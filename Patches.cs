@@ -18,7 +18,8 @@ namespace ImprovedLoadingScreens
         private static List<String> allowedHints = new List<String>();
         //private static List<String> allowedRegionHints;
         //alprivate static List<String> allowedRegionTitles;
-       
+
+        private static String region = "Default";
         private static String lastRegion = "Default";
 
         [HarmonyPatch(typeof(GameManager), "Awake")]
@@ -61,7 +62,7 @@ namespace ImprovedLoadingScreens
         [HarmonyPatch(typeof(Panel_Loading), "QueueHintLabel")]
         internal class Panel_Loading_QueueHintLabel
         {
-            private static String region = "Default";
+
            //private static String scene = "Default";
 
             private static void Prefix(Panel_Loading __instance, ref string textLocId, ref String titleLocId)
@@ -71,7 +72,7 @@ namespace ImprovedLoadingScreens
 
                 //scene = InterfaceManager.GetNameForScene(__instance.m_Info.m_MainScene); unsued for now
 
-                if (Settings.settings.hints)
+                if (Settings.settings.hints && Settings.settings.backgrounds)
                 {
 
                     //get the region from LoadingSceneInfo
@@ -138,8 +139,6 @@ namespace ImprovedLoadingScreens
             allowedTitles.Add("HINT_CookingWarmupBuff_title");
             allowedHints.Add("HINT_Moose");
             allowedTitles.Add("HINT_Moose_title");
-            allowedHints.Add("HINT_Wolves");
-            allowedTitles.Add("FUAR_WolvesTitle");
             allowedHints.Add("HINT_Quartering");
             allowedTitles.Add("HINT_Quartering_title");
             allowedHints.Add("HINT_RawMeatScent");
@@ -211,7 +210,14 @@ namespace ImprovedLoadingScreens
             allowedHints.Add("GAMEPLAY_tutorialFlashlight_short");
             allowedTitles.Add("GAMEPLAY_Flashlight");
             allowedHints.Add("HINT_BirchTea");
-            allowedTitles.Add("HINT_BirchTea_title"); 
+            allowedTitles.Add("HINT_BirchTea_title");
+
+            if (Settings.settings.cHints)
+            {
+                allowedHints.Add("HINT_Wolves");
+                allowedTitles.Add("FUAR_WolvesTitle");
+            }
+
 
             /*allowedHints.Add(""); spare lines
             allowedTitles.Add("");
@@ -232,30 +238,6 @@ namespace ImprovedLoadingScreens
         public static void AddRegionHints(String region)
         {
 
-          /*  allowedRegionHints.Add("HINT_LakeRegion"); //ml
-            allowedRegionTitles.Add("GAMEPLAY_MysteryLake");
-            allowedRegionHints.Add("HINT_MarshRegion");
-            allowedRegionTitles.Add("SCENENAME_Marsh"); //fm
-            allowedRegionHints.Add("HINT_TracksRegion");
-            allowedRegionTitles.Add("SCENENAME_Railway"); //br
-            allowedRegionHints.Add("HINT_RuralRegion");
-            allowedRegionTitles.Add("SCENENAME_RuralRegion"); //pv
-            allowedRegionHints.Add("SUBTITLE_SMFatE32430");
-            allowedRegionTitles.Add("SCENENAME_RuralRegion"); //pv
-            allowedRegionHints.Add("HINT_WhalingStationRegion");
-            allowedRegionTitles.Add("SCENENAME_WhalingStation");
-            allowedRegionHints.Add("HINT_CrashMountainRegion");
-            allowedRegionTitles.Add("SCENENAME_CrashMountainRegion");
-            allowedRegionHints.Add("HINT_MountainTownRegion");
-            allowedRegionTitles.Add("SCENENAME_MountainTownRegion"); //Milton
-            allowedRegionHints.Add("HINT_MountainTownRegion");
-            allowedRegionTitles.Add("STORY_jnl_LeaveMilton_Title"); //Milton
-            allowedRegionHints.Add("HINT_RiverValleyRegion");
-            allowedRegionTitles.Add("SCENENAME_RiverValleyRegion"); //HRV
-            allowedRegionHints.Add("GAMEPLAY_CoastalHighwayDescriptionUnlocked");
-            allowedRegionTitles.Add("SCENENAME_CoastalHighway"); //CH */
-
-
             //add region hints to the general list
 
             switch (region)
@@ -266,10 +248,13 @@ namespace ImprovedLoadingScreens
                     allowedTitles.Add("GAMEPLAY_MysteryLake");
                     allowedHints.Add("HINT_CarterDam");
                     allowedTitles.Add("GAMEPLAY_CarterHydroDam");
-                    allowedHints.Add("FUAR_LakeRegionLore1");
-                    allowedTitles.Add("GAMEPLAY_MysteryLake");
-                    allowedHints.Add("FUAR_CarterDamLore1");
-                    allowedTitles.Add("GAMEPLAY_CarterHydroDam");
+                    if (Settings.settings.cHints)
+                    {
+                        allowedHints.Add("FUAR_LakeRegionLore1");
+                        allowedTitles.Add("GAMEPLAY_MysteryLake");
+                        allowedHints.Add("FUAR_CarterDamLore1");
+                        allowedTitles.Add("GAMEPLAY_CarterHydroDam");
+                    }
                     break;
                 case "RuralRegion":
                     //add PV hints to main list
@@ -277,12 +262,15 @@ namespace ImprovedLoadingScreens
                     allowedTitles.Add("SCENENAME_RuralRegion");
                     allowedHints.Add("HINT_RuralRegion");
                     allowedTitles.Add("SCENENAME_RuralRegion");
-                    allowedHints.Add("FUAR_RuralRegionHint1");
-                    allowedTitles.Add("SCENENAME_RuralRegion");
-                    allowedHints.Add("FUAR_RuralRegionLore1");
-                    allowedTitles.Add("FUAR_ThompsonCrossing");
-                    allowedHints.Add("FUAR_RuralRegionLore2");
-                    allowedTitles.Add("GAMEPLAY_RuralRadioTower");
+                    if (Settings.settings.cHints)
+                    {
+                        allowedHints.Add("FUAR_RuralRegionHint1");
+                        allowedTitles.Add("SCENENAME_RuralRegion");
+                        allowedHints.Add("FUAR_RuralRegionLore1");
+                        allowedTitles.Add("FUAR_ThompsonCrossing");
+                        allowedHints.Add("FUAR_RuralRegionLore2");
+                        allowedTitles.Add("GAMEPLAY_RuralRadioTower");
+                    }
                     break;
                 case "MountainTownRegion":
                     //add Milton hints to main list
@@ -292,12 +280,15 @@ namespace ImprovedLoadingScreens
                     allowedTitles.Add("STORY_jnl_LeaveMilton_Title");
                     allowedHints.Add("HINT_MiltonOrigins");
                     allowedTitles.Add("HINT_MiltonOrigins_title");
-                    allowedHints.Add("FUAR_MountainTownRegionHint1");
-                    allowedTitles.Add("SCENENAME_MountainTownRegion");
-                    allowedHints.Add("FUAR_MountainTownRegionLore1");
-                    allowedTitles.Add("HINT_MiltonOrigins_title");
-                    allowedHints.Add("FUAR_MountainTownRegionLore2");
-                    allowedTitles.Add("GAMEPLAY_mtTownCentre");
+                    if (Settings.settings.cHints)
+                    {
+                        allowedHints.Add("FUAR_MountainTownRegionHint1");
+                        allowedTitles.Add("SCENENAME_MountainTownRegion");
+                        allowedHints.Add("FUAR_MountainTownRegionLore1");
+                        allowedTitles.Add("HINT_MiltonOrigins_title");
+                        allowedHints.Add("FUAR_MountainTownRegionLore2");
+                        allowedTitles.Add("GAMEPLAY_mtTownCentre");
+                    }
                     break;
                 case "CoastalRegion":
                     //add CH hints to main list
@@ -305,10 +296,13 @@ namespace ImprovedLoadingScreens
                     allowedTitles.Add("SCENENAME_CoastalHighway");
                     allowedHints.Add("HINT_LoreMining");
                     allowedTitles.Add("SCENENAME_WorldMap");
-                    allowedHints.Add("FUAR_CoastalRegionHint1");
-                    allowedTitles.Add("SCENENAME_CoastalHighway");
-                    allowedHints.Add("FUAR_CoastalRegionLore1");
-                    allowedTitles.Add("SCENENAME_CoastalHighway");
+                    if (Settings.settings.cHints)
+                    {
+                        allowedHints.Add("FUAR_CoastalRegionHint1");
+                        allowedTitles.Add("SCENENAME_CoastalHighway");
+                        allowedHints.Add("FUAR_CoastalRegionLore1");
+                        allowedTitles.Add("SCENENAME_CoastalHighway");
+                    }
                     break;
                 case "CrashMountainRegion":
                     //add TWM hints to main list
@@ -316,12 +310,15 @@ namespace ImprovedLoadingScreens
                     allowedTitles.Add("SCENENAME_CrashMountainRegion");
                     allowedHints.Add("HINT_RegionDifference");
                     allowedTitles.Add("SCENENAME_CrashMountainRegion");
-                    allowedHints.Add("FUAR_CrashMountainRegionHint1");
-                    allowedTitles.Add("SCENENAME_CrashMountainRegion");
-                    allowedHints.Add("FUAR_CrashMountainRegionLore1");
-                    allowedTitles.Add("SCENENAME_CrashMountainRegion");
-                    allowedHints.Add("FUAR_CrashMountainRegionLore2");
-                    allowedTitles.Add("SCENENAME_CrashMountainRegion");
+                    if (Settings.settings.cHints)
+                    {
+                        allowedHints.Add("FUAR_CrashMountainRegionHint1");
+                        allowedTitles.Add("SCENENAME_CrashMountainRegion");
+                        allowedHints.Add("FUAR_CrashMountainRegionLore1");
+                        allowedTitles.Add("SCENENAME_CrashMountainRegion");
+                        allowedHints.Add("FUAR_CrashMountainRegionLore2");
+                        allowedTitles.Add("SCENENAME_CrashMountainRegion");
+                    }
                     break;
                 case "MarshRegion":
                     //add FM hints to main list
@@ -329,10 +326,13 @@ namespace ImprovedLoadingScreens
                     allowedTitles.Add("SCENENAME_Marsh");
                     allowedHints.Add("HINT_RegionDifference");
                     allowedTitles.Add("SCENENAME_Marsh");
-                    allowedHints.Add("FUAR_MarshRegionHint1");
-                    allowedTitles.Add("SCENENAME_Marsh");
-                    allowedHints.Add("FUAR_MarshRegionLore1");
-                    allowedTitles.Add("SCENENAME_Marsh");
+                    if (Settings.settings.cHints)
+                    {
+                        allowedHints.Add("FUAR_MarshRegionHint1");
+                        allowedTitles.Add("SCENENAME_Marsh");
+                        allowedHints.Add("FUAR_MarshRegionLore1");
+                        allowedTitles.Add("SCENENAME_Marsh");
+                    }
                     break;
                 case "WhalingStationRegion":
                     //add DP hints to main list
@@ -340,12 +340,15 @@ namespace ImprovedLoadingScreens
                     allowedTitles.Add("SCENENAME_WhalingStation");
                     allowedHints.Add("HINT_LoreMining");
                     allowedTitles.Add("SCENENAME_WorldMap");
-                    allowedHints.Add("FUAR_WhalingStationRegionHint1");
-                    allowedTitles.Add("SCENENAME_WhalingStation");
-                    allowedHints.Add("FUAR_WhalingStationRegionLore1");
-                    allowedTitles.Add("SCENENAME_WhalingStation");
-                    allowedHints.Add("FUAR_WhalingStationRegionLore2");
-                    allowedTitles.Add("SCENENAME_WhalingStation");
+                    if (Settings.settings.cHints)
+                    {
+                        allowedHints.Add("FUAR_WhalingStationRegionHint1");
+                        allowedTitles.Add("SCENENAME_WhalingStation");
+                        allowedHints.Add("FUAR_WhalingStationRegionLore1");
+                        allowedTitles.Add("SCENENAME_WhalingStation");
+                        allowedHints.Add("FUAR_WhalingStationRegionLore2");
+                        allowedTitles.Add("SCENENAME_WhalingStation");
+                    }
                     break;
                 case "RiverValleyRegion":
                     //add HRV hints to main list
@@ -353,12 +356,15 @@ namespace ImprovedLoadingScreens
                     allowedTitles.Add("SCENENAME_RiverValleyRegion");
                     allowedHints.Add("HINT_RegionDifference");
                     allowedTitles.Add("SCENENAME_RiverValleyRegion");
-                    allowedHints.Add("FUAR_RiverValleyRegionHint1");
-                    allowedTitles.Add("SCENENAME_RiverValleyRegion");
-                    allowedHints.Add("FUAR_RiverValleyRegionHint2");
-                    allowedTitles.Add("SCENENAME_RiverValleyRegion");
-                    allowedHints.Add("FUAR_RiverValleyRegionHint3");
-                    allowedTitles.Add("FUAR_RiverValleyRegionHint3Title");
+                    if (Settings.settings.cHints)
+                    {
+                        allowedHints.Add("FUAR_RiverValleyRegionHint1");
+                        allowedTitles.Add("SCENENAME_RiverValleyRegion");
+                        allowedHints.Add("FUAR_RiverValleyRegionHint2");
+                        allowedTitles.Add("SCENENAME_RiverValleyRegion");
+                        allowedHints.Add("FUAR_RiverValleyRegionHint3");
+                        allowedTitles.Add("FUAR_RiverValleyRegionHint3Title");
+                    }
                     break;
                 case "TracksRegion":
                     //add BR hints to main list
@@ -366,10 +372,13 @@ namespace ImprovedLoadingScreens
                     allowedTitles.Add("SCENENAME_Railway");
                     allowedHints.Add("HINT_LoreEarthquakes");
                     allowedTitles.Add("SCENENAME_Railway");
-                    allowedHints.Add("FUAR_TracksRegionHint1");
-                    allowedTitles.Add("SCENENAME_Railway");
-                    allowedHints.Add("FUAR_TracksRegionLore1");
-                    allowedTitles.Add("SCENENAME_Railway");
+                    if (Settings.settings.cHints)
+                    {
+                        allowedHints.Add("FUAR_TracksRegionHint1");
+                        allowedTitles.Add("SCENENAME_Railway");
+                        allowedHints.Add("FUAR_TracksRegionLore1");
+                        allowedTitles.Add("SCENENAME_Railway");
+                    }
                     break;
                 case "TransitionMLtoCH":
                     //add Ravine hints to main list
@@ -380,15 +389,21 @@ namespace ImprovedLoadingScreens
                     //add Ravine hints to main list
                     allowedHints.Add("HINT_RegionDifference");
                     allowedTitles.Add("SCENENAME_AshCanyon");
-                    allowedHints.Add("FUAR_AshCanyonRegionHint1");
-                    allowedTitles.Add("SCENENAME_AshCanyon");
+                    if (Settings.settings.cHints)
+                    {
+                        allowedHints.Add("FUAR_AshCanyonRegionHint1");
+                        allowedTitles.Add("SCENENAME_AshCanyon");
+                    }
                     break;
                 case "CanneryRegion":
                     //add BI hints to main list
-                    allowedHints.Add("FUAR_BleakInletRegionHint1");
-                    allowedTitles.Add("SCENENAME_CanneryRegion");
-                    allowedHints.Add("FUAR_BleakInletRegionLore1");
-                    allowedTitles.Add("SCENENAME_CanneryRegion");
+                    if (Settings.settings.cHints)
+                    {
+                        allowedHints.Add("FUAR_BleakInletRegionHint1");
+                        allowedTitles.Add("SCENENAME_CanneryRegion");
+                        allowedHints.Add("FUAR_BleakInletRegionLore1");
+                        allowedTitles.Add("SCENENAME_CanneryRegion");
+                    }
                     break;
                 default:
                     allowedHints.Add("HINT_RegionDifference");
@@ -396,9 +411,118 @@ namespace ImprovedLoadingScreens
                     break;
 
             }
+        }
+
+        [HarmonyPatch(typeof(Utils), "GetLoadingBackgroundTexture")]
+
+        internal class Utils_GetLoadingBackgroundTexture
+        {
+
+            private static List<String> allowedBackgrounds = new List<String>(); 
+
+            private static void Prefix(ref string name)
+            {
+
+                allowedBackgrounds.Clear();
+
+                if (Settings.settings.active == Active.Disabled) return;
+
+                //get the region from LoadingSceneInfo
+                try
+                {
+                    if (region == "")
+                    {
+                        region = lastRegion;
+                    }
+                    else
+                    {
+                        lastRegion = region;
+                    }
+                }
+                catch (NullReferenceException e)
+                {
+                    MelonLoader.MelonLogger.Msg("Error: Region not found.");
+                    MelonLoader.MelonLogger.Msg("Caught Exception: {0}", e.Message);
+                }
+
+                if(region != null)
+                {
+                    allowedBackgrounds.Add("LoadingBackgroundTexture_1");
+                    allowedBackgrounds.Add("LoadingBackgroundTexture_2");
+                    allowedBackgrounds.Add("LoadingBackgroundTexture_3");
+                    allowedBackgrounds.Add("LoadingBackgroundTexture_4");
+                    allowedBackgrounds.Add("LoadingBackgroundTexture_5");
+                    allowedBackgrounds.Add("LoadingBackgroundTexture_6");
+                }
+
+                if (Settings.settings.regionBackgrounds)
+                {
+                    switch (region)
+                    {
+                        case "LakeRegion":
+                            allowedBackgrounds.Add("Ep2_LoadingBackgroundTexture_1");
+                            allowedBackgrounds.Add("Ep2_LoadingBackgroundTexture_2");
+                            allowedBackgrounds.Add("Ep2_LoadingBackgroundTexture_3");
+                            allowedBackgrounds.Add("Ep2_LoadingBackgroundTexture_5");
+                            break;
+                        case "RuralRegion":
+                            allowedBackgrounds.Add("Ep3_LoadingBackgroundTexture_1");
+                            allowedBackgrounds.Add("Ep3_LoadingBackgroundTexture_3");
+                            allowedBackgrounds.Add("Ep3_LoadingBackgroundTexture_5");
+                            allowedBackgrounds.Add("Ep3_LoadingBackgroundTexture_6");
+                            allowedBackgrounds.Add("Ep1_LoadingBackgroundTexture_5");
+                            break;
+                        case "MountainTownRegion":
+                            allowedBackgrounds.Add("Ep1_LoadingBackgroundTexture_1");
+                            allowedBackgrounds.Add("Ep1_LoadingBackgroundTexture_2");
+                            allowedBackgrounds.Add("Ep1_LoadingBackgroundTexture_3");
+                            allowedBackgrounds.Add("Ep1_LoadingBackgroundTexture_4");
+                            allowedBackgrounds.Add("Ep1_LoadingBackgroundTexture_6");
+                            break;
+                        case "CoastalRegion":
+                            //mo textures yet
+                            break;
+                        case "CrashMountainRegion":
+                            //mo textures yet
+                            break;
+                        case "MarshRegion":
+                            //mo textures yet
+                            break;
+                        case "WhalingStationRegion":
+                            //mo textures yet
+                            break;
+                        case "RiverValleyRegion":
+                            allowedBackgrounds.Add("Ep1_LoadingBackgroundTexture_5");
+                            break;
+                        case "TracksRegion":
+                            allowedBackgrounds.Add("Ep2_LoadingBackgroundTexture_4");
+                            allowedBackgrounds.Add("Ep2_LoadingBackgroundTexture_6");
+                            break;
+                        case "TransitionMLtoCH":
+                            //mo textures yet
+                            break;
+                        case "AshCanyonRegion":
+                            allowedBackgrounds.Add("Ep1_LoadingBackgroundTexture_5");
+                            break;
+                        case "CanneryRegion":
+                            //mo textures yet
+                            break;
+                        default:
+                            break;
+                    }
+                }
+
+                //override the loading screen
 
 
+                Random rando = new Random();
+                int index = rando.Next(0, allowedBackgrounds.Count);
 
+                if (!Settings.settings.backgrounds) index = 999;
+
+                name = allowedBackgrounds.ElementAt(index);
+
+            }
         }
 
     }

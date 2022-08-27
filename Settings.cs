@@ -25,6 +25,19 @@ namespace ImprovedLoadingScreens
         [Choice("Disabled", "Enabled")]
         public Active active = Active.Enabled;
 
+
+        [Section("Backgrounds")]
+
+        [Name("Enable Backgrounds")]
+        [Description("Enable or Disable loading screen backgrounds altogether.")]
+        [Choice("Disabled", "Enabled")]
+        public bool backgrounds = true;
+
+        [Name("Enable Region Backgrounds")]
+        [Description("Enable or Disable region specific loading screen backgrounds.")]
+        [Choice("Disabled", "Enabled")]
+        public bool regionBackgrounds = true;
+
         [Section("Hints")]
 
         [Name("Enable Hints")]
@@ -40,7 +53,8 @@ namespace ImprovedLoadingScreens
         protected override void OnChange(FieldInfo field, object oldValue, object newValue)
         {
             if (field.Name == nameof(active) ||
-               field.Name == nameof(hints))
+               field.Name == nameof(hints) ||
+               field.Name == nameof(backgrounds))
             {
                 RefreshSections();
             }
@@ -49,10 +63,13 @@ namespace ImprovedLoadingScreens
         internal void RefreshSections()
         {
 
+            SetFieldVisible(nameof(backgrounds), Settings.settings.active != Active.Disabled);
 
-            SetFieldVisible(nameof(hints), Settings.settings.active != Active.Disabled);
+            SetFieldVisible(nameof(regionBackgrounds), Settings.settings.active != Active.Disabled && backgrounds);
 
-            SetFieldVisible(nameof(cHints), Settings.settings.active != Active.Disabled && hints);
+            SetFieldVisible(nameof(hints), Settings.settings.active != Active.Disabled && backgrounds);
+
+            SetFieldVisible(nameof(cHints), Settings.settings.active != Active.Disabled && hints && backgrounds);
 
 
         }
