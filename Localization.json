@@ -159,17 +159,13 @@
   },
 
   "FUAR_RiverValleyRegionHint3": {
-
     "English": "This valley's steep vertical cliffs may provide aid to any survivors with a keen eye. Just watch out for high winds and freezing temperatures on the way up.",
     "French (France)": "Les falaises verticales escarpées de cette vallée peuvent venir en aide à n'importe quel survivant doté d'un œil attentif. Faites juste attention aux vents violents et aux températures glaciales en montant."
-
   },
 
   "FUAR_RiverValleyRegionHint3Title": {
-
     "English": "Traversing the Valley.",
     "French (France)": "Traverser la vallée."
-
   },
 
   "FUAR_BleakInletRegionHint1": {
@@ -191,15 +187,4 @@
     "English": "Wolves",
     "French": "Loups"
   }
-
-
-
-
-
-
-
-
-
-
-
 }
