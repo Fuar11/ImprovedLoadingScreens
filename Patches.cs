@@ -25,22 +25,6 @@ namespace ImprovedLoadingScreens
         private static String region = "Default";
         private static String lastRegion = "Default";
 
-        [HarmonyPatch(typeof(GameManager), "Awake")]
-        internal class GameManager_Awake
-        {
-            private static void Postfix()
-            {
-                //if mod is disabled, skip
-                if (Settings.settings.active == Active.Disabled) return;
-
-                //if hints are disabled, don't load the list or localizations
-                if (!Settings.settings.hints) return;
-
-                //LoadLocalizations();
-                FillGeneralLists();
-            }
-        }
-
         [HarmonyPatch(typeof(Panel_Loading), "QueueHintLabel")]
         internal class Panel_Loading_QueueHintLabel
         {
@@ -76,6 +60,11 @@ namespace ImprovedLoadingScreens
                         MelonLoader.MelonLogger.Msg("Error: Region not found.");
                         MelonLoader.MelonLogger.Msg("Caught Exception: {0}", e.Message);
                     }
+
+                    //if hints are disabled, don't load the list
+                    if (!Settings.settings.hints) return;
+
+                    FillGeneralLists();
 
                     if (region != "" || region != null)
                     {
