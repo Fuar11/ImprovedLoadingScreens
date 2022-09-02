@@ -8,8 +8,19 @@ Improved Loading Screens improves the game's loading screens by adding several f
 * Custom gameplay and region tips.
 * Region specific loading screen backgrounds.
 * Custom loading screen backgrounds from in-game screenshots.
-* Disable loading screens and tips.
+* Disable loading screens and tips for a pure black screen.
 * Full English and French Localization.
+* Customizable with the Mod Settings menu.
+
+## Planned Features
+
+* Support for custom modded regions.
+* More loading screens and hints/tips.
+
+## Known Issues
+
+* When travelling between regions, the mod will not update the region if you do not enter an interior scene first. You may see backgrounds and hints for the region you just came from when you enter a building for the first time upon entering a new region. 
+
 
 ## Installation
 
