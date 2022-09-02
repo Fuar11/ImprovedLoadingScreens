@@ -25,7 +25,6 @@ Improved Loading Screens improves the game's loading screens by adding several f
 ## Installation
 
 * Install MelonLoader by downloading and running [MelonLoader.Installer.exe](https://github.com/HerpDerpinstine/MelonLoader/releases/latest/download/MelonLoader.Installer.exe)
-
 * Install the following dependencies in your mods folder: 
 
 - [ModSettings](https://github.com/zeobviouslyfakeacc/ModSettings/releases/latest)
