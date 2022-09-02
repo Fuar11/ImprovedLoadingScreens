@@ -36,7 +36,7 @@ namespace ImprovedLoadingScreens
                 //if hints are disabled, don't load the list or localizations
                 if (!Settings.settings.hints) return;
 
-                LoadLocalizations();
+                //LoadLocalizations();
                 FillGeneralLists();
             }
         }

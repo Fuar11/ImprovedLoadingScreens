@@ -30,6 +30,8 @@ namespace ImprovedLoadingScreens
             MelonLoader.MelonLogger.Msg("Asset Bundle: {0}", assetBundle);
             GetAssetNames(assetBundle);
 
+            Patches.LoadLocalizations();
+
         }
 
         private static AssetBundle LoadAssetBundle(string path)
