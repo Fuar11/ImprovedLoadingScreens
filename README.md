@@ -1,6 +1,6 @@
 # Improved Loading Screens
 
-This is a visual mod for **The Long Dark** by Hinterland Games Studio, Inc.
+This is a visual mod for **The Long Dark** by Hinterland Studios
 
 Improved Loading Screens improves the game's loading screens by adding several features:
 
@@ -19,7 +19,7 @@ Improved Loading Screens improves the game's loading screens by adding several f
 
 ## Known Issues
 
-* When travelling between regions, the mod will not update the region if you do not enter an interior scene first. You may see backgrounds and hints for the region you just came from when you enter a building for the first time upon entering a new region. 
+* When travelling between regions, the mod will show backgrounds for the region you came from instead of the region you are travelling to.
 
 
 ## Installation
