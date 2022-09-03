@@ -18,48 +18,24 @@ namespace ImprovedLoadingScreens
         private static List<String> allowedTitles = new List<String>();
         private static List<String> allowedHints = new List<String>();
 
+        private static string tempRegion = "";
 
         //private static List<String> allowedRegionHints;
         //alprivate static List<String> allowedRegionTitles;
-
-        private static String region = "Default";
-        private static String lastRegion = "Default";
 
         [HarmonyPatch(typeof(Panel_Loading), "QueueHintLabel")]
         internal class Panel_Loading_QueueHintLabel
         {
 
-           //private static String scene = "Default";
-
-            private static void Prefix(Panel_Loading __instance, ref string textLocId, ref String titleLocId)
+            private static void Prefix(ref string textLocId, ref String titleLocId)
             {
 
                 if (Settings.settings.active == Active.Disabled) return;
 
-                //scene = InterfaceManager.GetNameForScene(__instance.m_Info.m_MainScene); unsued for now
-
                 if (Settings.settings.hints && Settings.settings.backgrounds)
                 {
 
-                    //get the region from LoadingSceneInfo
-                    try
-                    {
-                        region = __instance.m_Info.m_Region;
-
-                        if (region == "")
-                        {
-                            region = lastRegion;
-                        }
-                        else
-                        {
-                            lastRegion = region;
-                        }
-                    }
-                    catch (NullReferenceException e)
-                    {
-                        MelonLoader.MelonLogger.Msg("Error: Region not found.");
-                        MelonLoader.MelonLogger.Msg("Caught Exception: {0}", e.Message);
-                    }
+                    string region = GetRegion();
 
                     //if hints are disabled, don't load the list
                     if (!Settings.settings.hints) return;
@@ -104,27 +80,9 @@ namespace ImprovedLoadingScreens
 
                 if (Settings.settings.active == Active.Disabled) return;
 
-                //get the region from LoadingSceneInfo
-                try
-                {
-                    if (region == "")
-                    {
-                        region = lastRegion;
-                    }
-                    else
-                    {
-                        lastRegion = region;
-                    }
-                }
-                catch (NullReferenceException e)
-                {
-                    MelonLoader.MelonLogger.Msg("Error: Region not found.");
-                    MelonLoader.MelonLogger.Msg("Caught Exception: {0}", e.Message);
-                }
-
                 if (Settings.settings.regionBackgrounds)
                 {
-                    switch (region)
+                    switch (GetRegion())
                     {
                         case "LakeRegion":
                             allowedBackgrounds.Add("Ep2_LoadingBackgroundTexture_1");
@@ -199,29 +157,14 @@ namespace ImprovedLoadingScreens
 
                     if (Settings.settings.customBackgrounds)
                     {
-                        Random choiceSelector = new Random();
-                        int customBackgroundChoice = choiceSelector.Next(1, 4);
-                        if (customBackgroundChoice % 2 != 0) return; 
 
-                        //get the region from LoadingSceneInfo
-                        try
-                        {
-                            if (region == "")
-                            {
-                                region = lastRegion;
-                            }
-                            else
-                            {
-                                lastRegion = region;
-                            }
-                        }
-                        catch (NullReferenceException e)
-                        {
-                            MelonLoader.MelonLogger.Msg("Error: Region not found.");
-                            MelonLoader.MelonLogger.Msg("Caught Exception: {0}", e.Message);
-                        }
+                    string region = GetRegion();
 
-                        switch (region)
+                    Random choiceSelector = new Random();
+                    int customBackgroundChoice = choiceSelector.Next(1, 4);
+                    if ((customBackgroundChoice % 2 != 0) && (new[] {"LakeRegion", "RuralRegion", "MountainTownRegion", "RiverValleyRegion", "TracksRegion", "AshCanyonRegion"}.Any(s => region.Contains(s)))) return;
+
+                    switch (region)
                         {
                             case "LakeRegion":
                                 allowedCustomBackgrounds.Add("LakeRegion1");
@@ -366,6 +309,51 @@ namespace ImprovedLoadingScreens
 
         }
 
+        public static string GetRegion()
+        {
+
+            string scene = GameManager.m_ActiveScene;
+            string region = "";
+
+          
+            if (RegionManager.SceneIsRegion(scene))
+            {
+                region = scene;
+                tempRegion = scene;
+        
+            }
+            else
+            {
+
+                MelonLoader.MelonLogger.Msg("SCENE NAME IF NOT REGION: {0}", scene);
+
+                region = InterfaceManager.GetLocIDForScene(scene);
+
+                List<GameRegion> regions = GetAllRegions();
+
+                if (!regions.Any(r => region.Contains(r.ToString()))) region = tempRegion;
+            }
+
+            /*MelonLoader.MelonLogger.Msg("SCENE NAME: {0}", scene);
+            MelonLoader.MelonLogger.Msg("REGION NAME: {0}", region); */
+
+            return region;
+        }
+
+        public static List<GameRegion> GetAllRegions()
+        {
+            List<GameRegion> list = new List<GameRegion>();
+            string[] names = Enum.GetNames(typeof(GameRegion));
+            for (int i = 0; i < names.Length; i++)
+            {
+                if (i != 6 && i != 7)
+                {
+                    list.Add((GameRegion)i);
+                }
+            }
+            return list;
+
+        }
         public static void FillGeneralLists()
         {
 
