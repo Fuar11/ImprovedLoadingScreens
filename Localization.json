@@ -178,6 +178,11 @@
     "French (France)": "Cette crique côtière possède certains des climats côtiers les plus froids et les plus venteux de Great Bear. Traverser ses chemins sinueux et glacés n'est pas pour les âmes sensibles."
   },
 
+  "FUAR_BlackrockLore1": {
+    "English": "Home to Blackrock Penitentiary, this Region’s icy rivers, deep ravines, and challenging weather act as a natural extension of the notorious prison. Its many caves and winding roads offer additional security if a storm moves in.",
+    "French": "Abritant le pénitencier de Blackrock, les rivières glacées, les ravins profonds et le climat difficile de cette région agissent comme une extension naturelle de la prison notoire. Ses nombreuses grottes et ses routes sinueuses offrent une sécurité supplémentaire en cas d'orage."
+  },
+
   "FUAR_ThompsonCrossing": {
     "English": "Thompson's Crossing",
     "French": "Thompson's Crossing"
@@ -186,5 +191,37 @@
   "FUAR_WolvesTitle": {
     "English": "Wolves",
     "French": "Loups"
+  },
+
+  "FUAR_CrowsTitle": {
+    "English": "Crows",
+    "French": "Corbeaux"
+  },
+
+  "FUAR_CrowsHint": {
+    "English": "Look out for flocks of crows circling above. They often feed off of dead carcasses and bodies.",
+    "French": "Faites attention aux volées de corbeaux qui tournent au-dessus. Ils se nourrissent souvent de carcasses et de cadavres."
+  },
+
+  "FUAR_BearCrowsTitle": {
+    "English": "Keep your ears open.",
+    "French": "Gardez vos oreilles ouvertes."
+  },
+
+  "FUAR_BearCrowsHint": {
+    "English": "Pay attention to the crows and the sound they make. A deeper call may alert other crows that predators are nearby. Be on the lookout for bears.",
+    "French": "Faites attention aux corbeaux et au son qu'ils font. Un appel plus profond peut alerter les autres corbeaux que des prédateurs sont proche. Soyez alerte des ours."
+  },
+
+  "FUAR_AuroraTitle": {
+    "English": "The Aurora",
+    "French": "L'Aurore"
+  },
+
+  "FUAR_AuroraHint": {
+    "English": "The mysterious aurora once sent the world into darkness. But on clear nights it may be seen in the sky, bringing dead electronics back to life. Making some areas more accessible and others more hazardous.",
+    "French": "L'aurore mystérieuse a envoyé le monde sombre. Mais les nuits claires, on peut le voir dans le ciel, ramenant à la vie des appareils électroniques morts. Rendre certaines zones plus accessibles et d'autres plus dangereuses."
   }
+
+
 }

@@ -1,14 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.IO;
-using System.Text;
 using System.Reflection;
-using System.Threading.Tasks;
+using Il2Cpp;
 using HarmonyLib;
 using UnityEngine;
 using Random = System.Random;
 using LocalizationUtilities;
+using Stream = System.IO.Stream;
+using StreamReader = System.IO.StreamReader;
 
 namespace ImprovedLoadingScreens
 {
@@ -21,16 +21,16 @@ namespace ImprovedLoadingScreens
         private static string tempRegion = "";
 
         //private static List<String> allowedRegionHints;
-        //alprivate static List<String> allowedRegionTitles;
+        //private static List<String> allowedRegionTitles;
 
-        [HarmonyPatch(typeof(Panel_Loading), "QueueHintLabel")]
+        [HarmonyPatch(typeof(Panel_Loading), nameof(Panel_Loading.QueueHintLabel))]
         internal class Panel_Loading_QueueHintLabel
         {
-
             private static void Prefix(ref string textLocId, ref String titleLocId)
             {
 
                 if (Settings.settings.active == Active.Disabled) return;
+
 
                 if (Settings.settings.hints && Settings.settings.backgrounds)
                 {
@@ -60,20 +60,20 @@ namespace ImprovedLoadingScreens
                     textLocId = "";
                     titleLocId = "";
                 }
-          
+
             }
 
         }
 
-        [HarmonyPatch(typeof(Utils), "GetLoadingBackgroundTexture")]
+      
+        [HarmonyPatch(typeof(Panel_Loading), nameof(Panel_Loading.SetBackgroundData))]
 
-        internal class Utils_GetLoadingBackgroundTexture
-        {
+        internal class Panel_Loading_SetBackgroundData
+        { 
 
             private static List<String> allowedBackgrounds = new List<String>();
-            private static List<String> allowedCustomBackgrounds = new List<String>();
 
-            private static void Prefix(ref string name)
+      /*      private static void Prefix(ref string name)
             {
 
                 allowedBackgrounds.Clear();
@@ -82,6 +82,9 @@ namespace ImprovedLoadingScreens
 
                 if (Settings.settings.regionBackgrounds)
                 {
+
+                    MelonLoader.MelonLogger.Msg("Current Region: {0}", GetRegion());
+
                     switch (GetRegion())
                     {
                         case "LakeRegion":
@@ -143,168 +146,201 @@ namespace ImprovedLoadingScreens
 
                 name = allowedBackgrounds.ElementAt(index);
 
-            }
+            } */
 
-            private static void Postfix(ref Texture2D __result)
+            private static void Postfix(Panel_Loading __instance)
             {
-                MelonLoader.MelonLogger.Msg("Postfix starting.");
 
-                allowedCustomBackgrounds.Clear();
+                allowedBackgrounds.Clear();
 
                 if (Settings.settings.active == Active.Disabled) return;
 
                 if (!Settings.settings.regionBackgrounds) return;
 
-                    if (Settings.settings.customBackgrounds)
-                    {
-
                     string region = GetRegion();
 
-                    Random choiceSelector = new Random();
-                    int customBackgroundChoice = choiceSelector.Next(1, 4);
-                    if ((customBackgroundChoice % 2 != 0) && (new[] {"LakeRegion", "RuralRegion", "MountainTownRegion", "RiverValleyRegion", "TracksRegion", "AshCanyonRegion"}.Any(s => region.Contains(s)))) return;
-
                     switch (region)
-                        {
-                            case "LakeRegion":
-                                allowedCustomBackgrounds.Add("LakeRegion1");
-                                allowedCustomBackgrounds.Add("LakeRegion2");
-                                allowedCustomBackgrounds.Add("LakeRegion3");
-                                allowedCustomBackgrounds.Add("LakeRegion4");
-                                allowedCustomBackgrounds.Add("LakeRegion5");
-                                break;
-                            case "RuralRegion":
-                                allowedCustomBackgrounds.Add("RuralRegion1");
-                                allowedCustomBackgrounds.Add("RuralRegion2");
-                                allowedCustomBackgrounds.Add("RuralRegion3");
-                                allowedCustomBackgrounds.Add("RuralRegion4");
-                                allowedCustomBackgrounds.Add("RuralRegion5");
-                                allowedCustomBackgrounds.Add("RuralRegion6");
-                                allowedCustomBackgrounds.Add("RuralRegion7");
-                                allowedCustomBackgrounds.Add("RuralRegion8");
-                                allowedCustomBackgrounds.Add("RuralRegion9");
-                                allowedCustomBackgrounds.Add("RuralRegion10");
-                                allowedCustomBackgrounds.Add("RuralRegion11");
-                                allowedCustomBackgrounds.Add("RuralRegion12");
-                                allowedCustomBackgrounds.Add("RuralRegion13");
-                                break;
-                            case "MountainTownRegion":
-                                allowedCustomBackgrounds.Add("MiltonRegion1");
-                                allowedCustomBackgrounds.Add("MiltonRegion2");
-                                allowedCustomBackgrounds.Add("MiltonRegion3");
-                                allowedCustomBackgrounds.Add("MiltonRegion4");
-                                allowedCustomBackgrounds.Add("MiltonRegion5");
-                                allowedCustomBackgrounds.Add("MiltonRegion6");
-                                allowedCustomBackgrounds.Add("MiltonRegion7");
-                                allowedCustomBackgrounds.Add("MiltonRegion8");
-                                allowedCustomBackgrounds.Add("MiltonRegion9");
-                                allowedCustomBackgrounds.Add("MiltonRegion10");
-                                break;
-                            case "CoastalRegion":
-                                allowedCustomBackgrounds.Add("CoastalRegion1");
-                                allowedCustomBackgrounds.Add("CoastalRegion2");
-                                allowedCustomBackgrounds.Add("CoastalRegion3");
-                                allowedCustomBackgrounds.Add("CoastalRegion4");
-                                allowedCustomBackgrounds.Add("CoastalRegion5");
-                                allowedCustomBackgrounds.Add("CoastalRegion6");
-                                allowedCustomBackgrounds.Add("CoastalRegion7");
-                                allowedCustomBackgrounds.Add("CoastalRegion8");
-                                break;
-                            case "CrashMountainRegion":
-                                allowedCustomBackgrounds.Add("CrashMountainRegion1");
-                                break;
-                            case "MarshRegion":
-                                allowedCustomBackgrounds.Add("MarshRegion1");
-                                allowedCustomBackgrounds.Add("MarshRegion2");
-                                allowedCustomBackgrounds.Add("MarshRegion3");
-                                allowedCustomBackgrounds.Add("MarshRegion4");
-                                break;
-                            case "WhalingStationRegion":
-                                allowedCustomBackgrounds.Add("DesolationPoint1");
-                                allowedCustomBackgrounds.Add("DesolationPoint2");
-                                allowedCustomBackgrounds.Add("DesolationPoint3");
-                                allowedCustomBackgrounds.Add("DesolationPoint4");
-                                allowedCustomBackgrounds.Add("DesolationPoint5");
-                                allowedCustomBackgrounds.Add("DesolationPoint6");
-                                break;
-                            case "RiverValleyRegion":
-                                allowedCustomBackgrounds.Add("RiverValley2");
-                                allowedCustomBackgrounds.Add("RiverValley3");
-                                allowedCustomBackgrounds.Add("RiverValley4");
-                                allowedCustomBackgrounds.Add("RiverValley5");
-                                allowedCustomBackgrounds.Add("RiverValley6");
-                                allowedCustomBackgrounds.Add("RiverValley7");
-                                break;
-                            case "TracksRegion":
-                                allowedCustomBackgrounds.Add("TracksRegion1");
-                                allowedCustomBackgrounds.Add("TracksRegion2");
-                                allowedCustomBackgrounds.Add("TracksRegion3");
-                                allowedCustomBackgrounds.Add("TracksRegion4");
-                                allowedCustomBackgrounds.Add("TracksRegion5");
-                                break;
-                            case "TransitionMLtoCH":
-                                allowedCustomBackgrounds.Add("Ravine1");
-                                allowedCustomBackgrounds.Add("Ravine2");
-                                allowedCustomBackgrounds.Add("Ravine3");
-                                allowedCustomBackgrounds.Add("Ravine4");
-                                allowedCustomBackgrounds.Add("Ravine5");
-                                break;
-                            case "AshCanyonRegion":
-                                allowedCustomBackgrounds.Add("AshCanyonRegion1");
-                                allowedCustomBackgrounds.Add("AshCanyonRegion2");
-                                allowedCustomBackgrounds.Add("AshCanyonRegion3");
-                                allowedCustomBackgrounds.Add("AshCanyonRegion4");
-                                allowedCustomBackgrounds.Add("AshCanyonRegion5");
-                                allowedCustomBackgrounds.Add("AshCanyonRegion6");
-                                allowedCustomBackgrounds.Add("AshCanyonRegion7");
-                                break;
-                            case "CanneryRegion":
-                                allowedCustomBackgrounds.Add("BleakInlet1");
-                                allowedCustomBackgrounds.Add("BleakInlet2");
-                                allowedCustomBackgrounds.Add("BleakInlet3");
-                                allowedCustomBackgrounds.Add("BleakInlet4");
-                                allowedCustomBackgrounds.Add("BleakInlet5");
-                                allowedCustomBackgrounds.Add("BleakInlet6");
-                                allowedCustomBackgrounds.Add("BleakInlet7");
-                                allowedCustomBackgrounds.Add("BleakInlet8");
-                                allowedCustomBackgrounds.Add("BleakInlet9");
-                                allowedCustomBackgrounds.Add("BleakInlet10");
-                                allowedCustomBackgrounds.Add("BleakInlet11");
-                                allowedCustomBackgrounds.Add("BleakInlet12");
-                                break;
-                            case "BlackrockRegion":
-                                allowedCustomBackgrounds.Add("Blackrock1");
-                                allowedCustomBackgrounds.Add("Blackrock2");
-                                allowedCustomBackgrounds.Add("Blackrock3");
-                                allowedCustomBackgrounds.Add("Blackrock4");
-                                allowedCustomBackgrounds.Add("Blackrock5");
-                                allowedCustomBackgrounds.Add("Blackrock6");
+                    {
+                        case "LakeRegion":
+                            allowedBackgrounds.Add("LakeRegion1");
+                            allowedBackgrounds.Add("LakeRegion2");
+                            allowedBackgrounds.Add("LakeRegion3");
+                            allowedBackgrounds.Add("LakeRegion4");
+                            allowedBackgrounds.Add("LakeRegion5");
+                            allowedBackgrounds.Add("LakeRegion6");
+                            break;
+                        case "RuralRegion":
+                            allowedBackgrounds.Add("RuralRegion1");
+                            allowedBackgrounds.Add("RuralRegion2");
+                            allowedBackgrounds.Add("RuralRegion3");
+                            allowedBackgrounds.Add("RuralRegion4");
+                            allowedBackgrounds.Add("RuralRegion5");
+                            allowedBackgrounds.Add("RuralRegion6");
+                            allowedBackgrounds.Add("RuralRegion7");
+                            allowedBackgrounds.Add("RuralRegion8");
+                            allowedBackgrounds.Add("RuralRegion9");
+                            allowedBackgrounds.Add("RuralRegion10");
+                            allowedBackgrounds.Add("RuralRegion11");
+                            allowedBackgrounds.Add("RuralRegion12");
+                            allowedBackgrounds.Add("RuralRegion13");
+                            break;
+                        case "MountainTownRegion":
+                            allowedBackgrounds.Add("MiltonRegion1");
+                            allowedBackgrounds.Add("MiltonRegion2");
+                            allowedBackgrounds.Add("MiltonRegion3");
+                            allowedBackgrounds.Add("MiltonRegion4");
+                            allowedBackgrounds.Add("MiltonRegion5");
+                            allowedBackgrounds.Add("MiltonRegion6");
+                            allowedBackgrounds.Add("MiltonRegion7");
+                            allowedBackgrounds.Add("MiltonRegion8");
+                            allowedBackgrounds.Add("MiltonRegion9");
+                            allowedBackgrounds.Add("MiltonRegion10");
+                            break;
+                        case "CoastalRegion":
+                            allowedBackgrounds.Add("CoastalRegion1");
+                            allowedBackgrounds.Add("CoastalRegion2");
+                            allowedBackgrounds.Add("CoastalRegion3");
+                            allowedBackgrounds.Add("CoastalRegion4");
+                            allowedBackgrounds.Add("CoastalRegion5");
+                            allowedBackgrounds.Add("CoastalRegion6");
+                            allowedBackgrounds.Add("CoastalRegion7");
+                            allowedBackgrounds.Add("CoastalRegion8");
+                            break;
+                        case "CrashMountainRegion":
+                            allowedBackgrounds.Add("CrashMountainRegion1");
+                            break;
+                        case "MarshRegion":
+                            allowedBackgrounds.Add("MarshRegion1");
+                            allowedBackgrounds.Add("MarshRegion2");
+                            allowedBackgrounds.Add("MarshRegion3");
+                            allowedBackgrounds.Add("MarshRegion4");
+                            break;
+                        case "WhalingStationRegion":
+                            allowedBackgrounds.Add("DesolationPoint1");
+                            allowedBackgrounds.Add("DesolationPoint2");
+                            allowedBackgrounds.Add("DesolationPoint3");
+                            allowedBackgrounds.Add("DesolationPoint4");
+                            allowedBackgrounds.Add("DesolationPoint5");
+                            break;
+                        case "LongRailTransitionZone":
+                            allowedBackgrounds.Add("FarRange1");
+                            allowedBackgrounds.Add("FarRange2");
+                            allowedBackgrounds.Add("FarRange3");
+                            allowedBackgrounds.Add("FarRange4");
+                            allowedBackgrounds.Add("FarRange5");
+                            allowedBackgrounds.Add("FarRange6");
+                            allowedBackgrounds.Add("FarRange7");
+                            allowedBackgrounds.Add("FarRange8");
+                            allowedBackgrounds.Add("FarRange9");
+                            allowedBackgrounds.Add("FarRange10");
+                            break;
+                        case "RiverValleyRegion":
+                            allowedBackgrounds.Add("RiverValley2");
+                            allowedBackgrounds.Add("RiverValley3");
+                            allowedBackgrounds.Add("RiverValley4");
+                            allowedBackgrounds.Add("RiverValley5");
+                            allowedBackgrounds.Add("RiverValley6");
+                            allowedBackgrounds.Add("RiverValley7");
+                            break;
+                        case "TracksRegion":
+                            allowedBackgrounds.Add("TracksRegion1");
+                            allowedBackgrounds.Add("TracksRegion2");
+                            allowedBackgrounds.Add("TracksRegion3");
+                            allowedBackgrounds.Add("TracksRegion4");
+                            allowedBackgrounds.Add("TracksRegion5");
+                            break;
+                        case "RavineTransitionZone":
+                            allowedBackgrounds.Add("Ravine1");
+                            allowedBackgrounds.Add("Ravine2");
+                            allowedBackgrounds.Add("Ravine3");
+                            allowedBackgrounds.Add("Ravine4");
+                            allowedBackgrounds.Add("Ravine5");
+                            break;
+                        case "AshCanyonRegion":
+                            allowedBackgrounds.Add("AshCanyonRegion1");
+                            allowedBackgrounds.Add("AshCanyonRegion2");
+                            allowedBackgrounds.Add("AshCanyonRegion3");
+                            allowedBackgrounds.Add("AshCanyonRegion4");
+                            allowedBackgrounds.Add("AshCanyonRegion5");
+                            allowedBackgrounds.Add("AshCanyonRegion6");
+                            allowedBackgrounds.Add("AshCanyonRegion7");
+                            break;
+                        case "CanneryRegion":
+                            allowedBackgrounds.Add("BleakInlet1");
+                            allowedBackgrounds.Add("BleakInlet2");
+                            allowedBackgrounds.Add("BleakInlet3");
+                            allowedBackgrounds.Add("BleakInlet4");
+                            allowedBackgrounds.Add("BleakInlet5");
+                            allowedBackgrounds.Add("BleakInlet6");
+                            allowedBackgrounds.Add("BleakInlet7");
+                            allowedBackgrounds.Add("BleakInlet8");
+                            allowedBackgrounds.Add("BleakInlet9");
+                            allowedBackgrounds.Add("BleakInlet10");
+                            allowedBackgrounds.Add("BleakInlet11");
+                            allowedBackgrounds.Add("BleakInlet12");
+                            break;
+                         case "HubRegion":
+                             allowedBackgrounds.Add("HubRegion1");
+                             allowedBackgrounds.Add("HubRegion2");
+                             allowedBackgrounds.Add("HubRegion3");
+                            break;
+                        case "DamRiverTransitionZoneB":
+                            allowedBackgrounds.Add("WindingRiver1");
+                            allowedBackgrounds.Add("WindingRiver2");
+                            allowedBackgrounds.Add("WindingRiver3");
+                            allowedBackgrounds.Add("WindingRiver4");
+                            break;
+                        case "AirfieldRegion":
+                            allowedBackgrounds.Add("AirfieldRegion1");
+                            allowedBackgrounds.Add("AirfieldRegion2");
+                            allowedBackgrounds.Add("AirfieldRegion3");
+                            allowedBackgrounds.Add("AirfieldRegion4");
+                            allowedBackgrounds.Add("AirfieldRegion5");
+                            allowedBackgrounds.Add("AirfieldRegion6");
+                            allowedBackgrounds.Add("AirfieldRegion7");
+                            allowedBackgrounds.Add("AirfieldRegion8");
+                            allowedBackgrounds.Add("AirfieldRegion9");
+                            allowedBackgrounds.Add("AirfieldRegion10");
+                            allowedBackgrounds.Add("AirfieldRegion11");
+                            allowedBackgrounds.Add("AirfieldRegion12");
+                            allowedBackgrounds.Add("AirfieldRegion13");
+                            allowedBackgrounds.Add("AirfieldRegion14");
+                            allowedBackgrounds.Add("AirfieldRegion15");
+                            allowedBackgrounds.Add("AirfieldRegion16");
+                            break;
+                        case "BlackrockRegion":
+                            allowedBackgrounds.Add("Blackrock1");
+                            allowedBackgrounds.Add("Blackrock2");
+                            allowedBackgrounds.Add("Blackrock3");
+                            allowedBackgrounds.Add("Blackrock4");
+                            allowedBackgrounds.Add("Blackrock5");
+                            allowedBackgrounds.Add("Blackrock6");
 
-                                allowedCustomBackgrounds.Add("KeepersPass1"); //temporary
-                                allowedCustomBackgrounds.Add("KeepersPass2");
-                                allowedCustomBackgrounds.Add("KeepersPass3");
-                                allowedCustomBackgrounds.Add("KeepersPass4");
-                                break;
-                            default:
-                                break;
-                        }
+                            allowedBackgrounds.Add("KeepersPass1");
+                            allowedBackgrounds.Add("KeepersPass2");
+                            allowedBackgrounds.Add("KeepersPass3");
+                            allowedBackgrounds.Add("KeepersPass4");
+                            break;
+                        default:
+                                //add region non-specific backgrounds
+                            break;
                     }
-                else
-                {
-                    return;
-                }
                 
+                
+
                 //override the loading screen
 
                 Random rando = new Random();
-                int index = rando.Next(0, allowedCustomBackgrounds.Count);
+                int index = rando.Next(0, allowedBackgrounds.Count + 1);
 
                 if (!Settings.settings.backgrounds)
                 {
                     index = 999;
                 }
-                
-                __result = Implementation.BackgroundsAssetBundle.LoadAsset<Texture2D>(allowedCustomBackgrounds.ElementAt(index));
+
+                MelonLoader.MelonLogger.Msg("Choosing Custom Background: {0}", allowedBackgrounds.ElementAt(index));
+
+                __instance.m_BackgroundTexture.mainTexture = Implementation.BackgroundsAssetBundle.LoadAsset<Texture2D>(allowedBackgrounds.ElementAt(index));
             }
 
         }
@@ -313,47 +349,33 @@ namespace ImprovedLoadingScreens
         {
 
             string scene = GameManager.m_ActiveScene;
-            string region = "";
+            MelonLoader.MelonLogger.Msg("Current Scene: {0}", scene);
+            List<string> regions = GetAllRegions();
 
-          
-            if (RegionManager.SceneIsRegion(scene))
+            if (regions.Any(r => scene.Contains(r.ToString())))
             {
-                region = scene;
                 tempRegion = scene;
-        
             }
             else
             {
-
-                MelonLoader.MelonLogger.Msg("SCENE NAME IF NOT REGION: {0}", scene);
-
-                region = InterfaceManager.GetLocIDForScene(scene);
-
-                List<GameRegion> regions = GetAllRegions();
-
-                if (!regions.Any(r => region.Contains(r.ToString()))) region = tempRegion;
+                if (!regions.Any(r => scene.Contains(r.ToString()))) scene = tempRegion;
             }
 
-            /*MelonLoader.MelonLogger.Msg("SCENE NAME: {0}", scene);
-            MelonLoader.MelonLogger.Msg("REGION NAME: {0}", region); */
-
-            return region;
+            return scene;
         }
 
-        public static List<GameRegion> GetAllRegions()
+        public static List<string> GetAllRegions()
         {
-            List<GameRegion> list = new List<GameRegion>();
-            string[] names = Enum.GetNames(typeof(GameRegion));
-            for (int i = 0; i < names.Length; i++)
-            {
-                if (i != 6 && i != 7)
-                {
-                    list.Add((GameRegion)i);
-                }
-            }
-            return list;
+            List<string> names = Enum.GetNames(typeof(GameRegion)).ToList();
 
+            names.Add("LongRailTransitionZone");
+            names.Add("RavineTransitionZone");
+            names.Add("DamRiverTransitionZoneB");
+            names.Add("HubRegion");
+
+            return names;
         }
+
         public static void FillGeneralLists()
         {
 
@@ -451,6 +473,13 @@ namespace ImprovedLoadingScreens
             {
                 allowedHints.Add("HINT_Wolves");
                 allowedTitles.Add("FUAR_WolvesTitle");
+                allowedHints.Add("FUAR_CrowsHint");
+                allowedTitles.Add("FUAR_CrowsTitle");
+                allowedHints.Add("FUAR_BearCrowsHint");
+                allowedTitles.Add("FUAR_BearCrowsTitle");
+                allowedHints.Add("FUAR_AuroraHint");
+                allowedTitles.Add("FUAR_AuroraTitle");
+
             }
 
 
@@ -614,7 +643,7 @@ namespace ImprovedLoadingScreens
                         allowedTitles.Add("SCENENAME_Railway");
                     }
                     break;
-                case "TransitionMLtoCH":
+                case "RavineTransitionRegion":
                     //add Ravine hints to main list
                     allowedHints.Add("HINT_LakeRegion");
                     allowedTitles.Add("GAMEPLAY_MysteryLake");
@@ -639,6 +668,19 @@ namespace ImprovedLoadingScreens
                         allowedTitles.Add("SCENENAME_CanneryRegion");
                     }
                     break;
+                case "BlackrockRegion":
+                    //add BR hints to main list
+                    allowedHints.Add("HINT_BlackrockMountain");
+                    allowedTitles.Add("HINT_BlackrockMountain_title");
+                    allowedHints.Add("HINT_BlackrockBrokenRoads");
+                    allowedTitles.Add("HINT_BlackrockBrokenRoads_title");
+                    if (Settings.settings.cHints)
+                    {
+                        allowedHints.Add("HINT_BlackrockLore1");
+                        allowedTitles.Add("STORY_jnl_BlackRock_Title");
+                    }
+                    break;
+
                 default:
                     allowedHints.Add("HINT_RegionDifference");
                     allowedTitles.Add("SCENENAME_WorldMap");
@@ -657,9 +699,9 @@ namespace ImprovedLoadingScreens
             {
                 results = reader.ReadToEnd();
             }
-            LocalizationUtilities.LocalizationManager.LoadJSONLocalization(results);
+            LocalizationManager.LoadJSONLocalization(results);
 
-            MelonLoader.MelonLogger.Msg("Localizations Added: {0}", LocalizationUtilities.LocalizationManager.LoadJSONLocalization(results));
+            MelonLoader.MelonLogger.Msg("Localizations Added: {0}", LocalizationManager.LoadJSONLocalization(results));
 
 
         }
