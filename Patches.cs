@@ -31,7 +31,6 @@ namespace ImprovedLoadingScreens
 
                 if (Settings.settings.active == Active.Disabled) return;
 
-
                 if (Settings.settings.hints && Settings.settings.backgrounds)
                 {
 
@@ -60,9 +59,7 @@ namespace ImprovedLoadingScreens
                     textLocId = "";
                     titleLocId = "";
                 }
-
             }
-
         }
 
       
@@ -384,12 +381,6 @@ namespace ImprovedLoadingScreens
 
             //generic
 
-            allowedHints.Add("HINT_VehiclesRest");
-            allowedTitles.Add("GAMEPLAY_Vehicle");
-            allowedHints.Add("HINT_VehiclesLoot");
-            allowedTitles.Add("HINT_VehiclesLoot_title");
-            allowedHints.Add("HINT_VehiclesLoot_2");
-            allowedTitles.Add("HINT_VehiclesLoot_title");
             allowedHints.Add("HINT_FireColdBurnTimes");
             allowedTitles.Add("GAMEPLAY_Fuel");
             allowedHints.Add("HINT_CookingWarmupBuff");
@@ -402,10 +393,6 @@ namespace ImprovedLoadingScreens
             allowedTitles.Add("HINT_WolvesPatrol_title");
             allowedHints.Add("HINT_DistressPistol");
             allowedTitles.Add("HINT_DistressPistol_title");
-            allowedHints.Add("HINT_FlaresTorches");
-            allowedTitles.Add("HINT_FlaresTorches_title");
-            allowedHints.Add("HINT_CraftingSites");
-            allowedTitles.Add("HINT_CraftingSites_title");
             allowedHints.Add("HINT_ToolsRepair");
             allowedTitles.Add("GAMEPLAY_RadialTools");
             allowedHints.Add("HINT_CraftingSnowShelter");
@@ -416,18 +403,10 @@ namespace ImprovedLoadingScreens
             allowedTitles.Add("GAMEPLAY_Hypothermia");
             allowedHints.Add("HINT_Freezing");
             allowedTitles.Add("GAMEPLAY_CustomModeAdjustFreezingNearbyFire");
-            allowedHints.Add("HINT_Starving");
-            allowedTitles.Add("GAMEPLAY_Hunger");
-            allowedHints.Add("HINT_Dehydration");
-            allowedTitles.Add("GAMEPLAY_SymptomDehydration");
-            allowedHints.Add("HINT_Exhaustion");
-            allowedTitles.Add("GAMEPLAY_SymptomFatigue");
             allowedHints.Add("HINT_Temperature");
             allowedTitles.Add("HINT_Temperature_title");
             allowedHints.Add("HINT_Wind");
             allowedTitles.Add("HINT_Wind_title");
-            allowedHints.Add("HINT_WolfDeterrence");
-            allowedTitles.Add("HINT_WolfDeterrence_title");
             allowedHints.Add("HINT_WoodHarvest");
             allowedTitles.Add("HINT_WoodHarvest_title");
             allowedHints.Add("HINT_IceFishing");
@@ -456,16 +435,12 @@ namespace ImprovedLoadingScreens
             allowedTitles.Add("HINT_WoodHarvest_title");
             allowedHints.Add("HINT_Landmarks");
             allowedTitles.Add("HINT_Landmarks_title");
-            allowedHints.Add("HINT_BufferMemories");
-            allowedTitles.Add("GAMEPLAY_CollectionFilterAuroraScreens");
             allowedHints.Add("HINT_Shivering");
             allowedTitles.Add("HINT_Shivering_title");
             allowedHints.Add("HINT_Revolver");
             allowedTitles.Add("HINT_Revolver_title");
             allowedHints.Add("HINT_SprainPain");
             allowedTitles.Add("HINT_SprainPain_title");
-            allowedHints.Add("GAMEPLAY_tutorialFlashlight_short");
-            allowedTitles.Add("GAMEPLAY_Flashlight");
             allowedHints.Add("HINT_BirchTea");
             allowedTitles.Add("HINT_BirchTea_title");
 
@@ -479,7 +454,14 @@ namespace ImprovedLoadingScreens
                 allowedTitles.Add("FUAR_BearCrowsTitle");
                 allowedHints.Add("FUAR_AuroraHint");
                 allowedTitles.Add("FUAR_AuroraTitle");
-
+                allowedHints.Add("FUAR_DawnHint");
+                allowedTitles.Add("FUAR_DawnTitle");
+                allowedHints.Add("FUAR_CartographyHint");
+                allowedTitles.Add("FUAR_CartographyTitle");
+                allowedHints.Add("FUAR_RopeHint");
+                allowedTitles.Add("FUAR_RopeTitle");
+                allowedHints.Add("FUAR_CacheHint");
+                allowedTitles.Add("FUAR_CacheTitle");
             }
 
 
@@ -680,7 +662,42 @@ namespace ImprovedLoadingScreens
                         allowedTitles.Add("STORY_jnl_BlackRock_Title");
                     }
                     break;
-
+                case "LongRailTransitionZone":
+                    allowedHints.Add("FUAR_FarRangeBranchLineHint1");
+                    allowedTitles.Add("FUAR_FarRangeBranchLineTitle");
+                    allowedHints.Add("FUAR_FarRangeBranchLineHint2");
+                    allowedTitles.Add("FUAR_FarRangeBranchLineTitle");
+                    allowedHints.Add("FUAR_FarTerritoryLore1");
+                    allowedTitles.Add("FUAR_FarTerritoryTitle");
+                    allowedHints.Add("FUAR_FarRangeLore1");
+                    allowedTitles.Add("FUAR_FarRangeTitle");
+                    break;
+                case "HubRegion":
+                    allowedHints.Add("FUAR_FarTerritoryLore1");
+                    allowedTitles.Add("FUAR_FarTerritoryTitle");
+                    allowedHints.Add("FUAR_FarRangeLore1");
+                    allowedTitles.Add("FUAR_FarRangeTitle");
+                    allowedHints.Add("FUAR_TransferPassHint");
+                    allowedTitles.Add("FUAR_TransferPassTitle");
+                    break;
+                case "AirfieldRegion":
+                    allowedHints.Add("FUAR_FarTerritoryLore1");
+                    allowedTitles.Add("FUAR_FarTerritoryTitle");
+                    allowedHints.Add("FUAR_FarRangeLore1");
+                    allowedTitles.Add("FUAR_FarRangeTitle");
+                    allowedHints.Add("FUAR_AirfieldHint1");
+                    allowedTitles.Add("FUAR_AirfieldTitle");
+                    allowedHints.Add("FUAR_AirfieldHint2");
+                    allowedTitles.Add("FUAR_AirfieldTitle");
+                    allowedHints.Add("FUAR_AirfieldLore1");
+                    allowedTitles.Add("FUAR_AirfieldLoreTitle");
+                    allowedHints.Add("FUAR_GlimmerFogHint1");
+                    allowedTitles.Add("FUAR_GlimmerFogTitle");
+                    allowedHints.Add("FUAR_GlimmerFogHint2");
+                    allowedTitles.Add("FUAR_GlimmerFogTitle");
+                    allowedHints.Add("FUAR_InsomniaHint");
+                    allowedTitles.Add("FUAR_InsomniaTitle");
+                    break;
                 default:
                     allowedHints.Add("HINT_RegionDifference");
                     allowedTitles.Add("SCENENAME_WorldMap");
@@ -699,13 +716,11 @@ namespace ImprovedLoadingScreens
             {
                 results = reader.ReadToEnd();
             }
-            LocalizationManager.LoadJSONLocalization(results);
+            LocalizationManager.LoadJsonLocalization(results);
 
-            MelonLoader.MelonLogger.Msg("Localizations Added: {0}", LocalizationManager.LoadJSONLocalization(results));
+            MelonLoader.MelonLogger.Msg("Localizations Added: {0}", LocalizationManager.LoadJsonLocalization(results));
 
 
         }
-
     }
-
 }

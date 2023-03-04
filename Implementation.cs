@@ -21,7 +21,7 @@ namespace ImprovedLoadingScreens
             get => assetBundle ?? throw new System.NullReferenceException(nameof(assetBundle));
         }
 
-        public override void OnApplicationStart()
+        public override void OnInitializeMelon()
         {
             Debug.Log($"[{Info.Name}] Version {Info.Version} loaded!");
             Settings.onLoad();
