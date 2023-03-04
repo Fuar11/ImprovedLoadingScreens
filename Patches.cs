@@ -9,6 +9,7 @@ using Random = System.Random;
 using LocalizationUtilities;
 using Stream = System.IO.Stream;
 using StreamReader = System.IO.StreamReader;
+using MelonLoader;
 
 namespace ImprovedLoadingScreens
 {
@@ -716,9 +717,10 @@ namespace ImprovedLoadingScreens
             {
                 results = reader.ReadToEnd();
             }
+
             LocalizationManager.LoadJsonLocalization(results);
 
-            MelonLoader.MelonLogger.Msg("Localizations Added: {0}", LocalizationManager.LoadJsonLocalization(results));
+            MelonLogger.Msg("Localizations Added: {0}", LocalizationManager.LoadJsonLocalization(results));
 
 
         }
