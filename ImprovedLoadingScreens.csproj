@@ -16,7 +16,9 @@
 	<!--This is the of packages that the mod references.-->
 	<ItemGroup>
 		<!--This package contains almost everything a person could possibly need to reference while modding.-->
-		<PackageReference Include="ds5678.Modding.TLD.Il2CppAssemblies.Windows" Version="2.6.0" />
+		<PackageReference Include="STBlade.Modding.TLD.Il2CppAssemblies.Windows" Version="2.7.0" />
+		<PackageReference Include="STBlade.Modding.TLD.ModSettings" Version="1.9.0" />
+		<PackageReference Include="STBlade.Modding.TLD.LocalizationUtilities" Version="2.0.0" />
 		<!--The package version here may be outdated and need to be updated. Visual Studio can update package versions automatically.-->
 		<!--If the mod references any other mods (such as ModSettings), their NuGet package will also need to be listed here.-->
 	</ItemGroup>
@@ -32,17 +34,6 @@
 	  <EmbeddedResource Include="Localization.json" />
 	</ItemGroup>
  
-	<ItemGroup>
-		<Reference Include="ModSettings">
-			<HintPath>$(ModsPath)\ModSettings.dll</HintPath>
-			<Private>False</Private>
-		</Reference>
-		<Reference Include="LocalizationUtilities">
-			<HintPath>$(ModsPath)\LocalizationUtilities.dll</HintPath>
-			<Private>False</Private>
-		</Reference>
-	</ItemGroup>
-
 	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
 		<DebugType>full</DebugType>
 	</PropertyGroup>

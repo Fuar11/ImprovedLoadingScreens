@@ -336,8 +336,6 @@ namespace ImprovedLoadingScreens
                     index = 999;
                 }
 
-                MelonLoader.MelonLogger.Msg("Choosing Custom Background: {0}", allowedBackgrounds.ElementAt(index));
-
                 __instance.m_BackgroundTexture.mainTexture = Implementation.BackgroundsAssetBundle.LoadAsset<Texture2D>(allowedBackgrounds.ElementAt(index));
             }
 
@@ -719,9 +717,6 @@ namespace ImprovedLoadingScreens
             }
 
             LocalizationManager.LoadJsonLocalization(results);
-
-            MelonLogger.Msg("Localizations Added: {0}", LocalizationManager.LoadJsonLocalization(results));
-
 
         }
     }

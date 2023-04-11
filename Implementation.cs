@@ -27,8 +27,7 @@ namespace ImprovedLoadingScreens
             Settings.onLoad();
 
             assetBundle = LoadAssetBundle("ImprovedLoadingScreens.backgroundsbundle");
-            MelonLoader.MelonLogger.Msg("Asset Bundle: {0}", assetBundle);
-            GetAssetNames(assetBundle);
+            //GetAssetNames(assetBundle);
 
             Patches.LoadLocalizations();
 
@@ -37,9 +36,7 @@ namespace ImprovedLoadingScreens
         private static AssetBundle LoadAssetBundle(string path)
         {
             using Stream stream = Assembly.GetExecutingAssembly().GetManifestResourceStream(path);
-            MelonLoader.MelonLogger.Msg("Stream: {0}", stream);
             MemoryStream memoryStream = new MemoryStream((int)stream.Length);
-            MelonLoader.MelonLogger.Msg("Memory Stream: {0}", memoryStream);
             stream.CopyTo(memoryStream);
 
             return memoryStream.Length != 0
