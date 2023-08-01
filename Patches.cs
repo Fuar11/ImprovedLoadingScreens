@@ -331,12 +331,7 @@ namespace ImprovedLoadingScreens
                 Random rando = new Random();
                 int index = rando.Next(0, allowedBackgrounds.Count + 1);
 
-                if (!Settings.settings.backgrounds)
-                {
-                    index = 999;
-                }
-
-                __instance.m_BackgroundTexture.mainTexture = Implementation.BackgroundsAssetBundle.LoadAsset<Texture2D>(allowedBackgrounds.ElementAt(index));
+                __instance.m_BackgroundTexture.mainTexture = (Settings.settings.backgrounds && allowedBackgrounds.Count > 0) ? Implementation.BackgroundsAssetBundle.LoadAsset<Texture2D>(allowedBackgrounds.ElementAt(index)) : null;
             }
 
         }
@@ -345,7 +340,6 @@ namespace ImprovedLoadingScreens
         {
 
             string scene = GameManager.m_ActiveScene;
-            MelonLoader.MelonLogger.Msg("Current Scene: {0}", scene);
             List<string> regions = GetAllRegions();
 
             if (regions.Any(r => scene.Contains(r.ToString())))

@@ -35,5 +35,5 @@ using MelonLoader;
 // [assembly: AssemblyVersion("1.0.*")]
 [assembly: AssemblyVersion("1.0.0.0")]
 [assembly: AssemblyFileVersion("1.0.0.0")]
-[assembly: MelonInfo(typeof(ImprovedLoadingScreens.Implementation), "ImprovedLoadingScreens", "1.1.0", "Fuar")]
+[assembly: MelonInfo(typeof(ImprovedLoadingScreens.Implementation), "ImprovedLoadingScreens", "1.1.2", "Fuar")]
 [assembly: MelonGame("Hinterland", "TheLongDark")]
