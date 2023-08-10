@@ -180,181 +180,181 @@
 
   "FUAR_BlackrockLore1": {
     "English": "Home to Blackrock Penitentiary, this Region’s icy rivers, deep ravines, and challenging weather act as a natural extension of the notorious prison. Its many caves and winding roads offer additional security if a storm moves in.",
-    "French": "Abritant le pénitencier de Blackrock, les rivières glacées, les ravins profonds et le climat difficile de cette région agissent comme une extension naturelle de la prison notoire. Ses nombreuses grottes et ses routes sinueuses offrent une sécurité supplémentaire en cas d'orage."
+    "French (France)": "Abritant le pénitencier de Blackrock, les rivières glacées, les ravins profonds et le climat difficile de cette région agissent comme une extension naturelle de la prison notoire. Ses nombreuses grottes et ses routes sinueuses offrent une sécurité supplémentaire en cas d'orage."
   },
 
   "FUAR_ThompsonCrossing": {
     "English": "Thompson's Crossing",
-    "French": "Thompson's Crossing"
+    "French (France)": "Thompson's Crossing"
   },
 
   "FUAR_WolvesTitle": {
     "English": "Wolves",
-    "French": "Loups"
+    "French (France)": "Loups"
   },
 
   "FUAR_CrowsTitle": {
     "English": "Crows",
-    "French": "Corbeaux"
+    "French (France)": "Corbeaux"
   },
 
   "FUAR_CrowsHint": {
     "English": "Look out for flocks of crows circling above. They often feed off of dead carcasses and bodies.",
-    "French": "Faites attention aux volées de corbeaux qui tournent au-dessus. Ils se nourrissent souvent de carcasses et de cadavres."
+    "French (France)": "Faites attention aux volées de corbeaux qui tournent au-dessus. Ils se nourrissent souvent de carcasses et de cadavres."
   },
 
   "FUAR_BearCrowsTitle": {
     "English": "Keep your ears open.",
-    "French": "Gardez vos oreilles ouvertes."
+    "French (France)": "Gardez vos oreilles ouvertes."
   },
 
   "FUAR_BearCrowsHint": {
     "English": "Pay attention to the crows and the sound they make. A deeper call may alert other crows that predators are nearby. Be on the lookout for bears.",
-    "French": "Faites attention aux corbeaux et au son qu'ils font. Un appel plus profond peut alerter les autres corbeaux que des prédateurs sont proche. Soyez alerte des ours."
+    "French (France)": "Faites attention aux corbeaux et au son qu'ils font. Un appel plus profond peut alerter les autres corbeaux que des prédateurs sont proche. Soyez alerte des ours."
   },
 
   "FUAR_AuroraTitle": {
     "English": "The Aurora",
-    "French": "L'Aurore"
+    "French (France)": "L'Aurore"
   },
 
   "FUAR_AuroraHint": {
     "English": "The mysterious aurora once sent the world into darkness. But on clear nights it may be seen in the sky, bringing dead electronics back to life. Making some areas more accessible and others more hazardous.",
-    "French": "L'aurore mystérieuse a envoyé le monde sombre. Mais les nuits claires, on peut le voir dans le ciel, ramenant à la vie des appareils électroniques morts. Rendre certaines zones plus accessibles et d'autres plus dangereuses."
+    "French (France)": "L'aurore mystérieuse a envoyé le monde sombre. Mais les nuits claires, on peut le voir dans le ciel, ramenant à la vie des appareils électroniques morts. Rendre certaines zones plus accessibles et d'autres plus dangereuses."
   },
 
   "FUAR_DawnTitle": {
     "English": "Dawn",
-    "French": "Le Matin"
+    "French (France)": "Le Matin"
   },
 
   "FUAR_DawnHint": {
     "English": "Early mornings are always the coldest after the temperature drops at night.",
-    "French": "Les matins sont toujours les plus froids après que la température baisse la nuit."
+    "French (France)": "Les matins sont toujours les plus froids après que la température baisse la nuit."
   },
 
   "FUAR_CartographyTitle": {
     "English": "Vantage Point",
-    "French": "Position Avantageuse"
+    "French (France)": "Position Avantageuse"
   },
 
   "FUAR_CartographyHint": {
     "English": "Sketching from higher ground will reveal more of the area around you on your map.",
-    "French": "Dessiner à partir d'un terrain plus élevé révélera plus de la zone autour de vous sur votre carte."
+    "French (France)": "Dessiner à partir d'un terrain plus élevé révélera plus de la zone autour de vous sur votre carte."
   },
 
   "FUAR_RopeTitle": {
     "English": "Climbing Rope",
-    "French": "Corde d'Escalade"
+    "French (France)": "Corde d'Escalade"
   },
 
   "FUAR_RopeHint": {
     "English": "Mountaineering ropes can be deployed at anchor rocks to access previously inaccessible areas. But they take a lot of energy to climb up and down. Make sure you're not carrying too much!",
-    "French": "Des cordes d'alpinisme peuvent être déployées sur des rochers d'ancrage pour accéder à des zones auparavant inaccessibles. Mais ils demandent beaucoup d'énergie pour monter et descendre. Assurez-vous que vous ne transportez pas trop!"
+    "French (France)": "Des cordes d'alpinisme peuvent être déployées sur des rochers d'ancrage pour accéder à des zones auparavant inaccessibles. Mais ils demandent beaucoup d'énergie pour monter et descendre. Assurez-vous que vous ne transportez pas trop!"
   },
 
   "FUAR_CacheTitle": {
     "English": "Supply Cache",
-    "French": "Cache cachée"
+    "French (France)": "Cache cachée"
   },
 
   "FUAR_CacheHint": {
     "English": "Hidden caches left behind by other survivors can be found hidden around Great Bear containing valuable supplies.",
-    "French": "Des caches cachées laissées par d'autres survivants peuvent être trouvées cachées autour de Great Bear contenant des resources précieuses."
+    "French (France)": "Des caches cachées laissées par d'autres survivants peuvent être trouvées cachées autour de Great Bear contenant des resources précieuses."
   },
 
   "FUAR_FarRangeTitle": {
     "English": "Far Range",
-    "French": "Far Range"
+    "French (France)": "Far Range"
   },
 
   "FUAR_FarRangeLore1": {
     "English": "Deep along the rocky spine of Great Bear Island stands the Far Range. A massive mountain range bisecting the island. Over the decades, many have tried, few have succeeded to crack open the wealth within these rocks.",
-    "French": "Profondément le long de l'épine rocheuse de Great Bear Island se dresse le Far Range. Une chaîne de montagnes massive coupant l'île en deux. Au fil des décennies, beaucoup ont essayé, peu ont réussi à ouvrir la richesse de ces roches."
+    "French (France)": "Profondément le long de l'épine rocheuse de Great Bear Island se dresse le Far Range. Une chaîne de montagnes massive coupant l'île en deux. Au fil des décennies, beaucoup ont essayé, peu ont réussi à ouvrir la richesse de ces roches."
   },
 
   "FUAR_FarTerritoryTitle": {
     "English": "The Far Territory",
-    "French": "The Far Territory"
+    "French (France)": "The Far Territory"
   },
 
   "FUAR_FarTerritoryLore1": {
     "English": "Deep in the interior of Great Bear lies the far territory, a imposing mountain range that is accessed via the Trans-Island Railway.",
-    "French": "Au plus profond de l'intérieur de Great Bear se trouve le territoire lointain, une imposante chaîne de montagnes accessible via le chemin de fer Trans-Island."
+    "French (France)": "Au plus profond de l'intérieur de Great Bear se trouve le territoire lointain, une imposante chaîne de montagnes accessible via le chemin de fer Trans-Island."
   },
 
   "FUAR_FarRangeBranchLineTitle": {
     "English": "Far Range Branch Line",
-    "French": "Far Range Branch Line"
+    "French (France)": "Far Range Branch Line"
   },
 
   "FUAR_FarRangeBranchLineHint1": {
     "English": "A long stretch of railway branching off of the Trans-Island railroad, leading to the foothills of the far range.",
-    "French": "Un long tronçon de chemin de fer bifurquant du chemin de fer Trans-Island, menant aux contreforts de la chaîne lointaine."
+    "French (France)": "Un long tronçon de chemin de fer bifurquant du chemin de fer Trans-Island, menant aux contreforts de la chaîne lointaine."
   },
 
   "FUAR_FarRangeBranchLineHint2": {
     "English": "The far range branch line offers many tunnels and abandoned boxcars for survivors to shelter in on the long journey to the Far Territory.",
-    "French": "L'embranchement éloigné offre de nombreux tunnels et des wagons abandonnés pour que les survivants puissent se réfugier dans le long voyage vers le Territoire lointain."
+    "French (France)": "L'embranchement éloigné offre de nombreux tunnels et des wagons abandonnés pour que les survivants puissent se réfugier dans le long voyage vers le Territoire lointain."
   },
 
   "FUAR_TransferPassTitle": {
     "English": "Transfer Pass",
-    "French": "Transfer Pass"
+    "French (France)": "Transfer Pass"
   },
 
   "FUAR_TransferPassHint": {
     "English": "A crossroads dug out of the looming mountains, the transfer pass is quiet since the trains stopped. But it remains a critical junction for anyone wishing to access the Far Territory.",
-    "French": "Carrefour creusé dans les montagnes qui s'annoncent, le col de correspondance est silencieux depuis l'arrêt des trains. Mais il reste un carrefour critique pour quiconque souhaite accéder au Territoire lointain."
+    "French (France)": "Carrefour creusé dans les montagnes qui s'annoncent, le col de correspondance est silencieux depuis l'arrêt des trains. Mais il reste un carrefour critique pour quiconque souhaite accéder au Territoire lointain."
   },
 
   "FUAR_AirfieldTitle": {
     "English": "Forsaken Airfield",
-    "French": "Forsaken Airfield"
+    "French (France)": "Forsaken Airfield"
   },
 
   "FUAR_AirfieldHint1": {
     "English": "Once an active entry point for the Far Territory's wild interior, the airfield lives in shadow of better days. It's broken landing strip and support buildings sit wedged between natural obstacles and frozen fields, a broad lake and steep cliffs.",
-    "French": "Autrefois un point d'entrée actif pour l'intérieur sauvage du Territoire lointain, l'aérodrome vit à l'ombre de jours meilleurs. Sa piste d'atterrissage brisée et ses bâtiments de soutien sont coincés entre des obstacles naturels et des champs gelés, un large lac et des falaises abruptes."
+    "French (France)": "Autrefois un point d'entrée actif pour l'intérieur sauvage du Territoire lointain, l'aérodrome vit à l'ombre de jours meilleurs. Sa piste d'atterrissage brisée et ses bâtiments de soutien sont coincés entre des obstacles naturels et des champs gelés, un large lac et des falaises abruptes."
   },
 
   "FUAR_AirfieldHint2": {
     "English": "The vast open fields and lakes surrounding the airfield allow for some of Great Bear's longest and deadliest blizzards to blow in from over the mountains. Some lasting days.",
-    "French": "Les vastes champs ouverts et les lacs permettent à certains des blizzards les plus longs et les plus meurtriers du Grand Ours de souffler depuis les montagnes. Quelques jours qui durent."
+    "French (France)": "Les vastes champs ouverts et les lacs permettent à certains des blizzards les plus longs et les plus meurtriers du Grand Ours de souffler depuis les montagnes. Quelques jours qui durent."
   },
 
   "FUAR_AirfieldLoreTitle": {
     "English": "Field 31",
-    "French": "Field 31"
+    "French (France)": "Field 31"
   },
 
   "FUAR_AirfieldLore1": {
     "English": "Field 31 was constructed by Camber Aviation sometime in the 1980's to allow quick and easy access to Great Bear's interior for various needs.",
-    "French": "Field 31 a été construit par Camber Aviation dans les années 1980 pour permettre un accès rapide et facile à l'intérieur de Great Bear pour divers besoins."
+    "French (France)": "Field 31 a été construit par Camber Aviation dans les années 1980 pour permettre un accès rapide et facile à l'intérieur de Great Bear pour divers besoins."
   },
 
   "FUAR_GlimmerFogTitle": {
     "English": "Glimmer Fog",
-    "French": "Brouillard scintillant"
+    "French (France)": "Brouillard scintillant"
   },
 
   "FUAR_GlimmerFogHint1": {
     "English": "A mysterious weather phenomenon unique to the far territory caused by the aurora. Glimmer fog charges the open air with electrostatic energy, animating electronic devices in unpredictable ways and causing psychological effects.",
-    "French": "Un mystérieux phénomène météorologique unique au territoire lointain causé par les aurores boréales. Le brouillard scintillant charge l'air libre d'énergie électrostatique, animant les appareils électroniques de manière imprévisible et provoquant des effets psychologiques."
+    "French (France)": "Un mystérieux phénomène météorologique unique au territoire lointain causé par les aurores boréales. Le brouillard scintillant charge l'air libre d'énergie électrostatique, animant les appareils électroniques de manière imprévisible et provoquant des effets psychologiques."
   },
 
   "FUAR_GlimmerFogHint2": {
     "English": "Electrostatic fog can descend upon the airfield at a moments notice, leaving survivors disoriented and at risk of insomnia.",
-    "French": "Le brouillard électrostatique peut descendre sur l'aérodrome à tout moment, laissant les survivants désorientés et à risque d'insomnie."
+    "French (France)": "Le brouillard électrostatique peut descendre sur l'aérodrome à tout moment, laissant les survivants désorientés et à risque d'insomnie."
   },
 
   "FUAR_InsomniaTitle": {
     "English": "Insomnia",
-    "French": "Insomnie"
+    "French (France)": "Insomnie"
   },
 
   "FUAR_InsomniaHint": {
     "English": "Survivors exposed to the glimmer fog for too long can experience psychological effects including insomnia, which disrupts sleep. Seek shelter underground to avoid the effects of the fog.",
-    "French": "Les survivants exposés trop longtemps au brouillard scintillant peuvent ressentir des effets psychologiques, notamment l'insomnie, qui perturbe le sommeil. Abritez-vous sous terre pour éviter les effets du brouillard."
+    "French (France)": "Les survivants exposés trop longtemps au brouillard scintillant peuvent ressentir des effets psychologiques, notamment l'insomnie, qui perturbe le sommeil. Abritez-vous sous terre pour éviter les effets du brouillard."
   }
 }
