@@ -419,3 +419,320 @@
       "Turkish" : "Işıltılı sise çok uzun süre maruz kalanlar uykusuzluk gibi uykuyu bozan psikolojik etkiler yaşayabilir. Sisin etkilerinden kaçınmak için yer altına sığının."
     }
   }
+=======
+  "FUAR_LakeRegionLore1": {
+    "English": "The region’s main characteristics are its heavily forested and hilly terrain, as well as abundance of wildlife. The region’s high altitude leads to low average temperatures, as well as some of the coldest night-time temperatures on Great Bear Island.",
+    "French (France)": "Les caractéristiques principales de la région sont sa terrain fortement boisé et vallonné, ainsi que l'abondance de la faune. La haute altitude de la région entraîne des températures moyennes basses, ainsi que certaines des températures nocturnes les plus froides de Great Bear Island.",
+    "Dutch": "De belangrijkste kenmerken van de regio zijn het dicht beboste en heuvelachtige terrein, evenals overvloedige fauna. De hoge hoogte van de regio zorgt voor lage gemiddelde temperaturen, evenals enkele van de koudste nachttemperaturen op Great Bear Island."
+  },
+  "FUAR_CarterDamLore1": {
+    "English": "In the 1960s, a small hydroelectric dam was built on the Carter River. The project was engineered and financed by Richard Carter, who intended to use power from the dam to sustain a small mining town he planned to build. Unfortunately, growing seismic activity on Great Bear in the 1980s put an end to the projects.",
+    "French (France)": "Dans les années 1960, un petit barrage hydroélectrique a été construit sur la rivière Carter. Le projet a été conçu et financé par Richard Carter, qui avait l'intention d'utiliser l'énergie du barrage pour soutenir une petite ville minière qu'il prévoyait de construire. Malheureusement, l'activité sismique croissante sur Great Bear Island dans les années 1980 a mis fin aux projets.",
+    "Dutch": "In de jaren 1960 werd er een kleine waterkrachtcentrale gebouwd op de Carter Rivier. Het project werd ontworpen en gefinancierd door Richard Carter, die van plan was om de energie van de dam te gebruiken om een kleine mijnstad te ondersteunen die hij van plan was te bouwen. Helaas maakte groeiende seismische activiteit op Great Bear in de jaren 1980 een einde aan de projecten."
+  },
+  "FUAR_CoastalRegionHint1": {
+    "English": "A weather-battered coastline rich in shelters and resources. Watch out for wildlife.",
+    "French (France)": "Un littoral dégradé par les intempéries, riche en abris et en ressources. Attention à la faune.",
+    "Dutch": "Een door weer geteisterde kustlijn rijk aan schuilplaatsen en hulpbronnen. Let op voor wilde dieren."
+  },
+  "FUAR_CoastalRegionLore1": {
+    "English": "The coastal highway stretches along the shoreline of this bay, home to various hamlets and townsites. The geography of this area brings some of the densest morning fogs on Great Bear Island.",
+    "French (France)": "La route côtière s'étend le long du littoral de cette baie, qui abrite divers hameaux. La géographie de cette région apporte certains des brouillards matinaux les plus denses de Great Bear Island.",
+    "Dutch": "De kustsnelweg strekt zich uit langs de kustlijn van deze baai, de thuisbasis van verschillende gehuchten en dorpslocaties. De geografie van dit gebied zorgt voor enkele van de dichtste ochtendmist op Great Bear Island."
+  },
+  "FUAR_WhalingStationRegionHint1": {
+    "English": "Several key shelters, plenty of hostile wildlife, and harsh weather conditions to be found around these remnants of a once-thriving whaling industry.",
+    "French (France)": "Plusieurs abris clés, de nombreuses espèces sauvages hostiles et des conditions météorologiques difficiles se trouvent autour de ces vestiges d'une industrie baleinière autrefois florissante.",
+    "Dutch": "Bij deze overblijfselen van een eens bloeiende walvisindustrie zijn verschillende belangrijke schuilplaatsen te vinden, evenals tal van vijandige wilde dieren en barre weersomstandigheden."
+  },
+  "FUAR_WhalingStationRegionLore1": {
+    "English": "Desolation Point was once a hotspot for coal mining, until seismic activity and the construction of the coastal highway put an end to the business. In it's place came new industries, which now lay dormant along the coast.",
+    "French (France)": "Desolation Point était autrefois un point chaud pour l'extraction du charbon, jusqu'à ce que l'activité sismique et la construction de l'autoroute côtière mettent fin à l'activité. À sa place sont venues de nouvelles industries, qui dormaient maintenant le long de la côte.",
+    "Dutch": "Desolation Point was ooit een hotspot voor steenkoolwinning, tot seismische activiteit en de bouw van de kustsnelweg een einde maakten aan de activiteit. In de plaats daarvan kwamen nieuwe industrieën, die nu slapend langs de kust liggen."
+  },
+  "FUAR_WhalingStationRegionLore2": {
+    "English": "Desolation Point is home to the lonely lighthouse, which has kept watch over the point for decades, guiding passing vessels away from the jagged coastline.",
+    "French (France)": "Desolation Point abrite le phare solitaire, qui surveille la pointe depuis des décennies, guidant les navires de passage loin de la côte déchiquetée.",
+    "Dutch": "Desolation Point herbergt de eenzame vuurtoren, die al tientallen jaren de wacht houdt over het punt en passerende schepen de weg wijst, weg van de ruige kustlijn."
+  },
+  "FUAR_RuralRegionHint1": {
+    "English": "A challenging, vast mountain wilderness region with a few key shelters, originally settled by hardy homesteaders.",
+    "French (France)": "Une vaste région montagneuse sauvage et difficile avec quelques abris clés, à l'origine colonisés par de robustes fermiers.",
+    "Dutch": "Een uitdagende, uitgestrekte bergwildernisregio met enkele belangrijke schuilplaatsen, oorspronkelijk bewoond door stoere pioniers."
+  },
+  "FUAR_RuralRegionLore1": {
+    "English": "Founded in 1919, Thomson’s Crossing remains the only significant community in Pleasant Valley. With a history tied to the farming and mining concerns of its residents, the isolated town followed its own path along the boom and bust cycle of Great Bear Island industry.",
+    "French (France)": "Founded in 1919, Thomson’s Crossing remains the only significant community in Pleasant Valley. With a history tied to the farming and mining concerns of its residents, the isolated town followed its own path along the boom and bust cycle of Great Bear Island industry.",
+    "Dutch": "Opgericht in 1919, blijft Thomson's Crossing de enige significante gemeenschap in Pleasant Valley. Met een geschiedenis die verbonden is met de landbouw- en mijnbouwbelangen van zijn inwoners, volgde de geïsoleerde stad haar eigen weg langs de pieken en dalen van de Great Bear Island-industrie."
+  },
+  "FUAR_RuralRegionLore2": {
+    "English": "Signal Hill overlooks the vast fields and ridges of Pleasant Valley. Once providing weather reports to the residents of the valley, now providing shelter to any survivor that makes the trek.",
+    "French (France)": "Signal Hill surplombe les vastes champs et crêtes de Pleasant Valley. Fournissant autrefois des bulletins météorologiques aux habitants de la vallée, offrant désormais un abri à tout survivant qui fait le voyage.",
+    "Dutch": "Signal Hill kijkt uit over de uitgestrekte velden en heuvelruggen van Pleasant Valley. Ooit voorzag het de bewoners van het dal van weerberichten, nu biedt het onderdak aan overlevenden die de tocht maken."
+  },
+  "FUAR_MarshRegionHint1": {
+    "English": " A frigid open marshland bisected by a railway line. Weak ice and constant winds make this area highly dangerous.",
+    "French (France)": "Un marais glacial ouvert coupé en deux par une voie ferrée. La faible glace et les vents constants rendent cette zone très dangereuse.",
+    "Dutch": "Een ijzige, open moerasland dat doorkruist wordt door een spoorlijn. Zwak ijs en constante wind maken dit gebied zeer gevaarlijk."
+  },
+  "FUAR_MarshRegionLore1": {
+    "English": "This marshland covers a vast area of Mystery Lake Provincial Park. Once home to homesteaders, now lays dormant as weak ice and thick fog covers it's desolate landscape.",
+    "French (France)": "Ce marais couvre une vaste zone du parc provincial Mystery Lake. Autrefois la maison des fermiers, elle est maintenant endormie alors que la glace faible et le brouillard épais recouvrent son paysage désolé.",
+    "Dutch": "Dit moerasland beslaat een groot gebied van het Mystery Lake Provincial Park. Ooit de thuisbasis van pioniers, ligt het nu stil terwijl zwak ijs en dikke mist het desolate landschap bedekken."
+  },
+  "FUAR_TracksRegionHint1": {
+    "English": "Previous seismic activity means this section of the Trans-Island Railway Line is dramatically interrupted. Be careful you don't become lost in its many twisting routes.",
+    "French (France)": "L'activité sismique précédente signifie que cette section de la ligne de chemin de fer trans-île est considérablement interrompue. Attention à ne pas vous perdre dans ses nombreux itinéraires sinueux.",
+    "Dutch": "Eerdere seismische activiteit betekent dat dit gedeelte van de Trans-Island Railway Line dramatisch wordt onderbroken. Pas op dat je niet verdwaalt in de vele kronkelende routes."
+  },
+  "FUAR_TracksRegionLore1": {
+    "English": "Located at the edge of Mystery Lake Provincial Park, this region's crumbling infrastructure shows a glimpse into the island's industrial past.",
+    "French (France)": "Situées en bordure du parc provincial Mystery Lake, les infrastructures en ruine de cette région donnent un aperçu du passé industriel de l'île.",
+    "Dutch": "Gelegen aan de rand van Mystery Lake Provincial Park, laat de vervallen infrastructuur van deze regio een glimp zien van het industriële verleden van het eiland."
+  },
+  "FUAR_CrashMountainRegionHint1": {
+    "English": "An isolated alpine region with very few shelters or resources. A true test of wilderness survival skills.",
+    "French (France)": "Une région alpine isolée avec très peu d'abris ou de ressources. Un véritable test de compétences de survie en milieu sauvage.",
+    "Dutch": "Een geïsoleerde alpenregio met zeer weinig schuilplaatsen of hulpbronnen. Een echte test van vaardigheden voor overleving in het wild."
+  },
+  "FUAR_CrashMountainRegionLore1": {
+    "English": "Timberwolf Mountain is one of the tallest peaks on Great Bear Island. As such it hosts some of the coldest daytime temperatures on the island. Come prepared!",
+    "French (France)": "Timberwolf Mountain est l'un des plus hauts sommets du Grand Ours. En tant que tel, il abrite certaines des températures diurnes les plus froides de l'île. Venez préparé!",
+    "Dutch": "Timberwolf Mountain is een van de hoogste pieken op Great Bear Island. Als zodanig heeft het enkele van de koudste dagtemperaturen op het eiland. Kom goed voorbereid!"
+  },
+  "FUAR_CrashMountainRegionLore2": {
+    "English": "Once a popular mountain climbing location, this region holds many secrets and some of the most impressive vistas on Great Bear Island.",
+    "French (France)": "Autrefois un lieu d'alpinisme populaire, cette région recèle de nombreux secrets et certaines des vues les plus impressionnantes de Great Bear Island.",
+    "Dutch": "Ooit een populaire locatie voor bergbeklimmen, herbergt deze regio veel geheimen en een aantal van de meest indrukwekkende uitzichten op Great Bear Island."
+  },
+  "FUAR_AshCanyonRegionHint1": {
+    "English": "A climber’s paradise dotted with narrow ravines, towering cliffs, and multiple high plateaus. Its burnt forests and mining settlements also hint at a darker history.",
+    "French (France)": "Un paradis pour les grimpeurs parsemé de ravins étroits, de falaises imposantes et de multiples hauts plateaux. Ses forêts brûlées et ses colonies minières évoquent également une histoire plus sombre.",
+    "Dutch": "Een paradijs voor klimmers bezaaid met smalle ravijnen, imposante kliffen en meerdere hoge plateaus. Zijn verbrande bossen en mijnbouwnederzettingen wijzen ook op een duister verleden."
+  },
+  "FUAR_MountainTownRegionHint1": {
+    "English": "Although deep in decline, Milton still offers many sturdy shelters and plentiful wildlife. But if you leave town for the surrounding hills and fields, beware!",
+    "French (France)": "Bien que profondément en déclin, Milton offre encore de nombreux abris solides et une faune abondante. Mais si vous quittez la ville pour les collines et les champs environnants, faites attention!",
+    "Dutch": "Hoewel diep in verval, biedt Milton nog steeds veel stevige schuilplaatsen en overvloedige fauna. Maar als je de stad verlaat voor de omliggende heuvels en velden, wees dan op je hoede!"
+  },
+  "FUAR_MountainTownRegionLore1": {
+    "English": "Founded in 1911, Milton went through a boom/bust cycle throughout the 1900s, but after the collapse it's population has struggled to remain in the low double digits. This region is now completely abandoned since the lights went out.",
+    "French (France)": "Fondée en 1911, Milton a connu un cycle d'expansion et de récession tout au long des années 1900, mais après l'effondrement, sa population a eu du mal à rester dans les deux chiffres. Cette région est maintenant complètement abandonnée depuis que les lumières se sont éteintes.",
+    "Dutch": "Opgericht in 1911, doorliep Milton een bloei-/instortingscyclus gedurende de jaren 1900, maar na de ineenstorting heeft de bevolking moeite gehad om in de lage dubbele cijfers te blijven. Deze regio is nu volledig verlaten sinds het licht uitging."
+  },
+  "FUAR_MountainTownRegionLore2": {
+    "English": "Milton was once a popular stopping point for loggers, campers and others passing through from the mainland. But ever since the collapse, it's infrastructure has crumbled. But many survivors may still find shelters and supplies in the area.",
+    "French (France)": "Milton était autrefois un point d'arrêt populaire pour les bûcherons, les campeurs et les autres passants du continent. Mais depuis l'effondrement, son infrastructure s'est effondrée. Mais de nombreux survivants peuvent encore trouver des abris et des fournitures dans la région.",
+    "Dutch": "Milton was ooit een populaire stopplaats voor houthakkers, kampeerders en anderen die vanaf het vasteland kwamen. Maar sinds de ineenstorting is de infrastructuur ingestort. Maar veel overlevenden kunnen nog steeds schuilplaatsen en voorraden in het gebied vinden."
+  },
+  "FUAR_RiverValleyRegionHint1": {
+    "English": "A remote, wind-blown valley known for its sheer cliffs, dense forests, and steep, winding paths. Although devoid of human settlements, it has long been a destination for the area's toughest mountaineers, and may still have a few secrets to reveal.",
+    "French (France)": "Une vallée isolée et balayée par le vent connue pour ses falaises abruptes, ses forêts denses et ses sentiers escarpés et sinueux. Bien que dépourvue d'établissements humains, elle a longtemps été une destination pour les alpinistes les plus coriaces de la région, et peut encore avoir quelques secrets à révéler.",
+    "Dutch": "Een afgelegen, winderige vallei bekend om zijn steile kliffen, dichte bossen en steile, kronkelende paden. Hoewel verstoken van menselijke nederzettingen, is het al lang een bestemming voor de meest geharde bergbeklimmers in het gebied en kan het nog steeds een paar geheimen onthullen."
+  },
+  "FUAR_RiverValleyRegionHint2": {
+    "English": "Although devoid of any human settlements or shelters, this region's naturally forming ledges and ice caves offer shelter to any intrepid survivor that wishes to pass through this beautiful valley.",
+    "French (France)": "Bien que dépourvue de tout établissement humain ou abri, les corniches et les grottes de glace de cette région offrent un abri à tout survivant intrépide qui souhaite traverser cette belle vallée.",
+    "Dutch": "Hoewel verstoken van menselijke nederzettingen of schuilplaatsen, bieden de natuurlijke gevormde richels en ijs grotten in dit gebied onderdak aan elke moedige overlevende die deze prachtige vallei wil doorkruisen."
+  },
+  "FUAR_RiverValleyRegionHint3": {
+    "English": "This valley's steep vertical cliffs may provide aid to any survivors with a keen eye. Just watch out for high winds and freezing temperatures on the way up.",
+    "French (France)": "Les falaises verticales escarpées de cette vallée peuvent venir en aide à n'importe quel survivant doté d'un œil attentif. Faites juste attention aux vents violents et aux températures glaciales en montant.",
+    "Dutch": "De steile verticale kliffen van deze vallei kunnen hulp bieden aan overlevenden met een scherp oog. Pas gewoon op voor harde wind en bevriezende temperaturen tijdens de klim omhoog."
+  },
+  "FUAR_RiverValleyRegionHint3Title": {
+    "English": "Traversing the Valley.",
+    "French (France)": "Traverser la vallée.",
+    "Dutch": "De vallei doorkruisen."
+  },
+  "FUAR_BleakInletRegionHint1": {
+    "English": "Once home to a thriving industrial Cannery, seismic instability has cut Bleak Inlet off from the rest of the Great Bear Island. Inaccessible and in the heart of Timberwolf territory, exploring Bleak Inlet is not for the faint of heart. The Cannery industrial complex holds a useful treasure for those hardy enough to access it.",
+    "French (France)": "Autrefois le siège d'une conserverie industrielle florissante, l'instabilité sismique a coupé Bleak Inlet du reste de la Grande Ourse. Inaccessible et au cœur du territoire de Timberwolf, explorer Bleak Inlet n'est pas pour les âmes sensibles. Le complexe industriel de la conserverie recèle un trésor utile pour ceux qui sont assez hardis pour y accéder.",
+    "Dutch": "Ooit de thuisbasis van een bloeiende industriële conservefabriek, heeft seismische instabiliteit Bleak Inlet afgesneden van de rest van Great Bear Island. Ontoegankelijk en in het hart van het Timberwolf-gebied, is het verkennen van Bleak Inlet niet voor bangeriken. Het industrieel complex van de conservefabriek herbergt een nuttige schat voor degenen die sterk genoeg zijn om er toegang toe te krijgen."
+  },
+  "FUAR_BleakInletRegionLore1": {
+    "English": "This coastal inlet holds some of the coldest and windiest coastline weather on Great Bear Island. Traversing it's twisting, icy paths is not for the faint of heart.",
+    "French (France)": "Cette crique côtière possède certains des climats côtiers les plus froids et les plus venteux de Great Bear Island. Traverser ses chemins sinueux et glacés n'est pas pour les âmes sensibles.",
+    "Dutch": "Deze kustinham herbergt enkele van het koudste en winderigste kustweer op Great Bear Island. Het doorkruisen van de kronkelende, ijzige paden is niet voor bangeriken."
+  },
+  "FUAR_BlackrockLore1": {
+    "English": "Home to Blackrock Penitentiary, this Region’s icy rivers, deep ravines, and challenging weather act as a natural extension of the notorious prison. Its many caves and winding roads offer additional security if a storm moves in.",
+    "French (France)": "Abritant le pénitencier de Blackrock, les rivières glacées, les ravins profonds et le climat difficile de cette région agissent comme une extension naturelle de la prison notoire. Ses nombreuses grottes et ses routes sinueuses offrent une sécurité supplémentaire en cas d'orage.",
+    "Dutch": "Thuisbasis van de Blackrock-gevangenis, fungeren de ijzige rivieren, diepe ravijnen en uitdagende weersomstandigheden van deze regio als een natuurlijke uitbreiding van de beruchte gevangenis. De vele grotten en kronkelende wegen bieden extra veiligheid als er een storm opkomt."
+  },
+  "FUAR_ThompsonCrossing": {
+    "English": "Thompson's Crossing",
+    "French (France)": "Thompson's Crossing",
+    "Dutch": "Thompson's Crossing"
+  },
+  "FUAR_WolvesTitle": {
+    "English": "Wolves",
+    "French (France)": "Loups",
+    "Dutch": "Wolven"
+  },
+  "FUAR_CrowsTitle": {
+    "English": "Crows",
+    "French (France)": "Corbeaux",
+    "Dutch": "Kraaien"
+  },
+  "FUAR_CrowsHint": {
+    "English": "Look out for flocks of crows circling above. They often feed off of dead carcasses and bodies.",
+    "French (France)": "Faites attention aux volées de corbeaux qui tournent au-dessus. Ils se nourrissent souvent de carcasses et de cadavres.",
+    "Dutch": "Let op zwermen kraaien die boven cirkelen. Ze voeden zich vaak met dode kadavers en lichamen."
+  },
+  "FUAR_BearCrowsTitle": {
+    "English": "Keep your ears open.",
+    "French (France)": "Gardez vos oreilles ouvertes.",
+    "Dutch": "Houd je oren open."
+  },
+  "FUAR_BearCrowsHint": {
+    "English": "Pay attention to the crows and the sound they make. A deeper call may alert other crows that predators are nearby. Be on the lookout for bears.",
+    "French (France)": "Faites attention aux corbeaux et au son qu'ils font. Un appel plus profond peut alerter les autres corbeaux que des prédateurs sont proche. Soyez alerte des ours.",
+    "Dutch": "Let op de kraaien en het geluid dat ze maken. Een diepere roep kan andere kraaien waarschuwen dat roofdieren in de buurt zijn. Wees op je hoede voor beren."
+  },
+  "FUAR_AuroraTitle": {
+    "English": "The Aurora",
+    "French (France)": "L'Aurore",
+    "Dutch": "Het Noorderlicht"
+  },
+  "FUAR_AuroraHint": {
+    "English": "The mysterious aurora once sent the world into darkness. But on clear nights it may be seen in the sky, bringing dead electronics back to life. Making some areas more accessible and others more hazardous.",
+    "French (France)": "L'aurore mystérieuse a envoyé le monde sombre. Mais les nuits claires, on peut le voir dans le ciel, ramenant à la vie des appareils électroniques morts. Rendre certaines zones plus accessibles et d'autres plus dangereuses.",
+    "Dutch": "Het mysterieuze noorderlicht stortte de wereld ooit in duisternis. Maar op heldere nachten is het mogelijk te zien aan de hemel, elektronica nieuw leven inblazend. Hierdoor worden sommige gebieden toegankelijker en andere gevaarlijker."
+  },
+  "FUAR_DawnTitle": {
+    "English": "Dawn",
+    "French (France)": "Le Matin",
+    "Dutch": "Dageraad"
+  },
+  "FUAR_DawnHint": {
+    "English": "Early mornings are always the coldest after the temperature drops at night.",
+    "French (France)": "Les matins sont toujours les plus froids après que la température baisse la nuit.",
+    "Dutch": "Vroege ochtenden zijn altijd het koudst nadat de temperatuur 's nachts is gedaald."
+  },
+  "FUAR_CartographyTitle": {
+    "English": "Vantage Point",
+    "French (France)": "Position Avantageuse",
+    "Dutch": "Uitzichtpunt"
+  },
+  "FUAR_CartographyHint": {
+    "English": "Sketching from higher ground will reveal more of the area around you on your map.",
+    "French (France)": "Dessiner à partir d'un terrain plus élevé révélera plus de la zone autour de vous sur votre carte.",
+    "Dutch": "Schetsen vanaf hoger terrein zal meer van het gebied om je heen onthullen op je kaart."
+  },
+  "FUAR_RopeTitle": {
+    "English": "Climbing Rope",
+    "French (France)": "Corde d'Escalade",
+    "Dutch": "Klimtouw"
+  },
+  "FUAR_RopeHint": {
+    "English": "Mountaineering ropes can be deployed at anchor rocks to access previously inaccessible areas. But they take a lot of energy to climb up and down. Make sure you're not carrying too much!",
+    "French (France)": "Des cordes d'alpinisme peuvent être déployées sur des rochers d'ancrage pour accéder à des zones auparavant inaccessibles. Mais ils demandent beaucoup d'énergie pour monter et descendre. Assurez-vous que vous ne transportez pas trop!",
+    "Dutch": " Bergbeklimmingstouwen kunnen worden gebruikt op ankerrotsen om toegang te krijgen tot voorheen ontoegankelijke gebieden. Maar ze vergen veel energie om op en neer te klimmen. Zorg ervoor dat je niet te veel bij je draagt!"
+  },
+  "FUAR_CacheTitle": {
+    "English": "Supply Cache",
+    "French (France)": "Cache cachée",
+    "Dutch": "Voorraadopslag"
+  },
+  "FUAR_CacheHint": {
+    "English": "Hidden caches left behind by other survivors can be found hidden around Great Bear Island containing valuable supplies.",
+    "French (France)": "Des caches cachées laissées par d'autres survivants peuvent être trouvées cachées autour de Great Bear Island contenant des resources précieuses.",
+    "Dutch": "Verborgen voorraden achtergelaten door andere overlevenden kunnen worden gevonden op verschillende locaties op Great Bear Island en bevatten waardevolle benodigdheden."
+  },
+  "FUAR_FarRangeTitle": {
+    "English": "Far Range",
+    "French (France)": "Far Range",
+    "Dutch": "Verre Bergketen"
+  },
+  "FUAR_FarRangeLore1": {
+    "English": "Deep along the rocky spine of Great Bear Island stands the Far Range. A massive mountain range bisecting the island. Over the decades, many have tried, few have succeeded to crack open the wealth within these rocks.",
+    "French (France)": "Profondément le long de l'épine rocheuse de Great Bear Island se dresse le Far Range. Une chaîne de montagnes massive coupant l'île en deux. Au fil des décennies, beaucoup ont essayé, peu ont réussi à ouvrir la richesse de ces roches.",
+    "Dutch": "Diep langs de rotsachtige ruggengraat van Great Bear Island staat de Verre Bergketen. Een enorme bergketen die het eiland doorkruist. In de loop der jaren hebben velen het geprobeerd, maar weinigen zijn erin geslaagd om de rijkdom in deze rotsen te ontsluiten."
+  },
+  "FUAR_FarTerritoryTitle": {
+    "English": "The Far Territory",
+    "French (France)": "The Far Territory",
+    "Dutch": "The Far Territory"
+  },
+  "FUAR_FarTerritoryLore1": {
+    "English": "Deep in the interior of Great Bear Island lies the far territory, a imposing mountain range that is accessed via the Trans-Island Railway.",
+    "French (France)": "Au plus profond de l'intérieur de Great Bear Island se trouve le territoire lointain, une imposante chaîne de montagnes accessible via le chemin de fer Trans-Island.",
+    "Dutch": "Diep in het binnenland van Great Bear Island ligt het verre gebied, een imposante bergketen die via de Trans-Island Railway wordt bereikt."
+  },
+  "FUAR_FarRangeBranchLineTitle": {
+    "English": "Far Range Branch Line",
+    "French (France)": "Far Range Branch Line",
+    "Dutch": "Far Range Branch Line"
+  },
+  "FUAR_FarRangeBranchLineHint1": {
+    "English": "A long stretch of railway branching off of the Trans-Island railroad, leading to the foothills of the far range.",
+    "French (France)": "Un long tronçon de chemin de fer bifurquant du chemin de fer Trans-Island, menant aux contreforts de la chaîne lointaine.",
+    "Dutch": "Een lange strook spoorweg die aftakt van de Trans-Island-spoorlijn en leidt naar de uitlopers van de verre bergketen."
+  },
+  "FUAR_FarRangeBranchLineHint2": {
+    "English": "The far range branch line offers many tunnels and abandoned boxcars for survivors to shelter in on the long journey to the Far Territory.",
+    "French (France)": "L'embranchement éloigné offre de nombreux tunnels et des wagons abandonnés pour que les survivants puissent se réfugier dans le long voyage vers le Territoire lointain.",
+    "Dutch": "De taklijn van de verre bergketen biedt veel tunnels en verlaten goederenwagons waar overlevenden in kunnen schuilen tijdens de lange reis naar het Verre Gebied."
+  },
+  "FUAR_TransferPassTitle": {
+    "English": "Transfer Pass",
+    "French (France)": "Transfer Pass",
+    "Dutch": "Transfer Pass"
+  },
+  "FUAR_TransferPassHint": {
+    "English": "A crossroads dug out of the looming mountains, the transfer pass is quiet since the trains stopped. But it remains a critical junction for anyone wishing to access the Far Territory.",
+    "French (France)": "Carrefour creusé dans les montagnes qui s'annoncent, le col de correspondance est silencieux depuis l'arrêt des trains. Mais il reste un carrefour critique pour quiconque souhaite accéder au Territoire lointain.",
+    "Dutch": "Een kruispunt uitgegraven uit de dreigende bergen, de Transfer Pass is stil sinds de treinen gestopt zijn. Maar het blijft een kritiek knooppunt voor iedereen die toegang wil tot het Verre Gebied."
+  },
+  "FUAR_AirfieldTitle": {
+    "English": "Forsaken Airfield",
+    "French (France)": "Forsaken Airfield",
+    "Dutch": "Forsaken Airfield"
+  },
+  "FUAR_AirfieldHint1": {
+    "English": "Once an active entry point for the Far Territory's wild interior, the airfield lives in shadow of better days. It's broken landing strip and support buildings sit wedged between natural obstacles and frozen fields, a broad lake and steep cliffs.",
+    "French (France)": "Autrefois un point d'entrée actif pour l'intérieur sauvage du Territoire lointain, l'aérodrome vit à l'ombre de jours meilleurs. Sa piste d'atterrissage brisée et ses bâtiments de soutien sont coincés entre des obstacles naturels et des champs gelés, un large lac et des falaises abruptes.",
+    "Dutch": "Ooit een actieve toegangspoort tot het wilde binnenland van het Verre Gebied, ligt het vliegveld in de schaduw van betere dagen. De gebroken landingsbaan en ondersteunende gebouwen liggen klem tussen natuurlijke obstakels en bevroren velden, een groot meer en steile kliffen."
+  },
+  "FUAR_AirfieldHint2": {
+    "English": "The vast open fields and lakes surrounding the airfield allow for some of Great Bear's longest and deadliest blizzards to blow in from over the mountains. Some lasting days.",
+    "French (France)": "Les vastes champs ouverts et les lacs permettent à certains des blizzards les plus longs et les plus meurtriers du Grand Ours de souffler depuis les montagnes. Quelques jours qui durent.",
+    "Dutch": "De uitgestrekte open velden en meren rondom het vliegveld zorgen ervoor dat enkele van de langste en dodelijkste sneeuwstormen van Great Bear Island over de bergen kunnen blazen. Sommige duren dagen."
+  },
+  "FUAR_AirfieldLoreTitle": {
+    "English": "Field 31",
+    "French (France)": "Field 31",
+    "Dutch": "Field 31"
+  },
+  "FUAR_AirfieldLore1": {
+    "English": "Field 31 was constructed by Camber Aviation sometime in the 1980's to allow quick and easy access to Great Bear's interior for various needs.",
+    "French (France)": "Field 31 a été construit par Camber Aviation dans les années 1980 pour permettre un accès rapide et facile à l'intérieur de Great Bear Island pour divers besoins.",
+    "Dutch": "Field 31 is ergens in de jaren 1980 gebouwd door Camber Aviation om snel en gemakkelijk toegang te krijgen tot het binnenland van Great Bear Island voor verschillende behoeften."
+  },
+  "FUAR_GlimmerFogTitle": {
+    "English": "Glimmer Fog",
+    "French (France)": "Brouillard scintillant",
+    "Dutch": "Glinsternevel"
+  },
+  "FUAR_GlimmerFogHint1": {
+    "English": "A mysterious weather phenomenon unique to the far territory caused by the aurora. Glimmer fog charges the open air with electrostatic energy, animating electronic devices in unpredictable ways and causing psychological effects.",
+    "French (France)": "Un mystérieux phénomène météorologique unique au territoire lointain causé par les aurores boréales. Le brouillard scintillant charge l'air libre d'énergie électrostatique, animant les appareils électroniques de manière imprévisible et provoquant des effets psychologiques.",
+    "Dutch": "Een mysterieus weersverschijnsel dat uniek is voor het Verre Gebied en wordt veroorzaakt door het noorderlicht. Glinsternevel laadt de open lucht op met elektrostatische energie, die elektronische apparaten op onvoorspelbare manieren activeert en psychologische effecten veroorzaakt."
+  },
+  "FUAR_GlimmerFogHint2": {
+    "English": "Electrostatic fog can descend upon the airfield at a moments notice, leaving survivors disoriented and at risk of insomnia.",
+    "French (France)": "Le brouillard électrostatique peut descendre sur l'aérodrome à tout moment, laissant les survivants désorientés et à risque d'insomnie.",
+    "Dutch": "Elektrostatische mist kan plotseling neerdalen op het vliegveld, waardoor overlevenden gedesoriënteerd raken en het risico lopen op slapeloosheid."
+  },
+  "FUAR_InsomniaTitle": {
+    "English": "Insomnia",
+    "French (France)": "Insomnie",
+    "Dutch": "Slapeloosheid"
+  },
+  "FUAR_InsomniaHint": {
+    "English": "Survivors exposed to the glimmer fog for too long can experience psychological effects including insomnia, which disrupts sleep. Seek shelter underground to avoid the effects of the fog.",
+    "French (France)": "Les survivants exposés trop longtemps au brouillard scintillant peuvent ressentir des effets psychologiques, notamment l'insomnie, qui perturbe le sommeil. Abritez-vous sous terre pour éviter les effets du brouillard.",
+    "Dutch": "Overlevenden die te lang aan de glinsternevel zijn blootgesteld, kunnen psychologische effecten ervaren, waaronder slapeloosheid, wat de slaap verstoort. Zoek ondergronds onderdak om de effecten van de mist te vermijden."
+  }
+}
