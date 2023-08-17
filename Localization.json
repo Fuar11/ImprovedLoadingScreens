@@ -1,360 +1,421 @@
 {
-  "FUAR_LakeRegionLore1": {
-
-    "English": "The region’s main characteristics are its heavily forested and hilly terrain, as well as abundance of wildlife. The region’s high altitude leads to low average temperatures, as well as some of the coldest night-time temperatures on Great Bear Island.",
-    "French (France)": "Les caractéristiques principales de la région sont sa terrain fortement boisé et vallonné, ainsi que l'abondance de la faune. La haute altitude de la région entraîne des températures moyennes basses, ainsi que certaines des températures nocturnes les plus froides de Great Bear Island."
-
-  },
-  "FUAR_CarterDamLore1": {
-
-    "English": "In the 1960s, a small hydroelectric dam was built on the Carter River. The project was engineered and financed by Richard Carter, who intended to use power from the dam to sustain a small mining town he planned to build. Unfortunately, growing seismic activity on Great Bear in the 1980s put an end to the projects.",
-    "French (France)": "Dans les années 1960, un petit barrage hydroélectrique a été construit sur la rivière Carter. Le projet a été conçu et financé par Richard Carter, qui avait l'intention d'utiliser l'énergie du barrage pour soutenir une petite ville minière qu'il prévoyait de construire. Malheureusement, l'activité sismique croissante sur Great Bear dans les années 1980 a mis fin aux projets."
-
-  },
-  "FUAR_CoastalRegionHint1": {
-
-    "English": "A weather-battered coastline rich in shelters and resources. Watch out for wildlife. ",
-    "French (France)": "Un littoral dégradé par les intempéries, riche en abris et en ressources. Attention à la faune."
-
-  },
-
-  "FUAR_CoastalRegionLore1": {
-
-    "English": "The coastal highway stretches along the shoreline of this bay, home to various hamlets and townsites. The geography of this area brings some of the densest morning fogs on Great Bear.",
-    "French (France)": "La route côtière s'étend le long du littoral de cette baie, qui abrite divers hameaux. La géographie de cette région apporte certains des brouillards matinaux les plus denses de Great Bear."
-
-  },
-
-  "FUAR_WhalingStationRegionHint1": {
-
-    "English": "Several key shelters, plenty of hostile wildlife, and harsh weather conditions to be found around these remnants of a once-thriving whaling industry.",
-    "French (France)": "Plusieurs abris clés, de nombreuses espèces sauvages hostiles et des conditions météorologiques difficiles se trouvent autour de ces vestiges d'une industrie baleinière autrefois florissante."
-
-  },
-
-  "FUAR_WhalingStationRegionLore1": {
-
-    "English": "Desolation Point was once a hotspot for coal mining, until seismic activity and the construction of the coastal highway put an end to the business. In it's place came new industries, which now lay dormant along the coast.",
-    "French (France)": "Desolation Point était autrefois un point chaud pour l'extraction du charbon, jusqu'à ce que l'activité sismique et la construction de l'autoroute côtière mettent fin à l'activité. À sa place sont venues de nouvelles industries, qui dormaient maintenant le long de la côte."
-
-  },
-
-  "FUAR_WhalingStationRegionLore2": {
-
-    "English": "Desolation Point is home to the lonely lighthouse, which has kept watch over the point for decades, guiding passing vessels away from the jagged coastline.",
-    "French (France)": "Desolation Point abrite le phare solitaire, qui surveille la pointe depuis des décennies, guidant les navires de passage loin de la côte déchiquetée."
-
-  },
-
-  "FUAR_RuralRegionHint1": {
-
-    "English": "A challenging, vast mountain wilderness region with a few key shelters, originally settled by hardy homesteaders.",
-    "French (France)": "Une vaste région montagneuse sauvage et difficile avec quelques abris clés, à l'origine colonisés par de robustes fermiers."
-
-  },
-
-  "FUAR_RuralRegionLore1": {
-
-    "English": "Founded in 1919, Thomson’s Crossing remains the only significant community in Pleasant Valley. With a history tied to the farming and mining concerns of its residents, the isolated town followed its own path along the boom and bust cycle of Great Bear Island industry. ",
-    "French (France)": "Founded in 1919, Thomson’s Crossing remains the only significant community in Pleasant Valley. With a history tied to the farming and mining concerns of its residents, the isolated town followed its own path along the boom and bust cycle of Great Bear Island industry. "
-
-  },
-
-  "FUAR_RuralRegionLore2": {
-
-    "English": "Signal Hill overlooks the vast fields and ridges of Pleasant Valley. Once providing weather reports to the residents of the valley, now providing shelter to any survivor that makes the trek.",
-    "French (France)": "Signal Hill surplombe les vastes champs et crêtes de Pleasant Valley. Fournissant autrefois des bulletins météorologiques aux habitants de la vallée, offrant désormais un abri à tout survivant qui fait le voyage."
-
-  },
-
-  "FUAR_MarshRegionHint1": {
-
-    "English": " A frigid open marshland bisected by a railway line. Weak ice and constant winds make this area highly dangerous.",
-    "French (France)": "Un marais glacial ouvert coupé en deux par une voie ferrée. La faible glace et les vents constants rendent cette zone très dangereuse."
-
-  },
-
-  "FUAR_MarshRegionLore1": {
-
-    "English": "This marshland covers a vast area of Mystery Lake Provincial Park. Once home to homesteaders, now lays dormant as weak ice and thick fog covers it's desolate landscape.",
-    "French (France)": "Ce marais couvre une vaste zone du parc provincial Mystery Lake. Autrefois la maison des fermiers, elle est maintenant endormie alors que la glace faible et le brouillard épais recouvrent son paysage désolé."
-
-  },
-
-  "FUAR_TracksRegionHint1": {
-
-    "English": "Previous seismic activity means this section of the Trans-Island Railway Line is dramatically interrupted. Be careful you don't become lost in its many twisting routes.",
-    "French (France)": "L'activité sismique précédente signifie que cette section de la ligne de chemin de fer trans-île est considérablement interrompue. Attention à ne pas vous perdre dans ses nombreux itinéraires sinueux."
-
-  },
-
-  "FUAR_TracksRegionLore1": {
-
-    "English": "Located at the edge of Mystery Lake Provincial Park, this region's crumbling infrastructure shows a glimpse into the island's industrial past.",
-    "French (France)": "Situées en bordure du parc provincial Mystery Lake, les infrastructures en ruine de cette région donnent un aperçu du passé industriel de l'île."
-
-  },
-
-  "FUAR_CrashMountainRegionHint1": {
-
-    "English": "An isolated alpine region with very few shelters or resources. A true test of wilderness survival skills.",
-    "French (France)": "Une région alpine isolée avec très peu d'abris ou de ressources. Un véritable test de compétences de survie en milieu sauvage."
-
-  },
-
-  "FUAR_CrashMountainRegionLore1": {
-
-    "English": "Timberwolf Mountain is one of the tallest peaks on Great Bear. As such it hosts some of the coldest daytime temperatures on the island. Come prepared!",
-    "French (France)": "Timberwolf Mountain est l'un des plus hauts sommets du Grand Ours. En tant que tel, il abrite certaines des températures diurnes les plus froides de l'île. Venez préparé!"
-
-  },
-
-  "FUAR_CrashMountainRegionLore2": {
-
-    "English": "Once a popular mountain climbing location, this region holds many secrets and some of the most impressive vistas on Great Bear Island.",
-    "French (France)": "Autrefois un lieu d'alpinisme populaire, cette région recèle de nombreux secrets et certaines des vues les plus impressionnantes de Great Bear Island."
-
-  },
-
-  "FUAR_AshCanyonRegionHint1": {
-
-    "English": "A climber’s paradise dotted with narrow ravines, towering cliffs, and multiple high plateaus. Its burnt forests and mining settlements also hint at a darker history.",
-    "French (France)": "Un paradis pour les grimpeurs parsemé de ravins étroits, de falaises imposantes et de multiples hauts plateaux. Ses forêts brûlées et ses colonies minières évoquent également une histoire plus sombre."
-
-  },
-
-  "FUAR_MountainTownRegionHint1": {
-
-    "English": "Although deep in decline, Milton still offers many sturdy shelters and plentiful wildlife. But if you leave town for the surrounding hills and fields, beware!",
-    "French (France)": "Bien que profondément en déclin, Milton offre encore de nombreux abris solides et une faune abondante. Mais si vous quittez la ville pour les collines et les champs environnants, faites attention!"
-
-  },
-
-  "FUAR_MountainTownRegionLore1": {
-
-    "English": "Founded in 1911, Milton went through a boom/bust cycle throughout the 1900s, but after the collapse it's population has struggled to remain in the low double digits. This region is now completely abandoned since the lights went out.",
-    "French (France)": "Fondée en 1911, Milton a connu un cycle d'expansion et de récession tout au long des années 1900, mais après l'effondrement, sa population a eu du mal à rester dans les deux chiffres. Cette région est maintenant complètement abandonnée depuis que les lumières se sont éteintes."
-
-  },
-
-  "FUAR_MountainTownRegionLore2": {
-
-    "English": "Milton was once a popular stopping point for loggers, campers and others passing through from the mainland. But ever since the collapse, it's infrastructure has crumbled. But many survivors may still find shelters and supplies in the area.",
-    "French (France)": "Milton était autrefois un point d'arrêt populaire pour les bûcherons, les campeurs et les autres passants du continent. Mais depuis l'effondrement, son infrastructure s'est effondrée. Mais de nombreux survivants peuvent encore trouver des abris et des fournitures dans la région."
-
-  },
-
-  "FUAR_RiverValleyRegionHint1": {
-
-    "English": "A remote, wind-blown valley known for its sheer cliffs, dense forests, and steep, winding paths. Although devoid of human settlements, it has long been a destination for the area's toughest mountaineers, and may still have a few secrets to reveal.",
-    "French (France)": "Une vallée isolée et balayée par le vent connue pour ses falaises abruptes, ses forêts denses et ses sentiers escarpés et sinueux. Bien que dépourvue d'établissements humains, elle a longtemps été une destination pour les alpinistes les plus coriaces de la région, et peut encore avoir quelques secrets à révéler."
-
-  },
-
-  "FUAR_RiverValleyRegionHint2": {
-
-    "English": "Although devoid of any human settlements or shelters, this region's naturally forming ledges and ice caves offer shelter to any intrepid survivor that wishes to pass through this beautiful valley.",
-    "French (France)": "Bien que dépourvue de tout établissement humain ou abri, les corniches et les grottes de glace de cette région offrent un abri à tout survivant intrépide qui souhaite traverser cette belle vallée."
-
-  },
-
-  "FUAR_RiverValleyRegionHint3": {
-    "English": "This valley's steep vertical cliffs may provide aid to any survivors with a keen eye. Just watch out for high winds and freezing temperatures on the way up.",
-    "French (France)": "Les falaises verticales escarpées de cette vallée peuvent venir en aide à n'importe quel survivant doté d'un œil attentif. Faites juste attention aux vents violents et aux températures glaciales en montant."
-  },
-
-  "FUAR_RiverValleyRegionHint3Title": {
-    "English": "Traversing the Valley.",
-    "French (France)": "Traverser la vallée."
-  },
-
-  "FUAR_BleakInletRegionHint1": {
-    "English": "Once home to a thriving industrial Cannery, seismic instability has cut Bleak Inlet off from the rest of the Great Bear. Inaccessible and in the heart of Timberwolf territory, exploring Bleak Inlet is not for the faint of heart. The Cannery industrial complex holds a useful treasure for those hardy enough to access it.",
-    "French (France)": "Autrefois le siège d'une conserverie industrielle florissante, l'instabilité sismique a coupé Bleak Inlet du reste de la Grande Ourse. Inaccessible et au cœur du territoire de Timberwolf, explorer Bleak Inlet n'est pas pour les âmes sensibles. Le complexe industriel de la conserverie recèle un trésor utile pour ceux qui sont assez hardis pour y accéder."
-  },
-
-  "FUAR_BleakInletRegionLore1": {
-    "English": "This coastal inlet holds some of the coldest and windiest coastline weather on Great Bear. Traversing it's twisting, icy paths is not for the faint of heart.",
-    "French (France)": "Cette crique côtière possède certains des climats côtiers les plus froids et les plus venteux de Great Bear. Traverser ses chemins sinueux et glacés n'est pas pour les âmes sensibles."
-  },
-
-  "FUAR_BlackrockLore1": {
-    "English": "Home to Blackrock Penitentiary, this Region’s icy rivers, deep ravines, and challenging weather act as a natural extension of the notorious prison. Its many caves and winding roads offer additional security if a storm moves in.",
-    "French": "Abritant le pénitencier de Blackrock, les rivières glacées, les ravins profonds et le climat difficile de cette région agissent comme une extension naturelle de la prison notoire. Ses nombreuses grottes et ses routes sinueuses offrent une sécurité supplémentaire en cas d'orage."
-  },
-
-  "FUAR_ThompsonCrossing": {
-    "English": "Thompson's Crossing",
-    "French": "Thompson's Crossing"
-  },
-
-  "FUAR_WolvesTitle": {
-    "English": "Wolves",
-    "French": "Loups"
-  },
-
-  "FUAR_CrowsTitle": {
-    "English": "Crows",
-    "French": "Corbeaux"
-  },
-
-  "FUAR_CrowsHint": {
-    "English": "Look out for flocks of crows circling above. They often feed off of dead carcasses and bodies.",
-    "French": "Faites attention aux volées de corbeaux qui tournent au-dessus. Ils se nourrissent souvent de carcasses et de cadavres."
-  },
-
-  "FUAR_BearCrowsTitle": {
-    "English": "Keep your ears open.",
-    "French": "Gardez vos oreilles ouvertes."
-  },
-
-  "FUAR_BearCrowsHint": {
-    "English": "Pay attention to the crows and the sound they make. A deeper call may alert other crows that predators are nearby. Be on the lookout for bears.",
-    "French": "Faites attention aux corbeaux et au son qu'ils font. Un appel plus profond peut alerter les autres corbeaux que des prédateurs sont proche. Soyez alerte des ours."
-  },
-
-  "FUAR_AuroraTitle": {
-    "English": "The Aurora",
-    "French": "L'Aurore"
-  },
-
-  "FUAR_AuroraHint": {
-    "English": "The mysterious aurora once sent the world into darkness. But on clear nights it may be seen in the sky, bringing dead electronics back to life. Making some areas more accessible and others more hazardous.",
-    "French": "L'aurore mystérieuse a envoyé le monde sombre. Mais les nuits claires, on peut le voir dans le ciel, ramenant à la vie des appareils électroniques morts. Rendre certaines zones plus accessibles et d'autres plus dangereuses."
-  },
-
-  "FUAR_DawnTitle": {
-    "English": "Dawn",
-    "French": "Le Matin"
-  },
-
-  "FUAR_DawnHint": {
-    "English": "Early mornings are always the coldest after the temperature drops at night.",
-    "French": "Les matins sont toujours les plus froids après que la température baisse la nuit."
-  },
-
-  "FUAR_CartographyTitle": {
-    "English": "Vantage Point",
-    "French": "Position Avantageuse"
-  },
-
-  "FUAR_CartographyHint": {
-    "English": "Sketching from higher ground will reveal more of the area around you on your map.",
-    "French": "Dessiner à partir d'un terrain plus élevé révélera plus de la zone autour de vous sur votre carte."
-  },
-
-  "FUAR_RopeTitle": {
-    "English": "Climbing Rope",
-    "French": "Corde d'Escalade"
-  },
-
-  "FUAR_RopeHint": {
-    "English": "Mountaineering ropes can be deployed at anchor rocks to access previously inaccessible areas. But they take a lot of energy to climb up and down. Make sure you're not carrying too much!",
-    "French": "Des cordes d'alpinisme peuvent être déployées sur des rochers d'ancrage pour accéder à des zones auparavant inaccessibles. Mais ils demandent beaucoup d'énergie pour monter et descendre. Assurez-vous que vous ne transportez pas trop!"
-  },
-
-  "FUAR_CacheTitle": {
-    "English": "Supply Cache",
-    "French": "Cache cachée"
-  },
-
-  "FUAR_CacheHint": {
-    "English": "Hidden caches left behind by other survivors can be found hidden around Great Bear containing valuable supplies.",
-    "French": "Des caches cachées laissées par d'autres survivants peuvent être trouvées cachées autour de Great Bear contenant des resources précieuses."
-  },
-
-  "FUAR_FarRangeTitle": {
-    "English": "Far Range",
-    "French": "Far Range"
-  },
-
-  "FUAR_FarRangeLore1": {
-    "English": "Deep along the rocky spine of Great Bear Island stands the Far Range. A massive mountain range bisecting the island. Over the decades, many have tried, few have succeeded to crack open the wealth within these rocks.",
-    "French": "Profondément le long de l'épine rocheuse de Great Bear Island se dresse le Far Range. Une chaîne de montagnes massive coupant l'île en deux. Au fil des décennies, beaucoup ont essayé, peu ont réussi à ouvrir la richesse de ces roches."
-  },
-
-  "FUAR_FarTerritoryTitle": {
-    "English": "The Far Territory",
-    "French": "The Far Territory"
-  },
-
-  "FUAR_FarTerritoryLore1": {
-    "English": "Deep in the interior of Great Bear lies the far territory, a imposing mountain range that is accessed via the Trans-Island Railway.",
-    "French": "Au plus profond de l'intérieur de Great Bear se trouve le territoire lointain, une imposante chaîne de montagnes accessible via le chemin de fer Trans-Island."
-  },
-
-  "FUAR_FarRangeBranchLineTitle": {
-    "English": "Far Range Branch Line",
-    "French": "Far Range Branch Line"
-  },
-
-  "FUAR_FarRangeBranchLineHint1": {
-    "English": "A long stretch of railway branching off of the Trans-Island railroad, leading to the foothills of the far range.",
-    "French": "Un long tronçon de chemin de fer bifurquant du chemin de fer Trans-Island, menant aux contreforts de la chaîne lointaine."
-  },
-
-  "FUAR_FarRangeBranchLineHint2": {
-    "English": "The far range branch line offers many tunnels and abandoned boxcars for survivors to shelter in on the long journey to the Far Territory.",
-    "French": "L'embranchement éloigné offre de nombreux tunnels et des wagons abandonnés pour que les survivants puissent se réfugier dans le long voyage vers le Territoire lointain."
-  },
-
-  "FUAR_TransferPassTitle": {
-    "English": "Transfer Pass",
-    "French": "Transfer Pass"
-  },
-
-  "FUAR_TransferPassHint": {
-    "English": "A crossroads dug out of the looming mountains, the transfer pass is quiet since the trains stopped. But it remains a critical junction for anyone wishing to access the Far Territory.",
-    "French": "Carrefour creusé dans les montagnes qui s'annoncent, le col de correspondance est silencieux depuis l'arrêt des trains. Mais il reste un carrefour critique pour quiconque souhaite accéder au Territoire lointain."
-  },
-
-  "FUAR_AirfieldTitle": {
-    "English": "Forsaken Airfield",
-    "French": "Forsaken Airfield"
-  },
-
-  "FUAR_AirfieldHint1": {
-    "English": "Once an active entry point for the Far Territory's wild interior, the airfield lives in shadow of better days. It's broken landing strip and support buildings sit wedged between natural obstacles and frozen fields, a broad lake and steep cliffs.",
-    "French": "Autrefois un point d'entrée actif pour l'intérieur sauvage du Territoire lointain, l'aérodrome vit à l'ombre de jours meilleurs. Sa piste d'atterrissage brisée et ses bâtiments de soutien sont coincés entre des obstacles naturels et des champs gelés, un large lac et des falaises abruptes."
-  },
-
-  "FUAR_AirfieldHint2": {
-    "English": "The vast open fields and lakes surrounding the airfield allow for some of Great Bear's longest and deadliest blizzards to blow in from over the mountains. Some lasting days.",
-    "French": "Les vastes champs ouverts et les lacs permettent à certains des blizzards les plus longs et les plus meurtriers du Grand Ours de souffler depuis les montagnes. Quelques jours qui durent."
-  },
-
-  "FUAR_AirfieldLoreTitle": {
-    "English": "Field 31",
-    "French": "Field 31"
-  },
-
-  "FUAR_AirfieldLore1": {
-    "English": "Field 31 was constructed by Camber Aviation sometime in the 1980's to allow quick and easy access to Great Bear's interior for various needs.",
-    "French": "Field 31 a été construit par Camber Aviation dans les années 1980 pour permettre un accès rapide et facile à l'intérieur de Great Bear pour divers besoins."
-  },
-
-  "FUAR_GlimmerFogTitle": {
-    "English": "Glimmer Fog",
-    "French": "Brouillard scintillant"
-  },
-
-  "FUAR_GlimmerFogHint1": {
-    "English": "A mysterious weather phenomenon unique to the far territory caused by the aurora. Glimmer fog charges the open air with electrostatic energy, animating electronic devices in unpredictable ways and causing psychological effects.",
-    "French": "Un mystérieux phénomène météorologique unique au territoire lointain causé par les aurores boréales. Le brouillard scintillant charge l'air libre d'énergie électrostatique, animant les appareils électroniques de manière imprévisible et provoquant des effets psychologiques."
-  },
-
-  "FUAR_GlimmerFogHint2": {
-    "English": "Electrostatic fog can descend upon the airfield at a moments notice, leaving survivors disoriented and at risk of insomnia.",
-    "French": "Le brouillard électrostatique peut descendre sur l'aérodrome à tout moment, laissant les survivants désorientés et à risque d'insomnie."
-  },
-
-  "FUAR_InsomniaTitle": {
-    "English": "Insomnia",
-    "French": "Insomnie"
-  },
-
-  "FUAR_InsomniaHint": {
-    "English": "Survivors exposed to the glimmer fog for too long can experience psychological effects including insomnia, which disrupts sleep. Seek shelter underground to avoid the effects of the fog.",
-    "French": "Les survivants exposés trop longtemps au brouillard scintillant peuvent ressentir des effets psychologiques, notamment l'insomnie, qui perturbe le sommeil. Abritez-vous sous terre pour éviter les effets du brouillard."
+    "FUAR_LakeRegionLore1": {
+  
+      "English": "The region’s main characteristics are its heavily forested and hilly terrain, as well as abundance of wildlife. The region’s high altitude leads to low average temperatures, as well as some of the coldest night-time temperatures on Great Bear Island.",
+      "French (France)": "Les caractéristiques principales de la région sont sa terrain fortement boisé et vallonné, ainsi que l'abondance de la faune. La haute altitude de la région entraîne des températures moyennes basses, ainsi que certaines des températures nocturnes les plus froides de Great Bear Island.",
+      "Turkish" : "Bölgenin başlıca özellikleri yoğun ormanlık ve tepelik arazisinin yanı sıra yaban hayatının bolluğudur. Bölgenin yüksek rakımı, düşük ortalama sıcaklıkların yanı sıra Büyük Ayı Adası'ndaki en soğuk gece sıcaklıklarından bazılarına yol açmaktadır."
+    },
+    "FUAR_CarterDamLore1": {
+  
+      "English": "In the 1960s, a small hydroelectric dam was built on the Carter River. The project was engineered and financed by Richard Carter, who intended to use power from the dam to sustain a small mining town he planned to build. Unfortunately, growing seismic activity on Great Bear in the 1980s put an end to the projects.",
+      "French (France)": "Dans les années 1960, un petit barrage hydroélectrique a été construit sur la rivière Carter. Le projet a été conçu et financé par Richard Carter, qui avait l'intention d'utiliser l'énergie du barrage pour soutenir une petite ville minière qu'il prévoyait de construire. Malheureusement, l'activité sismique croissante sur Great Bear dans les années 1980 a mis fin aux projets.",
+      "Turkish" : "1960'lı yıllarda Carter Nehri üzerinde küçük bir hidroelektrik barajı inşa edilmiştir. Proje, inşa etmeyi planladığı küçük bir maden kasabasını ayakta tutmak için barajdan elde edilecek enerjiyi kullanmayı amaçlayan Richard Carter tarafından tasarlanmış ve finanse edilmiştir. Ne yazık ki, 1980'lerde Büyük Ayı'da artan sismik faaliyetler projelere son verdi."
+  
+    },
+    "FUAR_CoastalRegionHint1": {
+  
+      "English": "A weather-battered coastline rich in shelters and resources. Watch out for wildlife. ",
+      "French (France)": "Un littoral dégradé par les intempéries, riche en abris et en ressources. Attention à la faune.",
+      "Turkish" : "Barınaklar ve kaynaklar açısından zengin, hava şartlarından etkilenmiş bir kıyı şeridi. Vahşi yaşama dikkat edin."
+  
+    },
+  
+    "FUAR_CoastalRegionLore1": {
+  
+      "English": "The coastal highway stretches along the shoreline of this bay, home to various hamlets and townsites. The geography of this area brings some of the densest morning fogs on Great Bear.",
+      "French (France)": "La route côtière s'étend le long du littoral de cette baie, qui abrite divers hameaux. La géographie de cette région apporte certains des brouillards matinaux les plus denses de Great Bear.",
+      "Turkish" : "Sahil Yolu, çeşitli mezra ve kasabalara ev sahipliği yapan bu körfezin kıyı şeridi boyunca uzanmaktadır. Bu bölgenin coğrafyası, Büyük Ayı'daki en yoğun sabah sislerinden bazılarını beraberinde getirir."
+  
+    },
+  
+    "FUAR_WhalingStationRegionHint1": {
+  
+      "English": "Several key shelters, plenty of hostile wildlife, and harsh weather conditions to be found around these remnants of a once-thriving whaling industry.",
+      "French (France)": "Plusieurs abris clés, de nombreuses espèces sauvages hostiles et des conditions météorologiques difficiles se trouvent autour de ces vestiges d'une industrie baleinière autrefois florissante.",
+      "Turkish" : "Bir zamanlar gelişen balina avcılığı endüstrisinin bu kalıntılarının çevresinde birkaç önemli barınak, çok sayıda vahşi yaşam ve sert hava koşulları bulunmaktadır."
+  
+    },
+  
+    "FUAR_WhalingStationRegionLore1": {
+  
+      "English": "Desolation Point was once a hotspot for coal mining, until seismic activity and the construction of the coastal highway put an end to the business. In it's place came new industries, which now lay dormant along the coast.",
+      "French (France)": "Desolation Point était autrefois un point chaud pour l'extraction du charbon, jusqu'à ce que l'activité sismique et la construction de l'autoroute côtière mettent fin à l'activité. À sa place sont venues de nouvelles industries, qui dormaient maintenant le long de la côte.",
+      "Turkish" : "Terk Edilmiş Topraklar bir zamanlar kömür madenciliği için önemli bir noktaydı, ta ki sismik faaliyetler ve kıyı otoyolunun inşası bu işe son verene kadar. Onun yerine şimdi kıyı boyunca uykuda olan yeni endüstriler geldi"
+  
+    },
+  
+    "FUAR_WhalingStationRegionLore2": {
+  
+      "English": "Desolation Point is home to the lonely lighthouse, which has kept watch over the point for decades, guiding passing vessels away from the jagged coastline.",
+      "French (France)": "Desolation Point abrite le phare solitaire, qui surveille la pointe depuis des décennies, guidant les navires de passage loin de la côte déchiquetée.",
+      "Turkish" : "Terk Edilmiş Topraklar, onlarca yıldır noktayı gözetleyen ve geçen gemilere pürüzlü kıyı şeridinden uzakta rehberlik eden yalnız deniz fenerine ev sahipliği yapmaktadır."
+  
+    },
+  
+    "FUAR_RuralRegionHint1": {
+  
+      "English": "A challenging, vast mountain wilderness region with a few key shelters, originally settled by hardy homesteaders.",
+      "French (France)": "Une vaste région montagneuse sauvage et difficile avec quelques abris clés, à l'origine colonisés par de robustes fermiers.",
+      "Turkish" : "Başlangıçta dayanıklı çiftçiler tarafından yerleşilen, birkaç önemli sığınağın bulunduğu geniş, vahşi ve zorlu bir dağlık bölge."
+  
+    },
+  
+    "FUAR_RuralRegionLore1": {
+  
+      "English": "Founded in 1919, Thomson’s Crossing remains the only significant community in Pleasant Valley. With a history tied to the farming and mining concerns of its residents, the isolated town followed its own path along the boom and bust cycle of Great Bear Island industry. ",
+      "French (France)": "Founded in 1919, Thomson’s Crossing remains the only significant community in Pleasant Valley. With a history tied to the farming and mining concerns of its residents, the isolated town followed its own path along the boom and bust cycle of Great Bear Island industry. ",
+      "Turkish" : "1919 yılında kurulan Thomson's Crossing, Tatlı Vadi'deki tek önemli topluluk olmaya devam etmektedir. Sakinlerinin çiftçilik ve madencilik kaygılarına bağlı bir geçmişe sahip olan bu izole kasaba, Büyük Ayı Adası endüstrisinin patlama ve çöküş döngüsü boyunca kendi yolunu izlemiştir."
+  
+    },
+  
+    "FUAR_RuralRegionLore2": {
+  
+      "English": "Signal Hill overlooks the vast fields and ridges of Pleasant Valley. Once providing weather reports to the residents of the valley, now providing shelter to any survivor that makes the trek.",
+      "French (France)": "Signal Hill surplombe les vastes champs et crêtes de Pleasant Valley. Fournissant autrefois des bulletins météorologiques aux habitants de la vallée, offrant désormais un abri à tout survivant qui fait le voyage.",
+      "Turkish" : "Sinyal Tepesi, Tatlı Vadi'nin uçsuz bucaksız tarlalarına ve sırtlarına bakmaktadır. Bir zamanlar vadi sakinlerine hava durumu raporları sağlayan tepe, şimdi bu yolu kat eden tüm kazazedelere sığınak sağlıyor."
+  
+    },
+  
+    "FUAR_MarshRegionHint1": {
+  
+      "English": " A frigid open marshland bisected by a railway line. Weak ice and constant winds make this area highly dangerous.",
+      "French (France)": "Un marais glacial ouvert coupé en deux par une voie ferrée. La faible glace et les vents constants rendent cette zone très dangereuse.",
+      "Turkish" : "Bir demiryolu hattı ile ikiye bölünmüş açık bir buzul bataklığı. İnce buz ve sürekli rüzgarlar bu bölgeyi son derece tehlikeli hale getirmektedir."
+  
+    },
+  
+    "FUAR_MarshRegionLore1": {
+  
+      "English": "This marshland covers a vast area of Mystery Lake Provincial Park. Once home to homesteaders, now lays dormant as weak ice and thick fog covers it's desolate landscape.",
+      "French (France)": "Ce marais couvre une vaste zone du parc provincial Mystery Lake. Autrefois la maison des fermiers, elle est maintenant endormie alors que la glace faible et le brouillard épais recouvrent son paysage désolé.",
+      "Turkish" : "Bu bataklık Gizemli Göl İl Parkı'nın geniş bir alanını kaplamaktadır. Bir zamanlar çiftçilerin evi olan bataklık, şimdi ince buz ve yoğun sisin ıssız manzarasını kaplamasıyla biliniyor."
+  
+    },
+  
+    "FUAR_TracksRegionHint1": {
+  
+      "English": "Previous seismic activity means this section of the Trans-Island Railway Line is dramatically interrupted. Be careful you don't become lost in its many twisting routes.",
+      "French (France)": "L'activité sismique précédente signifie que cette section de la ligne de chemin de fer trans-île est considérablement interrompue. Attention à ne pas vous perdre dans ses nombreux itinéraires sinueux.",
+      "Turkish" : "Önceki sismik faaliyetler Trans-Island Demiryolu Hattı'nın bu bölümünün dramatik bir şekilde kesintiye uğradığı anlamına gelmektedir. Birçok kıvrımlı rotasında kaybolmamaya dikkat edin."
+  
+    },
+  
+    "FUAR_TracksRegionLore1": {
+  
+      "English": "Located at the edge of Mystery Lake Provincial Park, this region's crumbling infrastructure shows a glimpse into the island's industrial past.",
+      "French (France)": "Situées en bordure du parc provincial Mystery Lake, les infrastructures en ruine de cette région donnent un aperçu du passé industriel de l'île.",
+      "Turkish" : "Gizemli Göl İl Parkı'nın kenarında yer alan bu bölgedeki yıkık altyapı, adanın endüstriyel geçmişine bir bakış sunmaktadır."
+  
+    },
+  
+    "FUAR_CrashMountainRegionHint1": {
+  
+      "English": "An isolated alpine region with very few shelters or resources. A true test of wilderness survival skills.",
+      "French (France)": "Une région alpine isolée avec très peu d'abris ou de ressources. Un véritable test de compétences de survie en milieu sauvage.",
+      "Turkish" : "Çok az barınak veya kaynağın bulunduğu izole bir dağlık bölge. Vahşi doğada hayatta kalma becerilerinin gerçek bir testi."
+  
+    },
+  
+    "FUAR_CrashMountainRegionLore1": {
+  
+      "English": "Timberwolf Mountain is one of the tallest peaks on Great Bear. As such it hosts some of the coldest daytime temperatures on the island. Come prepared!",
+      "French (France)": "Timberwolf Mountain est l'un des plus hauts sommets du Grand Ours. En tant que tel, il abrite certaines des températures diurnes les plus froides de l'île. Venez préparé!",
+      "Turkish" : "Bozkurt Dağı, Büyük Ayı'daki en yüksek zirvelerden biridir. Bu nedenle adadaki en soğuk gündüz sıcaklıklarından bazılarına ev sahipliği yapar. Hazırlıklı gelin!"
+  
+    },
+  
+    "FUAR_CrashMountainRegionLore2": {
+  
+      "English": "Once a popular mountain climbing location, this region holds many secrets and some of the most impressive vistas on Great Bear Island.",
+      "French (France)": "Autrefois un lieu d'alpinisme populaire, cette région recèle de nombreux secrets et certaines des vues les plus impressionnantes de Great Bear Island.",
+      "Turkish" : "Bir zamanlar popüler bir dağ tırmanışı noktası olan bu bölge birçok sırrı ve Büyük Ayı Adası'ndaki en etkileyici manzaralardan bazılarını barındırmaktadır."
+  
+    },
+  
+    "FUAR_AshCanyonRegionHint1": {
+  
+      "English": "A climber’s paradise dotted with narrow ravines, towering cliffs, and multiple high plateaus. Its burnt forests and mining settlements also hint at a darker history.",
+      "French (France)": "Un paradis pour les grimpeurs parsemé de ravins étroits, de falaises imposantes et de multiples hauts plateaux. Ses forêts brûlées et ses colonies minières évoquent également une histoire plus sombre.",
+      "Turkish" : "Dar vadiler, yüksek kayalıklar ve çok sayıda yüksek plato ile bezeli bir dağcı cennetidir. Yanmış ormanları ve madencilik yerleşimleri de daha karanlık bir geçmişe işaret ediyor."
+  
+    },
+  
+    "FUAR_MountainTownRegionHint1": {
+  
+      "English": "Although deep in decline, Milton still offers many sturdy shelters and plentiful wildlife. But if you leave town for the surrounding hills and fields, beware!",
+      "French (France)": "Bien que profondément en déclin, Milton offre encore de nombreux abris solides et une faune abondante. Mais si vous quittez la ville pour les collines et les champs environnants, faites attention!",
+      "Turkish" : "Dağ Kasabası, her ne kadar çöküşe geçmiş olsa da hala birçok sağlam barınak ve bol miktarda yaban hayatı sunmaktadır. Ancak çevredeki tepelere ve tarlalara gitmek için kasabadan ayrılırsanız, dikkatli olun!"
+  
+    },
+  
+    "FUAR_MountainTownRegionLore1": {
+  
+      "English": "Founded in 1911, Milton went through a boom/bust cycle throughout the 1900s, but after the collapse it's population has struggled to remain in the low double digits. This region is now completely abandoned since the lights went out.",
+      "French (France)": "Fondée en 1911, Milton a connu un cycle d'expansion et de récession tout au long des années 1900, mais après l'effondrement, sa population a eu du mal à rester dans les deux chiffres. Cette région est maintenant complètement abandonnée depuis que les lumières se sont éteintes.",
+      "Turkish" : "1911 yılında kurulan Dağ Kasabası, 1900'lü yıllar boyunca bir patlama/çöküş döngüsü yaşamış, ancak çöküşün ardından nüfusu düşük çift haneli rakamlarda kalmak için mücadele etmiştir. Işıklar söndüğünden beri bu bölge artık tamamen terk edilmiş durumda."
+    },
+  
+    "FUAR_MountainTownRegionLore2": {
+  
+      "English": "Milton was once a popular stopping point for loggers, campers and others passing through from the mainland. But ever since the collapse, it's infrastructure has crumbled. But many survivors may still find shelters and supplies in the area.",
+      "French (France)": "Milton était autrefois un point d'arrêt populaire pour les bûcherons, les campeurs et les autres passants du continent. Mais depuis l'effondrement, son infrastructure s'est effondrée. Mais de nombreux survivants peuvent encore trouver des abris et des fournitures dans la région.",
+      "Turkish" : "Dağ Kasabası bir zamanlar keresteciler, kampçılar ve kıtadan geçen diğer yolcular için popüler bir mola noktasıydı. Ancak çöküşten bu yana altyapısı çökmüş durumda. Ancak hayatta kalan pek çok kişi bölgede hala barınak ve erzak bulabiliyor."
+  
+    },
+  
+    "FUAR_RiverValleyRegionHint1": {
+  
+      "English": "A remote, wind-blown valley known for its sheer cliffs, dense forests, and steep, winding paths. Although devoid of human settlements, it has long been a destination for the area's toughest mountaineers, and may still have a few secrets to reveal.",
+      "French (France)": "Une vallée isolée et balayée par le vent connue pour ses falaises abruptes, ses forêts denses et ses sentiers escarpés et sinueux. Bien que dépourvue d'établissements humains, elle a longtemps été une destination pour les alpinistes les plus coriaces de la région, et peut encore avoir quelques secrets à révéler.",
+      "Turkish" : "Sarp kayalıkları, sık ormanları ve dik, dolambaçlı yollarıyla bilinen uzak, rüzgârlı bir vadi. İnsan yerleşiminden yoksun olmasına rağmen, uzun zamandır bölgenin en zorlu dağcıları için bir hedef olmuştur ve hala ortaya çıkaracak birkaç sırrı olabilir."
+  
+    },
+  
+    "FUAR_RiverValleyRegionHint2": {
+  
+      "English": "Although devoid of any human settlements or shelters, this region's naturally forming ledges and ice caves offer shelter to any intrepid survivor that wishes to pass through this beautiful valley.",
+      "French (France)": "Bien que dépourvue de tout établissement humain ou abri, les corniches et les grottes de glace de cette région offrent un abri à tout survivant intrépide qui souhaite traverser cette belle vallée.",
+      "Turkish" : "Herhangi bir insan yerleşimi veya barınağı bulunmamasına rağmen, bu bölgenin doğal olarak oluşan çıkıntıları ve buz mağaraları, bu güzel vadiden geçmek isteyen cesur kazazedelere barınak sunmaktadır."
+  
+    },
+  
+    "FUAR_RiverValleyRegionHint3": {
+      "English": "This valley's steep vertical cliffs may provide aid to any survivors with a keen eye. Just watch out for high winds and freezing temperatures on the way up.",
+      "French (France)": "Les falaises verticales escarpées de cette vallée peuvent venir en aide à n'importe quel survivant doté d'un œil attentif. Faites juste attention aux vents violents et aux températures glaciales en montant.",
+      "Turkish" : "Bu vadinin sarp dikey kayalıkları, keskin bir göze sahip olan hayatta kalanlara yardım sağlayabilir. Sadece yukarı çıkarken şiddetli rüzgarlara ve dondurucu soğuklara dikkat edin."
+    },
+  
+    "FUAR_RiverValleyRegionHint3Title": {
+      "English": "Traversing the Valley.",
+      "French (France)": "Traverser la vallée.",
+      "Turkish" : "Vadiyi geç."
+    },
+  
+    "FUAR_BleakInletRegionHint1": {
+      "English": "Once home to a thriving industrial Cannery, seismic instability has cut Bleak Inlet off from the rest of the Great Bear. Inaccessible and in the heart of Timberwolf territory, exploring Bleak Inlet is not for the faint of heart. The Cannery industrial complex holds a useful treasure for those hardy enough to access it.",
+      "French (France)": "Autrefois le siège d'une conserverie industrielle florissante, l'instabilité sismique a coupé Bleak Inlet du reste de la Grande Ourse. Inaccessible et au cœur du territoire de Timberwolf, explorer Bleak Inlet n'est pas pour les âmes sensibles. Le complexe industriel de la conserverie recèle un trésor utile pour ceux qui sont assez hardis pour y accéder.",
+      "Turkish" : "Bir zamanlar gelişen bir endüstriyel konserve fabrikasına ev sahipliği yapan Kasvetli Körfez, sismik istikrarsızlık nedeniyle Büyük Ayı'nın geri kalanından kopmuştur. Erişilemez ve bozkurtlar bölgesinin kalbinde yer alan Kasvetli Körfez'i keşfetmek korkaklara göre değil. Konserve Fabrikası sanayi kompleksi, ona erişebilecek kadar cesur olanlar için faydalı bir hazine barındırıyor."
+    },
+  
+    "FUAR_BleakInletRegionLore1": {
+      "English": "This coastal inlet holds some of the coldest and windiest coastline weather on Great Bear. Traversing it's twisting, icy paths is not for the faint of heart.",
+      "French (France)": "Cette crique côtière possède certains des climats côtiers les plus froids et les plus venteux de Great Bear. Traverser ses chemins sinueux et glacés n'est pas pour les âmes sensibles.",
+      "Turkish" : "Bu kıyı girişi Büyük Ayı'daki en soğuk ve en rüzgarlı kıyı şeridi havasına sahiptir. Kıvrımlı, buzlu patikaları aşmak, kalbi zayıf olanlar için iyi değildir."
+    },
+  
+    "FUAR_BlackrockLore1": {
+      "English": "Home to Blackrock Penitentiary, this Region’s icy rivers, deep ravines, and challenging weather act as a natural extension of the notorious prison. Its many caves and winding roads offer additional security if a storm moves in.",
+      "French": "Abritant le pénitencier de Blackrock, les rivières glacées, les ravins profonds et le climat difficile de cette région agissent comme une extension naturelle de la prison notoire. Ses nombreuses grottes et ses routes sinueuses offrent une sécurité supplémentaire en cas d'orage.",
+      "Turkish" : "Blackrock Cezaevine ev sahipliği yapan bu bölgenin buzlu nehirleri, derin vadileri ve zorlu hava koşulları, kötü şöhretli cezaevinin doğal bir uzantısı gibidir. Birçok mağarası ve dolambaçlı yolları, fırtınanın yaklaşması halinde ek güvenlik sağlar."
+    },
+  
+    "FUAR_ThompsonCrossing": {
+      "English": "Thompson's Crossing",
+      "French": "Thompson's Crossing",
+      "Turkish" : "Thompson Geçidi"
+    },
+  
+    "FUAR_WolvesTitle": {
+      "English": "Wolves",
+      "French": "Loups",
+      "Turkish" : "Kurtlar"
+    },
+  
+    "FUAR_CrowsTitle": {
+      "English": "Crows",
+      "French": "Corbeaux",
+      "Turkish" : "Kargalar"
+    },
+  
+    "FUAR_CrowsHint": {
+      "English": "Look out for flocks of crows circling above. They often feed off of dead carcasses and bodies.",
+      "French": "Faites attention aux volées de corbeaux qui tournent au-dessus. Ils se nourrissent souvent de carcasses et de cadavres.",
+      "Turkish" : "Yukarıda dolaşan karga sürülerine dikkat edin. Genellikle ölü leşler ve cesetlerle beslenirler."
+    },
+  
+    "FUAR_BearCrowsTitle": {
+      "English": "Keep your ears open.",
+      "French": "Gardez vos oreilles ouvertes.",
+      "Turkish" : "Kulaklarınızı açık tutun."
+    },
+  
+    "FUAR_BearCrowsHint": {
+      "English": "Pay attention to the crows and the sound they make. A deeper call may alert other crows that predators are nearby. Be on the lookout for bears.",
+      "French": "Faites attention aux corbeaux et au son qu'ils font. Un appel plus profond peut alerter les autres corbeaux que des prédateurs sont proche. Soyez alerte des ours.",
+      "Turkish" : "Kargalara ve çıkardıkları seslere dikkat edin. Daha derinden gelen bir ses diğer kargaları avcıların yakınlarda olduğu konusunda uyarabilir. Ayılar için tetikte olun."
+    },
+  
+    "FUAR_AuroraTitle": {
+      "English": "The Aurora",
+      "French": "L'Aurore",
+      "Turkish" : "Kuzey Işıkları"
+    },
+  
+    "FUAR_AuroraHint": {
+      "English": "The mysterious aurora once sent the world into darkness. But on clear nights it may be seen in the sky, bringing dead electronics back to life. Making some areas more accessible and others more hazardous.",
+      "French": "L'aurore mystérieuse a envoyé le monde sombre. Mais les nuits claires, on peut le voir dans le ciel, ramenant à la vie des appareils électroniques morts. Rendre certaines zones plus accessibles et d'autres plus dangereuses.",
+      "Turkish" : "Gizemli kuzey ışıkları bir zamanlar dünyayı karanlığa gömüyordu. Ancak açık gecelerde gökyüzünde görülebilir ve ölü elektronikleri hayata döndürür. Bazı bölgeleri daha erişilebilir, bazılarını ise daha tehlikeli hale getiriyor."
+    },
+  
+    "FUAR_DawnTitle": {
+      "English": "Dawn",
+      "French": "Le Matin",
+      "Turkish" : "Şafak"
+    },
+  
+    "FUAR_DawnHint": {
+      "English": "Early mornings are always the coldest after the temperature drops at night.",
+      "French": "Les matins sont toujours les plus froids après que la température baisse la nuit.",
+      "Turkish" : "Gece sıcaklık düştükten sonra sabahın erken saatleri her zaman en soğuk saatler olur."
+    },
+  
+    "FUAR_CartographyTitle": {
+      "English": "Vantage Point",
+      "French": "Position Avantageuse",
+      "Turkish" : "Avantajlı konum"
+    },
+  
+    "FUAR_CartographyHint": {
+      "English": "Sketching from higher ground will reveal more of the area around you on your map.",
+      "French": "Dessiner à partir d'un terrain plus élevé révélera plus de la zone autour de vous sur votre carte.",
+      "Turkish" : "Yüksek bir yerden çizim yapmak, haritanızda etrafınızdaki alanı daha fazla gösterecektir."
+    },
+  
+    "FUAR_RopeTitle": {
+      "English": "Climbing Rope",
+      "French": "Corde d'Escalade",
+      "Turkish" : "Tırmanma Halatı"
+    },
+  
+    "FUAR_RopeHint": {
+      "English": "Mountaineering ropes can be deployed at anchor rocks to access previously inaccessible areas. But they take a lot of energy to climb up and down. Make sure you're not carrying too much!",
+      "French": "Des cordes d'alpinisme peuvent être déployées sur des rochers d'ancrage pour accéder à des zones auparavant inaccessibles. Mais ils demandent beaucoup d'énergie pour monter et descendre. Assurez-vous que vous ne transportez pas trop!",
+      "Turkish" : "Dağcı İpleri, daha önce erişilemeyen alanlara erişmek için çapa kayalarına yerleştirilebilir. Ancak yukarı ve aşağı tırmanmak için çok fazla enerji gerektirirler. Çok fazla yük taşımadığınızdan emin olun!"
+    },
+  
+    "FUAR_CacheTitle": {
+      "English": "Supply Cache",
+      "French": "Cache cachée",
+      "Turkish" : "Gizli Zulalar"
+    },
+  
+    "FUAR_CacheHint": {
+      "English": "Hidden caches left behind by other survivors can be found hidden around Great Bear containing valuable supplies.",
+      "French": "Des caches cachées laissées par d'autres survivants peuvent être trouvées cachées autour de Great Bear contenant des resources précieuses.",
+      "Turkish" : "Diğer kazazedeler tarafından geride bırakılan ve içinde değerli malzemeler bulunan gizli zulalar Büyük Ayı'nın çevresinde bulunabilir."
+    },
+  
+    "FUAR_FarRangeTitle": {
+      "English": "Far Range",
+      "French": "Far Range",
+      "Turkish" : "Uzak Mesafe"
+    },
+  
+    "FUAR_FarRangeLore1": {
+      "English": "Deep along the rocky spine of Great Bear Island stands the Far Range. A massive mountain range bisecting the island. Over the decades, many have tried, few have succeeded to crack open the wealth within these rocks.",
+      "French": "Profondément le long de l'épine rocheuse de Great Bear Island se dresse le Far Range. Une chaîne de montagnes massive coupant l'île en deux. Au fil des décennies, beaucoup ont essayé, peu ont réussi à ouvrir la richesse de ces roches.",
+      "Turkish" : "Büyük Ayı Adası'nın kayalık omurgasının derinliklerinde Uzak Sıradağlar yer alır. Adayı ikiye bölen devasa bir dağ silsilesi. On yıllar boyunca pek çok kişi bu kayaların içindeki zenginliği ortaya çıkarmaya çalışmış, ancak çok azı bunu başarabilmiştir."
+    },
+  
+    "FUAR_FarTerritoryTitle": {
+      "English": "The Far Territory",
+      "French": "The Far Territory",
+      "Turkish" : "Uzak Topraklar"
+    },
+  
+    "FUAR_FarTerritoryLore1": {
+      "English": "Deep in the interior of Great Bear lies the far territory, a imposing mountain range that is accessed via the Trans-Island Railway.",
+      "French": "Au plus profond de l'intérieur de Great Bear se trouve le territoire lointain, une imposante chaîne de montagnes accessible via le chemin de fer Trans-Island.",
+      "Turkish" : "Büyük Ayı'nın iç kısımlarında, Trans-Island Demiryolu ile ulaşılan heybetli bir dağ silsilesi olan uzak bölge yer almaktadır."
+    },
+  
+    "FUAR_FarRangeBranchLineTitle": {
+      "English": "Far Range Branch Line",
+      "French": "Far Range Branch Line",
+      "Turkish" : "Uzak Diyar Şube Hattı"
+    },
+  
+    "FUAR_FarRangeBranchLineHint1": {
+      "English": "A long stretch of railway branching off of the Trans-Island railroad, leading to the foothills of the far range.",
+      "French": "Un long tronçon de chemin de fer bifurquant du chemin de fer Trans-Island, menant aux contreforts de la chaîne lointaine.",
+      "Turkish" : "Trans-Island demiryolundan ayrılan ve uzak dağların eteklerine uzanan uzun bir demiryolu hattı."
+    },
+  
+    "FUAR_FarRangeBranchLineHint2": {
+      "English": "The far range branch line offers many tunnels and abandoned boxcars for survivors to shelter in on the long journey to the Far Territory.",
+      "French": "L'embranchement éloigné offre de nombreux tunnels et des wagons abandonnés pour que les survivants puissent se réfugier dans le long voyage vers le Territoire lointain.",
+      "Turkish" : "Uzak Diyar'a yapılan uzun yolculukta hayatta kalanların sığınabileceği çok sayıda tünel ve terk edilmiş yük vagonları bulunmaktadır."
+    },
+  
+    "FUAR_TransferPassTitle": {
+      "English": "Transfer Pass",
+      "French": "Transfer Pass",
+      "Turkish" : "Transfer Geçidi"
+    },
+  
+    "FUAR_TransferPassHint": {
+      "English": "A crossroads dug out of the looming mountains, the transfer pass is quiet since the trains stopped. But it remains a critical junction for anyone wishing to access the Far Territory.",
+      "French": "Carrefour creusé dans les montagnes qui s'annoncent, le col de correspondance est silencieux depuis l'arrêt des trains. Mais il reste un carrefour critique pour quiconque souhaite accéder au Territoire lointain.",
+      "Turkish" : "Yükselen dağların arasından kazılmış bir kavşak olan transfer geçidi, trenler durduğundan beri sessiz. Ancak Uzak Bölge'ye erişmek isteyen herkes için kritik bir kavşak olmaya devam ediyor."
+    },
+  
+    "FUAR_AirfieldTitle": {
+      "English": "Forsaken Airfield",
+      "French": "Forsaken Airfield",
+      "Turkish" : "Terk Edilmiş Havaalanı"
+    },
+  
+    "FUAR_AirfieldHint1": {
+      "English": "Once an active entry point for the Far Territory's wild interior, the airfield lives in shadow of better days. It's broken landing strip and support buildings sit wedged between natural obstacles and frozen fields, a broad lake and steep cliffs.",
+      "French": "Autrefois un point d'entrée actif pour l'intérieur sauvage du Territoire lointain, l'aérodrome vit à l'ombre de jours meilleurs. Sa piste d'atterrissage brisée et ses bâtiments de soutien sont coincés entre des obstacles naturels et des champs gelés, un large lac et des falaises abruptes.",
+      "Turkish" : "Bir zamanlar Uzak Topraklar'ın vahşi iç kısımları için aktif bir giriş noktası olan havaalanı, daha iyi günlerin gölgesinde yaşıyor. Bozuk iniş pisti ve destek binaları, doğal engeller ve donmuş tarlalar, geniş bir göl ve sarp kayalıklar arasında sıkışmış durumda."
+    },
+  
+    "FUAR_AirfieldHint2": {
+      "English": "The vast open fields and lakes surrounding the airfield allow for some of Great Bear's longest and deadliest blizzards to blow in from over the mountains. Some lasting days.",
+      "French": "Les vastes champs ouverts et les lacs permettent à certains des blizzards les plus longs et les plus meurtriers du Grand Ours de souffler depuis les montagnes. Quelques jours qui durent.",
+      "Turkish" : "Havaalanını çevreleyen geniş açık alanlar ve göller, Büyük Ayı'nın en uzun ve en ölümcül kar fırtınalarından bazılarının dağların üzerinden esmesine izin verir. Bazıları günlerce sürer."
+    },
+  
+    "FUAR_AirfieldLoreTitle": {
+      "English": "Field 31",
+      "French": "Field 31",
+      "Turkish" : "Alan 31"
+    },
+  
+    "FUAR_AirfieldLore1": {
+      "English": "Field 31 was constructed by Camber Aviation sometime in the 1980's to allow quick and easy access to Great Bear's interior for various needs.",
+      "French": "Field 31 a été construit par Camber Aviation dans les années 1980 pour permettre un accès rapide et facile à l'intérieur de Great Bear pour divers besoins.",
+      "Turkish" : "Alan 31, çeşitli ihtiyaçlar için Büyük Ayı'nın iç kısmına hızlı ve kolay erişim sağlamak amacıyla 1980'lerde Camber Havacılık tarafından inşa edilmiştir."
+    },
+  
+    "FUAR_GlimmerFogTitle": {
+      "English": "Glimmer Fog",
+      "French": "Brouillard scintillant",
+      "Turkish" : "Işıltılı Sis"
+    },
+  
+    "FUAR_GlimmerFogHint1": {
+      "English": "A mysterious weather phenomenon unique to the far territory caused by the aurora. Glimmer fog charges the open air with electrostatic energy, animating electronic devices in unpredictable ways and causing psychological effects.",
+      "French": "Un mystérieux phénomène météorologique unique au territoire lointain causé par les aurores boréales. Le brouillard scintillant charge l'air libre d'énergie électrostatique, animant les appareils électroniques de manière imprévisible et provoquant des effets psychologiques.",
+      "Turkish" : "Kuzey Işıkları'nın neden olduğu uzak topraklara özgü gizemli bir hava fenomeni. ışıltılı sis, açık havayı elektrostatik enerjiyle doldurarak elektronik cihazları öngörülemeyen şekillerde harekete geçirir ve psikolojik etkilere neden olur."
+    },
+  
+    "FUAR_GlimmerFogHint2": {
+      "English": "Electrostatic fog can descend upon the airfield at a moments notice, leaving survivors disoriented and at risk of insomnia.",
+      "French": "Le brouillard électrostatique peut descendre sur l'aérodrome à tout moment, laissant les survivants désorientés et à risque d'insomnie.",
+      "Turkish" : "Elektrostatik sis bir anda havaalanının üzerine çökebilir ve hayatta kalanları yönlerini şaşırmış ve uykusuzluk riski altında bırakabilir."
+    },
+  
+    "FUAR_InsomniaTitle": {
+      "English": "Insomnia",
+      "French": "Insomnie",
+      "Turkish" : "Uykusuzluk"
+    },
+  
+    "FUAR_InsomniaHint": {
+      "English": "Survivors exposed to the glimmer fog for too long can experience psychological effects including insomnia, which disrupts sleep. Seek shelter underground to avoid the effects of the fog.",
+      "French": "Les survivants exposés trop longtemps au brouillard scintillant peuvent ressentir des effets psychologiques, notamment l'insomnie, qui perturbe le sommeil. Abritez-vous sous terre pour éviter les effets du brouillard.",
+      "Turkish" : "Işıltılı sise çok uzun süre maruz kalanlar uykusuzluk gibi uykuyu bozan psikolojik etkiler yaşayabilir. Sisin etkilerinden kaçınmak için yer altına sığının."
+    }
   }
-}
