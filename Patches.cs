@@ -19,6 +19,10 @@ namespace ImprovedLoadingScreens
         private static List<String> allowedTitles = new List<String>();
         private static List<String> allowedHints = new List<String>();
 
+        //refactor stuff
+
+        private static List<Tuple<string, string>> hintsAndTitles = new List<Tuple<string, string>>();
+
         private static string tempRegion = "";
 
         //private static List<String> allowedRegionHints;
@@ -48,12 +52,12 @@ namespace ImprovedLoadingScreens
                     }
 
                     Random rando = new Random();
-                    int index = rando.Next(0, allowedHints.Count);
+                    int index = rando.Next(0, hintsAndTitles.Count);
 
                     //override parameters
 
-                    textLocId = allowedHints.ElementAt(index);
-                    titleLocId = allowedTitles.ElementAt(index);
+                    textLocId = hintsAndTitles[index].Item2;
+                    titleLocId = hintsAndTitles[index].Item1;
                 }
                 else
                 {
@@ -369,109 +373,56 @@ namespace ImprovedLoadingScreens
         public static void FillGeneralLists()
         {
 
-            allowedHints.Clear();
-            allowedTitles.Clear();
+            //refactor
 
-            //generic
+            hintsAndTitles.Clear();
 
-            allowedHints.Add("HINT_FireColdBurnTimes");
-            allowedTitles.Add("GAMEPLAY_Fuel");
-            allowedHints.Add("HINT_CookingWarmupBuff");
-            allowedTitles.Add("HINT_CookingWarmupBuff_title");
-            allowedHints.Add("HINT_Moose");
-            allowedTitles.Add("HINT_Moose_title");
-            allowedHints.Add("HINT_Quartering");
-            allowedTitles.Add("HINT_Quartering_title");
-            allowedHints.Add("HINT_RawMeatScent");
-            allowedTitles.Add("HINT_WolvesPatrol_title");
-            allowedHints.Add("HINT_DistressPistol");
-            allowedTitles.Add("HINT_DistressPistol_title");
-            allowedHints.Add("HINT_ToolsRepair");
-            allowedTitles.Add("GAMEPLAY_RadialTools");
-            allowedHints.Add("HINT_CraftingSnowShelter");
-            allowedTitles.Add("GAMEPLAY_RadialSnowShelter");
-            allowedHints.Add("HINT_Frostbite");
-            allowedTitles.Add("GAMEPLAY_Stat_Frostbite");
-            allowedHints.Add("HINT_Hypothermia");
-            allowedTitles.Add("GAMEPLAY_Hypothermia");
-            allowedHints.Add("HINT_Freezing");
-            allowedTitles.Add("GAMEPLAY_CustomModeAdjustFreezingNearbyFire");
-            allowedHints.Add("HINT_Temperature");
-            allowedTitles.Add("HINT_Temperature_title");
-            allowedHints.Add("HINT_Wind");
-            allowedTitles.Add("HINT_Wind_title");
-            allowedHints.Add("HINT_WoodHarvest");
-            allowedTitles.Add("HINT_WoodHarvest_title");
-            allowedHints.Add("HINT_IceFishing");
-            allowedTitles.Add("HINT_IceFishing_title");
-            allowedHints.Add("HINT_WetFrozenClothing");
-            allowedTitles.Add("HINT_WetFrozenClothing_title");
-            allowedHints.Add("HINT_MaintainClothing");
-            allowedTitles.Add("HINT_MaintainClothing_title");
-            allowedHints.Add("HINT_ExposureFrostbite");
-            allowedTitles.Add("HINT_ExposureFrostbite_title");
-            allowedHints.Add("HINT_ClothingProtection");
-            allowedTitles.Add("HINT_ClothingProtection_title");
-            allowedHints.Add("HINT_Hatchets");
-            allowedTitles.Add("HINT_WoodHarvest_title");
-            allowedHints.Add("HINT_HuntingKnife");
-            allowedTitles.Add("GAMEPLAY_HuntingKnife");
-            allowedHints.Add("HINT_CanOpener");
-            allowedTitles.Add("GAMEPLAY_CanOpener");
-            allowedHints.Add("HINT_Prybar");
-            allowedTitles.Add("GAMEPLAY_Prybar");
-            allowedHints.Add("HINT_Lantern");
-            allowedTitles.Add("GAMEPLAY_StormLantern");
-            allowedHints.Add("HINT_Blizzards");
-            allowedTitles.Add("HINT_Blizzards_title");
-            allowedHints.Add("HINT_StormFuel");
-            allowedTitles.Add("HINT_WoodHarvest_title");
-            allowedHints.Add("HINT_Landmarks");
-            allowedTitles.Add("HINT_Landmarks_title");
-            allowedHints.Add("HINT_Shivering");
-            allowedTitles.Add("HINT_Shivering_title");
-            allowedHints.Add("HINT_Revolver");
-            allowedTitles.Add("HINT_Revolver_title");
-            allowedHints.Add("HINT_SprainPain");
-            allowedTitles.Add("HINT_SprainPain_title");
-            allowedHints.Add("HINT_BirchTea");
-            allowedTitles.Add("HINT_BirchTea_title");
+            hintsAndTitles.Add(Tuple.Create("GAMEPLAY_Fuel", "HINT_FireColdBurnTimes"));
+            hintsAndTitles.Add(Tuple.Create("HINT_CookingWarmupBuff_title", "HINT_CookingWarmupBuff"));
+            hintsAndTitles.Add(Tuple.Create("HINT_Moose_title", "HINT_Moose"));
+            hintsAndTitles.Add(Tuple.Create("HINT_Quartering_title", "HINT_Quartering"));
+            hintsAndTitles.Add(Tuple.Create("HINT_WolvesPatrol_title", "HINT_RawMeatScent"));
+            hintsAndTitles.Add(Tuple.Create("HINT_DistressPistol_title", "HINT_DistressPistol"));
+            hintsAndTitles.Add(Tuple.Create("GAMEPLAY_RadialTools", "HINT_ToolsRepair"));
+            hintsAndTitles.Add(Tuple.Create("GAMEPLAY_RadialSnowShelter", "HINT_CraftingSnowShelter"));
+            hintsAndTitles.Add(Tuple.Create("GAMEPLAY_Stat_Frostbite", "HINT_Frostbite"));
+            hintsAndTitles.Add(Tuple.Create("GAMEPLAY_Hypothermia", "HINT_Hypothermia"));
+            hintsAndTitles.Add(Tuple.Create("GAMEPLAY_CustomModeAdjustFreezingNearbyFire", "HINT_Freezing"));
+            hintsAndTitles.Add(Tuple.Create("HINT_Temperature_title", "HINT_Temperature"));
+            hintsAndTitles.Add(Tuple.Create("HINT_Wind_title", "HINT_Wind"));
+            hintsAndTitles.Add(Tuple.Create("HINT_WoodHarvest_title", "HINT_WoodHarvest"));
+            hintsAndTitles.Add(Tuple.Create("HINT_IceFishing_title", "HINT_IceFishing"));
+            hintsAndTitles.Add(Tuple.Create("HINT_WetFrozenClothing_title", "HINT_WetFrozenClothing"));
+            hintsAndTitles.Add(Tuple.Create("HINT_MaintainClothing_title", "HINT_MaintainClothing"));
+            hintsAndTitles.Add(Tuple.Create("HINT_ExposureFrostbite_title", "HINT_ExposureFrostbite"));
+            hintsAndTitles.Add(Tuple.Create("HINT_ClothingProtection_title", "HINT_ClothingProtection"));
+            hintsAndTitles.Add(Tuple.Create("HINT_WoodHarvest_title", "HINT_Hatchets"));
+            hintsAndTitles.Add(Tuple.Create("GAMEPLAY_HuntingKnife", "HINT_HuntingKnife"));
+            hintsAndTitles.Add(Tuple.Create("GAMEPLAY_CanOpener", "HINT_CanOpener"));
+            hintsAndTitles.Add(Tuple.Create("GAMEPLAY_Prybar", "HINT_Prybar"));
+            hintsAndTitles.Add(Tuple.Create("GAMEPLAY_StormLantern", "HINT_Lantern"));
+            hintsAndTitles.Add(Tuple.Create("HINT_Blizzards_title", "HINT_Blizzards"));
+            hintsAndTitles.Add(Tuple.Create("HINT_WoodHarvest_title", "HINT_StormFuel"));
+            hintsAndTitles.Add(Tuple.Create("HINT_Landmarks_title", "HINT_Landmarks"));
+            hintsAndTitles.Add(Tuple.Create("HINT_Shivering_title", "HINT_Shivering"));
+            hintsAndTitles.Add(Tuple.Create("HINT_Revolver_title", "HINT_Revolver"));
+            hintsAndTitles.Add(Tuple.Create("HINT_SprainPain_title", "HINT_SprainPain"));
+            hintsAndTitles.Add(Tuple.Create("HINT_BirchTea_title", "HINT_BirchTea"));
 
             if (Settings.settings.cHints)
             {
-                allowedHints.Add("HINT_Wolves");
-                allowedTitles.Add("FUAR_WolvesTitle");
-                allowedHints.Add("FUAR_CrowsHint");
-                allowedTitles.Add("FUAR_CrowsTitle");
-                allowedHints.Add("FUAR_BearCrowsHint");
-                allowedTitles.Add("FUAR_BearCrowsTitle");
-                allowedHints.Add("FUAR_AuroraHint");
-                allowedTitles.Add("FUAR_AuroraTitle");
-                allowedHints.Add("FUAR_DawnHint");
-                allowedTitles.Add("FUAR_DawnTitle");
-                allowedHints.Add("FUAR_CartographyHint");
-                allowedTitles.Add("FUAR_CartographyTitle");
-                allowedHints.Add("FUAR_RopeHint");
-                allowedTitles.Add("FUAR_RopeTitle");
-                allowedHints.Add("FUAR_CacheHint");
-                allowedTitles.Add("FUAR_CacheTitle");
+                hintsAndTitles.Add(Tuple.Create("FUAR_WolvesTitle", "HINT_Wolves"));
+                hintsAndTitles.Add(Tuple.Create("FUAR_CrowsTitle", "FUAR_CrowsHint"));
+                hintsAndTitles.Add(Tuple.Create("FUAR_BearCrowsTitle", "FUAR_BearCrowsHint"));
+                hintsAndTitles.Add(Tuple.Create("FUAR_AuroraTitle", "FUAR_AuroraHint"));
+                hintsAndTitles.Add(Tuple.Create("FUAR_DawnTitle", "FUAR_DawnHint"));
+                hintsAndTitles.Add(Tuple.Create("FUAR_CartographyTitle", "FUAR_CartographyHint"));
+                hintsAndTitles.Add(Tuple.Create("FUAR_RopeTitle", "FUAR_RopeHint"));
+                hintsAndTitles.Add(Tuple.Create("FUAR_CacheTitle", "FUAR_CacheHint"));
+                hintsAndTitles.Add(Tuple.Create("FUAR_TravoisTitle", "FUAR_TravoisHint1"));
+                hintsAndTitles.Add(Tuple.Create("FUAR_TravoisTitle", "FUAR_TravoisHint2"));
             }
 
-
-            /*allowedHints.Add(""); spare lines
-            allowedTitles.Add("");
-            allowedHints.Add("");
-            allowedTitles.Add("");
-            allowedHints.Add("");
-            allowedTitles.Add("");
-            allowedHints.Add("");
-            allowedTitles.Add("");
-            allowedHints.Add("");
-            allowedTitles.Add("");
-            allowedHints.Add("");
-            allowedTitles.Add("");
-            allowedHints.Add("");
-            allowedTitles.Add(""); */
         }
         public static void AddRegionHints(String region)
         {
@@ -481,223 +432,165 @@ namespace ImprovedLoadingScreens
             switch (region)
             {
                 case "LakeRegion":
-                    //add ML hints to main list
-                    allowedHints.Add("HINT_LakeRegion");
-                    allowedTitles.Add("GAMEPLAY_MysteryLake");
-                    allowedHints.Add("HINT_CarterDam");
-                    allowedTitles.Add("GAMEPLAY_CarterHydroDam");
+                    AddRegionToHintsAndTitles("GAMEPLAY_MysteryLake", "HINT_LakeRegion");
+                    AddRegionToHintsAndTitles("GAMEPLAY_CarterHydroDam", "HINT_CarterDam");
                     if (Settings.settings.cHints)
                     {
-                        allowedHints.Add("FUAR_LakeRegionLore1");
-                        allowedTitles.Add("GAMEPLAY_MysteryLake");
-                        allowedHints.Add("FUAR_CarterDamLore1");
-                        allowedTitles.Add("GAMEPLAY_CarterHydroDam");
+                        AddRegionToHintsAndTitles("GAMEPLAY_MysteryLake", "FUAR_LakeRegionLore1");
+                        AddRegionToHintsAndTitles("GAMEPLAY_CarterHydroDam", "FUAR_CarterDamLore1");
                     }
                     break;
                 case "RuralRegion":
-                    //add PV hints to main list
-                    allowedHints.Add("SUBTITLE_SMFatE32430");
-                    allowedTitles.Add("SCENENAME_RuralRegion");
-                    allowedHints.Add("HINT_RuralRegion");
-                    allowedTitles.Add("SCENENAME_RuralRegion");
+                    AddRegionToHintsAndTitles("SCENENAME_RuralRegion", "SUBTITLE_SMFatE32430");
+                    AddRegionToHintsAndTitles("SCENENAME_RuralRegion", "HINT_RuralRegion");
                     if (Settings.settings.cHints)
                     {
-                        allowedHints.Add("FUAR_RuralRegionHint1");
-                        allowedTitles.Add("SCENENAME_RuralRegion");
-                        allowedHints.Add("FUAR_RuralRegionLore1");
-                        allowedTitles.Add("FUAR_ThompsonCrossing");
-                        allowedHints.Add("FUAR_RuralRegionLore2");
-                        allowedTitles.Add("GAMEPLAY_RuralRadioTower");
+                        AddRegionToHintsAndTitles("SCENENAME_RuralRegion", "FUAR_RuralRegionHint1");
+                        AddRegionToHintsAndTitles("FUAR_ThompsonCrossing", "FUAR_RuralRegionLore1");
+                        AddRegionToHintsAndTitles("GAMEPLAY_RuralRadioTower", "FUAR_RuralRegionLore2");
                     }
                     break;
                 case "MountainTownRegion":
-                    //add Milton hints to main list
-                    allowedHints.Add("HINT_MountainTownRegion");
-                    allowedTitles.Add("SCENENAME_MountainTownRegion");
-                    allowedHints.Add("HINT_MountainTownRegion");
-                    allowedTitles.Add("STORY_jnl_LeaveMilton_Title");
-                    allowedHints.Add("HINT_MiltonOrigins");
-                    allowedTitles.Add("HINT_MiltonOrigins_title");
+                    AddRegionToHintsAndTitles("SCENENAME_MountainTownRegion", "HINT_MountainTownRegion");
+                    AddRegionToHintsAndTitles("STORY_jnl_LeaveMilton_Title", "HINT_MountainTownRegion");
+                    AddRegionToHintsAndTitles("HINT_MiltonOrigins_title", "HINT_MiltonOrigins");
                     if (Settings.settings.cHints)
                     {
-                        allowedHints.Add("FUAR_MountainTownRegionHint1");
-                        allowedTitles.Add("SCENENAME_MountainTownRegion");
-                        allowedHints.Add("FUAR_MountainTownRegionLore1");
-                        allowedTitles.Add("HINT_MiltonOrigins_title");
-                        allowedHints.Add("FUAR_MountainTownRegionLore2");
-                        allowedTitles.Add("GAMEPLAY_mtTownCentre");
+                        AddRegionToHintsAndTitles("SCENENAME_MountainTownRegion", "FUAR_MountainTownRegionHint1");
+                        AddRegionToHintsAndTitles("HINT_MiltonOrigins_title", "FUAR_MountainTownRegionLore1");
+                        AddRegionToHintsAndTitles("GAMEPLAY_mtTownCentre", "FUAR_MountainTownRegionLore2");
                     }
                     break;
                 case "CoastalRegion":
-                    //add CH hints to main list
-                    allowedHints.Add("GAMEPLAY_CoastalHighwayDescriptionUnlocked");
-                    allowedTitles.Add("SCENENAME_CoastalHighway");
-                    allowedHints.Add("HINT_LoreMining");
-                    allowedTitles.Add("SCENENAME_WorldMap");
+                    AddRegionToHintsAndTitles("SCENENAME_CoastalHighway", "GAMEPLAY_CoastalHighwayDescriptionUnlocked");
+                    AddRegionToHintsAndTitles("SCENENAME_WorldMap", "HINT_LoreMining");
                     if (Settings.settings.cHints)
                     {
-                        allowedHints.Add("FUAR_CoastalRegionHint1");
-                        allowedTitles.Add("SCENENAME_CoastalHighway");
-                        allowedHints.Add("FUAR_CoastalRegionLore1");
-                        allowedTitles.Add("SCENENAME_CoastalHighway");
+                        AddRegionToHintsAndTitles("SCENENAME_CoastalHighway", "FUAR_CoastalRegionHint1");
+                        AddRegionToHintsAndTitles("SCENENAME_CoastalHighway", "FUAR_CoastalRegionLore1");
                     }
                     break;
                 case "CrashMountainRegion":
-                    //add TWM hints to main list
-                    allowedHints.Add("HINT_CrashMountainRegion");
-                    allowedTitles.Add("SCENENAME_CrashMountainRegion");
-                    allowedHints.Add("HINT_RegionDifference");
-                    allowedTitles.Add("SCENENAME_CrashMountainRegion");
+                    AddRegionToHintsAndTitles("SCENENAME_CrashMountainRegion", "HINT_CrashMountainRegion");
+                    AddRegionToHintsAndTitles("SCENENAME_CrashMountainRegion", "HINT_RegionDifference");
                     if (Settings.settings.cHints)
                     {
-                        allowedHints.Add("FUAR_CrashMountainRegionHint1");
-                        allowedTitles.Add("SCENENAME_CrashMountainRegion");
-                        allowedHints.Add("FUAR_CrashMountainRegionLore1");
-                        allowedTitles.Add("SCENENAME_CrashMountainRegion");
-                        allowedHints.Add("FUAR_CrashMountainRegionLore2");
-                        allowedTitles.Add("SCENENAME_CrashMountainRegion");
+                        AddRegionToHintsAndTitles("SCENENAME_CrashMountainRegion", "FUAR_CrashMountainRegionHint1");
+                        AddRegionToHintsAndTitles("SCENENAME_CrashMountainRegion", "FUAR_CrashMountainRegionLore1");
+                        AddRegionToHintsAndTitles("SCENENAME_CrashMountainRegion", "FUAR_CrashMountainRegionLore2");
                     }
                     break;
                 case "MarshRegion":
-                    //add FM hints to main list
-                    allowedHints.Add("HINT_MarshRegion");
-                    allowedTitles.Add("SCENENAME_Marsh");
-                    allowedHints.Add("HINT_RegionDifference");
-                    allowedTitles.Add("SCENENAME_Marsh");
+                    AddRegionToHintsAndTitles("SCENENAME_Marsh", "HINT_MarshRegion");
+                    AddRegionToHintsAndTitles("SCENENAME_Marsh", "HINT_RegionDifference");
                     if (Settings.settings.cHints)
                     {
-                        allowedHints.Add("FUAR_MarshRegionHint1");
-                        allowedTitles.Add("SCENENAME_Marsh");
-                        allowedHints.Add("FUAR_MarshRegionLore1");
-                        allowedTitles.Add("SCENENAME_Marsh");
+                        AddRegionToHintsAndTitles("SCENENAME_Marsh", "FUAR_MarshRegionHint1");
+                        AddRegionToHintsAndTitles("SCENENAME_Marsh", "FUAR_MarshRegionLore1");
                     }
                     break;
                 case "WhalingStationRegion":
-                    //add DP hints to main list
-                    allowedHints.Add("HINT_WhalingStationRegion");
-                    allowedTitles.Add("SCENENAME_WhalingStation");
-                    allowedHints.Add("HINT_LoreMining");
-                    allowedTitles.Add("SCENENAME_WorldMap");
+                    AddRegionToHintsAndTitles("SCENENAME_WhalingStation", "HINT_WhalingStationRegion");
+                    AddRegionToHintsAndTitles("SCENENAME_WorldMap", "HINT_LoreMining");
                     if (Settings.settings.cHints)
                     {
-                        allowedHints.Add("FUAR_WhalingStationRegionHint1");
-                        allowedTitles.Add("SCENENAME_WhalingStation");
-                        allowedHints.Add("FUAR_WhalingStationRegionLore1");
-                        allowedTitles.Add("SCENENAME_WhalingStation");
-                        allowedHints.Add("FUAR_WhalingStationRegionLore2");
-                        allowedTitles.Add("SCENENAME_WhalingStation");
+                        AddRegionToHintsAndTitles("SCENENAME_WhalingStation", "FUAR_WhalingStationRegionHint1");
+                        AddRegionToHintsAndTitles("SCENENAME_WhalingStation", "FUAR_WhalingStationRegionLore1");
+                        AddRegionToHintsAndTitles("SCENENAME_WhalingStation", "FUAR_WhalingStationRegionLore2");
                     }
                     break;
                 case "RiverValleyRegion":
-                    //add HRV hints to main list
-                    allowedHints.Add("HINT_RiverValleyRegion");
-                    allowedTitles.Add("SCENENAME_RiverValleyRegion");
-                    allowedHints.Add("HINT_RegionDifference");
-                    allowedTitles.Add("SCENENAME_RiverValleyRegion");
+                    AddRegionToHintsAndTitles("SCENENAME_RiverValleyRegion", "HINT_RiverValleyRegion");
+                    AddRegionToHintsAndTitles("SCENENAME_RiverValleyRegion", "HINT_RegionDifference");
                     if (Settings.settings.cHints)
                     {
-                        allowedHints.Add("FUAR_RiverValleyRegionHint1");
-                        allowedTitles.Add("SCENENAME_RiverValleyRegion");
-                        allowedHints.Add("FUAR_RiverValleyRegionHint2");
-                        allowedTitles.Add("SCENENAME_RiverValleyRegion");
-                        allowedHints.Add("FUAR_RiverValleyRegionHint3");
-                        allowedTitles.Add("FUAR_RiverValleyRegionHint3Title");
+                        AddRegionToHintsAndTitles("SCENENAME_RiverValleyRegion", "FUAR_RiverValleyRegionHint1");
+                        AddRegionToHintsAndTitles("SCENENAME_RiverValleyRegion", "FUAR_RiverValleyRegionHint2");
+                        AddRegionToHintsAndTitles("FUAR_RiverValleyRegionHint3Title", "FUAR_RiverValleyRegionHint3");
                     }
                     break;
                 case "TracksRegion":
-                    //add BR hints to main list
-                    allowedHints.Add("HINT_TracksRegion");
-                    allowedTitles.Add("SCENENAME_Railway");
-                    allowedHints.Add("HINT_LoreEarthquakes");
-                    allowedTitles.Add("SCENENAME_Railway");
+                    AddRegionToHintsAndTitles("SCENENAME_Railway", "HINT_TracksRegion");
+                    AddRegionToHintsAndTitles("SCENENAME_Railway", "HINT_LoreEarthquakes");
                     if (Settings.settings.cHints)
                     {
-                        allowedHints.Add("FUAR_TracksRegionHint1");
-                        allowedTitles.Add("SCENENAME_Railway");
-                        allowedHints.Add("FUAR_TracksRegionLore1");
-                        allowedTitles.Add("SCENENAME_Railway");
+                        AddRegionToHintsAndTitles("SCENENAME_Railway", "FUAR_TracksRegionHint1");
+                        AddRegionToHintsAndTitles("SCENENAME_Railway", "FUAR_TracksRegionLore1");
                     }
                     break;
                 case "RavineTransitionRegion":
-                    //add Ravine hints to main list
-                    allowedHints.Add("HINT_LakeRegion");
-                    allowedTitles.Add("GAMEPLAY_MysteryLake");
+                    AddRegionToHintsAndTitles("GAMEPLAY_MysteryLake", "HINT_LakeRegion");
                     break;
                 case "AshCanyonRegion":
-                    //add Ravine hints to main list
-                    allowedHints.Add("HINT_RegionDifference");
-                    allowedTitles.Add("SCENENAME_AshCanyon");
+                    AddRegionToHintsAndTitles("SCENENAME_AshCanyon", "HINT_RegionDifference");
                     if (Settings.settings.cHints)
                     {
-                        allowedHints.Add("FUAR_AshCanyonRegionHint1");
-                        allowedTitles.Add("SCENENAME_AshCanyon");
+                        AddRegionToHintsAndTitles("SCENENAME_AshCanyon", "FUAR_AshCanyonRegionHint1");
                     }
                     break;
                 case "CanneryRegion":
-                    //add BI hints to main list
                     if (Settings.settings.cHints)
                     {
-                        allowedHints.Add("FUAR_BleakInletRegionHint1");
-                        allowedTitles.Add("SCENENAME_CanneryRegion");
-                        allowedHints.Add("FUAR_BleakInletRegionLore1");
-                        allowedTitles.Add("SCENENAME_CanneryRegion");
+                        AddRegionToHintsAndTitles("SCENENAME_CanneryRegion", "FUAR_BleakInletRegionHint1");
+                        AddRegionToHintsAndTitles("SCENENAME_CanneryRegion", "FUAR_BleakInletRegionLore1");
                     }
                     break;
                 case "BlackrockRegion":
-                    //add BR hints to main list
-                    allowedHints.Add("HINT_BlackrockMountain");
-                    allowedTitles.Add("HINT_BlackrockMountain_title");
-                    allowedHints.Add("HINT_BlackrockBrokenRoads");
-                    allowedTitles.Add("HINT_BlackrockBrokenRoads_title");
+                    AddRegionToHintsAndTitles("HINT_BlackrockMountain_title", "HINT_BlackrockMountain");
+                    AddRegionToHintsAndTitles("HINT_BlackrockBrokenRoads_title", "HINT_BlackrockBrokenRoads");
                     if (Settings.settings.cHints)
                     {
-                        allowedHints.Add("HINT_BlackrockLore1");
-                        allowedTitles.Add("STORY_jnl_BlackRock_Title");
+                        AddRegionToHintsAndTitles("STORY_jnl_BlackRock_Title", "HINT_BlackrockLore1");
                     }
                     break;
                 case "LongRailTransitionZone":
-                    allowedHints.Add("FUAR_FarRangeBranchLineHint1");
-                    allowedTitles.Add("FUAR_FarRangeBranchLineTitle");
-                    allowedHints.Add("FUAR_FarRangeBranchLineHint2");
-                    allowedTitles.Add("FUAR_FarRangeBranchLineTitle");
-                    allowedHints.Add("FUAR_FarTerritoryLore1");
-                    allowedTitles.Add("FUAR_FarTerritoryTitle");
-                    allowedHints.Add("FUAR_FarRangeLore1");
-                    allowedTitles.Add("FUAR_FarRangeTitle");
+                    AddRegionToHintsAndTitles("FUAR_FarRangeBranchLineTitle", "FUAR_FarRangeBranchLineHint1");
+                    AddRegionToHintsAndTitles("FUAR_FarRangeBranchLineTitle", "FUAR_FarRangeBranchLineHint2");
+                    AddRegionToHintsAndTitles("FUAR_FarTerritoryTitle", "FUAR_FarTerritoryLore1");
+                    AddRegionToHintsAndTitles("FUAR_FarRangeTitle", "FUAR_FarRangeLore1");
                     break;
                 case "HubRegion":
-                    allowedHints.Add("FUAR_FarTerritoryLore1");
-                    allowedTitles.Add("FUAR_FarTerritoryTitle");
-                    allowedHints.Add("FUAR_FarRangeLore1");
-                    allowedTitles.Add("FUAR_FarRangeTitle");
-                    allowedHints.Add("FUAR_TransferPassHint");
-                    allowedTitles.Add("FUAR_TransferPassTitle");
+                    AddRegionToHintsAndTitles("FUAR_FarTerritoryTitle", "FUAR_FarTerritoryLore1");
+                    AddRegionToHintsAndTitles("FUAR_FarRangeTitle", "FUAR_FarRangeLore1");
+                    AddRegionToHintsAndTitles("FUAR_TransferPassTitle", "FUAR_TransferPassHint");
                     break;
                 case "AirfieldRegion":
-                    allowedHints.Add("FUAR_FarTerritoryLore1");
-                    allowedTitles.Add("FUAR_FarTerritoryTitle");
-                    allowedHints.Add("FUAR_FarRangeLore1");
-                    allowedTitles.Add("FUAR_FarRangeTitle");
-                    allowedHints.Add("FUAR_AirfieldHint1");
-                    allowedTitles.Add("FUAR_AirfieldTitle");
-                    allowedHints.Add("FUAR_AirfieldHint2");
-                    allowedTitles.Add("FUAR_AirfieldTitle");
-                    allowedHints.Add("FUAR_AirfieldLore1");
-                    allowedTitles.Add("FUAR_AirfieldLoreTitle");
-                    allowedHints.Add("FUAR_GlimmerFogHint1");
-                    allowedTitles.Add("FUAR_GlimmerFogTitle");
-                    allowedHints.Add("FUAR_GlimmerFogHint2");
-                    allowedTitles.Add("FUAR_GlimmerFogTitle");
-                    allowedHints.Add("FUAR_InsomniaHint");
-                    allowedTitles.Add("FUAR_InsomniaTitle");
+                    AddRegionToHintsAndTitles("FUAR_FarTerritoryTitle", "FUAR_FarTerritoryLore1");
+                    AddRegionToHintsAndTitles("FUAR_FarRangeTitle", "FUAR_FarRangeLore1");
+                    AddRegionToHintsAndTitles("FUAR_AirfieldTitle", "FUAR_AirfieldHint1");
+                    AddRegionToHintsAndTitles("FUAR_AirfieldTitle", "FUAR_AirfieldHint2");
+                    AddRegionToHintsAndTitles("FUAR_AirfieldLoreTitle", "FUAR_AirfieldLore1");
+                    AddRegionToHintsAndTitles("FUAR_GlimmerFogTitle", "FUAR_GlimmerFogHint1");
+                    AddRegionToHintsAndTitles("FUAR_GlimmerFogTitle", "FUAR_GlimmerFogHint2");
+                    AddRegionToHintsAndTitles("FUAR_InsomniaTitle", "FUAR_InsomniaHint");
+                    break;
+                case "MiningRegion":
+                    AddRegionToHintsAndTitles("FUAR_FarTerritoryTitle", "FUAR_FarTerritoryLore1");
+                    AddRegionToHintsAndTitles("FUAR_FarRangeTitle", "FUAR_FarRangeLore1");
+                    AddRegionToHintsAndTitles("FUAR_GlimmerFogTitle", "FUAR_GlimmerFogHint1");
+                    AddRegionToHintsAndTitles("FUAR_GlimmerFogTitle", "FUAR_GlimmerFogHint2");
+                    AddRegionToHintsAndTitles("FUAR_InsomniaTitle", "FUAR_InsomniaHint");
+                    AddRegionToHintsAndTitles("FUAR_ZCTitle", "FUAR_ZCHint1");
+                    AddRegionToHintsAndTitles("FUAR_ZCTitle", "FUAR_ZCHint2");
+                    AddRegionToHintsAndTitles("FUAR_LoreTitle1", "FUAR_ZCLoreHint1");
+                    AddRegionToHintsAndTitles("FUAR_LoreTitle1", "FUAR_ZCHint2");
+                    AddRegionToHintsAndTitles("FUAR_ZCTitle", "FUAR_PoisonWolfHint");
+                    AddRegionToHintsAndTitles("FUAR_LoreTitle1", "FUAR_PoisonWolfHint");
+                    AddRegionToHintsAndTitles("FUAR_RespiratorTitle", "FUAR_RespiratorHint1");
+                    AddRegionToHintsAndTitles("FUAR_LoreTitle1", "FUAR_RespiratorHint1");
+                    AddRegionToHintsAndTitles("FUAR_RespiratorTitle", "FUAR_RespiratorHint2");
                     break;
                 default:
-                    allowedHints.Add("HINT_RegionDifference");
-                    allowedTitles.Add("SCENENAME_WorldMap");
+                    AddRegionToHintsAndTitles("SCENENAME_WorldMap", "HINT_RegionDifference");
                     break;
-
             }
         }
+
+        static void AddRegionToHintsAndTitles(string hint, string title)
+        {
+            hintsAndTitles.Add(Tuple.Create(title, hint));
+        }
+
         public static void LoadLocalizations()
         {
             var JSONfile = "ImprovedLoadingScreens.Localization.json";

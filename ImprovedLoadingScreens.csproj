@@ -9,14 +9,13 @@
 
 	<PropertyGroup>
 		<TheLongDarkPath>C:\Program Files (x86)\Steam\steamapps\common\TheLongDark</TheLongDarkPath>
-		<MelonLoaderPath>$(TheLongDarkPath)\MelonLoader\net6</MelonLoaderPath>
 		<ModsPath>$(TheLongDarkPath)\Mods</ModsPath>
 	</PropertyGroup>
 
 	<!--This is the of packages that the mod references.-->
 	<ItemGroup>
 		<!--This package contains almost everything a person could possibly need to reference while modding.-->
-		<PackageReference Include="STBlade.Modding.TLD.Il2CppAssemblies.Windows" Version="2.23.0" />
+		<PackageReference Include="STBlade.Modding.TLD.Il2CppAssemblies.Windows" Version="2.25.0" />
 		<PackageReference Include="STBlade.Modding.TLD.ModSettings" Version="1.9.0" />
 		<PackageReference Include="STBlade.Modding.TLD.LocalizationUtilities" Version="2.0.0" />
 		<!--The package version here may be outdated and need to be updated. Visual Studio can update package versions automatically.-->
@@ -24,20 +23,12 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <None Remove="backgroundsbundle" />
-	  <None Remove="Localization.json" />
-	  <None Remove="testbundle" />
-	</ItemGroup>
-	
-	<ItemGroup>
 	  <EmbeddedResource Include="backgroundsbundle" />
 	  <EmbeddedResource Include="Localization.json" />
 	</ItemGroup>
- 
-	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-		<DebugType>full</DebugType>
-	</PropertyGroup>
-	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-		<DebugType>pdbonly</DebugType>
-	</PropertyGroup>
+
+	<Target Name="PostBuild" AfterTargets="PostBuildEvent">
+		<!-- This copies the mods files to the games mod dir -->
+		<Copy SourceFiles="$(TargetPath)" DestinationFolder="$(TheLongDarkPath)/Mods" />
+	</Target>
 </Project>
