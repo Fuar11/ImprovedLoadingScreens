@@ -26,7 +26,7 @@ namespace ImprovedLoadingScreens
             Debug.Log($"[{Info.Name}] Version {Info.Version} loaded!");
             Settings.onLoad();
 
-            assetBundle = LoadAssetBundle("ImprovedLoadingScreens.backgroundsbundle");
+            assetBundle = LoadAssetBundle("ImprovedLoadingScreens.improvedloadingscreens");
             //GetAssetNames(assetBundle);
 
             Patches.LoadLocalizations();
@@ -43,15 +43,5 @@ namespace ImprovedLoadingScreens
                 ? AssetBundle.LoadFromMemory(memoryStream.ToArray())
                 : throw new System.Exception("No data loaded!");
         }
-
-        private static void GetAssetNames(AssetBundle assetBundle)
-        {
-            foreach (string ass in assetBundle.GetAllAssetNames())
-            {
-                MelonLoader.MelonLogger.Msg("Assets: {0}", ass);
-            }
-        }
-
-
     }
 }

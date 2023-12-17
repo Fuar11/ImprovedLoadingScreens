@@ -489,7 +489,44 @@
     "English": "Crafted from deerskin, gut and saplings, the Travois is a useful tool for any survivor looking to drag a heavy load of gear across vast distances.",
     "French": "Fabriqué à partir de peau de cerf, de boyaux et de jeunes arbres, le Travois est un outil utile pour tout survivant cherchant à traîner une lourde charge d'équipement sur de vastes distances.",
     "Turkish": "Geyik derisinden, bağırsaktan ve fidanlardan üretilen Travois, ağır bir ekipmanı geniş mesafeler boyunca sürüklemek isteyen hayatta kalanlar için kullanışlı bir araçtır."
+  },
+
+  "FUAR_InsulatedFlaskTitle": {
+    "English": "Insulated Flask",
+    "French": "Fiole Isotherme",
+    "Turkish": "Yalıtımlı şişe"
+  },
+
+  "FUAR_InsulatedFlaskHint1": {
+    "English": "A heat-retaining thermos that can be used to keep drinks and other liquids warm for an extended period of time. Perfect for long days out in the cold.",
+    "French": "Un thermos conservant la chaleur qui peut être utilisé pour garder les boissons et autres liquides au chaud pendant une période prolongée. Parfait pour les longues journées dans le froid.",
+    "Turkish": "İçecekleri ve diğer sıvıları uzun süre sıcak tutmak için kullanılabilen, ısıyı koruyan bir termos. Soğukta uzun günler geçirmek için mükemmeldir."
+  },
+
+  "FUAR_CarcassHarvestTitle": {
+    "English": "Field Dressing",
+    "French": "Récolte des Carcasses",
+    "Turkish": "Saha Pansumanı"
+  },
+
+  "FUAR_CarcassHarvestHint1": {
+    "English": "When harvesting a carcass, you must first field dress the animal by making an incision with a bladed tool. Afterwards you may harvest the carcass without a tool, provided it's not frozen.",
+    "French": "Lors de la récolte d'une carcasse, vous devez d'abord panser l'animal sur le terrain en pratiquant une incision avec un outil à lame. Vous pourrez ensuite récolter la carcasse sans outil, à condition qu'elle ne soit pas congelée.",
+    "Turkish": "Bir karkas hasat ederken, öncelikle bıçaklı bir aletle bir kesi yaparak hayvanı sahada giydirmelisiniz. Daha sonra donmamış olması koşuluyla karkası alet kullanmadan hasat edebilirsiniz."
+  },
+
+  "FUAR_PtarmiganTitle": {
+    "English": "Ptarmigan",
+    "French": "Lagopède",
+    "Turkish": "Ptarmigan"
+  },
+
+  "FUAR_PtarmiganHint1": {
+    "English": "A small winter bird that gathers in flocks at high elevations. It's meat can be a source of food or boiled into a broth.",
+    "French": "Un petit oiseau hivernant qui se rassemble en groupes à haute altitude. Sa viande peut être une source de nourriture ou bouillie dans un bouillon.",
+    "Turkish": "Yüksek rakımlarda sürüler halinde toplanan küçük bir kış kuşu. Eti bir besin kaynağı olabilir veya et suyuna kaynatılabilir."
   }
+
 
 
 

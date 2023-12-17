@@ -12,6 +12,16 @@
 		<ModsPath>$(TheLongDarkPath)\Mods</ModsPath>
 	</PropertyGroup>
 
+	<ItemGroup>
+	  <Compile Remove="Unity\**" />
+	  <EmbeddedResource Remove="Unity\**" />
+	  <None Remove="Unity\**" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Remove="improvedloadingscreens" />
+	</ItemGroup>
+
 	<!--This is the of packages that the mod references.-->
 	<ItemGroup>
 		<!--This package contains almost everything a person could possibly need to reference while modding.-->
@@ -23,7 +33,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <EmbeddedResource Include="backgroundsbundle" />
+	  <EmbeddedResource Include="improvedloadingscreens" />
 	  <EmbeddedResource Include="Localization.json" />
 	</ItemGroup>
 

@@ -361,3 +361,4 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/Unity/Improved Loading Screens/Library/PackageCache/com.unity.visualscripting@1.7.8/Runtime/VisualScripting.Core/Events/MessageListeners

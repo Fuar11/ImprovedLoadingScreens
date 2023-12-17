@@ -44,10 +44,10 @@ namespace ImprovedLoadingScreens
         [Choice("Disabled", "Enabled")]
         public bool hints = true;
 
-        [Name("Custom Hints")]
-        [Description("Enabled or Disable custom loading screen hints from this mod.")]
+        [Name("Beginner Hints")]
+        [Description("Enabled or Disable loading screen hints directed towards beginners.")]
         [Choice("Disabled", "Enabled")]
-        public bool cHints = true;
+        public bool bHints = true;
 
         protected override void OnChange(FieldInfo field, object oldValue, object newValue)
         {
@@ -69,7 +69,7 @@ namespace ImprovedLoadingScreens
 
             SetFieldVisible(nameof(hints), Settings.settings.active != Active.Disabled && backgrounds);
 
-            SetFieldVisible(nameof(cHints), Settings.settings.active != Active.Disabled && hints && backgrounds);
+            SetFieldVisible(nameof(bHints), Settings.settings.active != Active.Disabled && hints && backgrounds);
 
 
         }
