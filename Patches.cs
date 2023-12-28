@@ -525,7 +525,7 @@ namespace ImprovedLoadingScreens
             }
         }
 
-        static void AddRegionToHintsAndTitles(string hint, string title)
+        static void AddRegionToHintsAndTitles(string title, string hint)
         {
             hintsAndTitles.Add(Tuple.Create(title, hint));
         }
