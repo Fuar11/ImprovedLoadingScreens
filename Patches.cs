@@ -16,8 +16,6 @@ namespace ImprovedLoadingScreens
     internal class Patches
     {
 
-        //refactor stuff
-
         private static List<Tuple<string, string>> hintsAndTitles = new List<Tuple<string, string>>();
 
         private static string tempRegion = "";
@@ -552,6 +550,15 @@ namespace ImprovedLoadingScreens
                     AddRegionToHintsAndTitles("FUAR_RespiratorTitle", "FUAR_RespiratorHint1");
                     AddRegionToHintsAndTitles("FUAR_LoreTitle1", "FUAR_RespiratorHint1");
                     AddRegionToHintsAndTitles("FUAR_RespiratorTitle", "FUAR_RespiratorHint2");
+                    break;
+                case "MountainPassRegion":
+                    AddRegionToHintsAndTitles("FUAR_FarTerritoryTitle", "FUAR_FarTerritoryLore1");
+                    AddRegionToHintsAndTitles("FUAR_FarRangeTitle", "FUAR_FarRangeLore1");
+                    AddRegionToHintsAndTitles("FUAR_GlimmerFogTitle", "FUAR_GlimmerFogHint1");
+                    AddRegionToHintsAndTitles("FUAR_GlimmerFogTitle", "FUAR_GlimmerFogHint2");
+                    AddRegionToHintsAndTitles("FUAR_SPTitle", "FUAR_SPHint1");
+                    AddRegionToHintsAndTitles("FUAR_SPTitle", "FUAR_SPHint2");
+                    AddRegionToHintsAndTitles("FUAR_SPTitle", "FUAR_SPHint3");
                     break;
                 default:
                     AddRegionToHintsAndTitles("SCENENAME_WorldMap", "HINT_RegionDifference");

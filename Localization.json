@@ -525,6 +525,32 @@
     "English": "A small winter bird that gathers in flocks at high elevations. It's meat can be a source of food or boiled into a broth.",
     "French": "Un petit oiseau hivernant qui se rassemble en groupes à haute altitude. Sa viande peut être une source de nourriture ou bouillie dans un bouillon.",
     "Turkish": "Yüksek rakımlarda sürüler halinde toplanan küçük bir kış kuşu. Eti bir besin kaynağı olabilir veya et suyuna kaynatılabilir."
+  },
+
+  "FUAR_SPTitle": {
+    "English": "Sundered Pass",
+    "French": "Passe brisée",
+    "Turkish": "Parçalanmış Geçiş"
+  },
+
+  "FUAR_SPHint1": {
+    "English": "Once a favoured destination for climbers, this isolated region of the far range has been devastated by extreme avalanche activity. Beyond the lower elevations and treeline, minimal shelters are available. Including the long abandoned weather station.",
+    "French": "Autrefois destination privilégiée des grimpeurs, cette région isolée du lointain massif a été dévastée par une activité avalancheuse extrême. Au-delà des altitudes inférieures et de la limite forestière, un minimum d’abris sont disponibles. Y compris la station météorologique abandonnée depuis longtemps.",
+    "Turkish": "Bir zamanlar dağcılar için tercih edilen bir destinasyon olan bu uzak dağlık bölge, aşırı çığ faaliyetleri nedeniyle harap oldu. Alçak rakımların ve ağaçlıkların ötesinde minimal barınaklar mevcuttur. Uzun süredir terk edilmiş meteoroloji istasyonu da dahil."
+  },
+
+  "FUAR_SPHint2": {
+    "English": "Steep climbs and some of the rockiest terrain to be found on Great Bear Island hide a remote installation that holds secrets to the Island's dark history.",
+    "French": "Des montées abruptes et certains des terrains les plus rocheux de l'île Great Bear cachent une installation isolée qui recèle les secrets de la sombre histoire de l'île.",
+    "Turkish": "Büyük Ayı Adası'ndaki dik tırmanışlar ve en kayalık arazilerden bazıları, adanın karanlık tarihine dair sırlar barındıran uzak bir kurulumu gizliyor."
+  },
+
+  "FUAR_SPHint3": {
+    "English": "An isolated alpine region deep along the far range, this avalanche prone mountain pass once allowed access to the interior mountains of Great Bear. Now, skilled survivors will find shelter from the harsh weather in the few avalanche cabins and settlements that dot it's cliffs and valleys. ",
+    "French": "Une région alpine isolée au plus profond de la chaîne lointaine, ce col de montagne sujet aux avalanches permettait autrefois d'accéder aux montagnes intérieures du Grand Ours. Désormais, les survivants expérimentés trouveront un abri contre les intempéries dans les quelques cabanes et colonies d'avalanche qui parsèment les falaises et les vallées.",
+    "Turkish": "Uzak sıradağların derinliklerinde izole bir dağ bölgesi olan bu çığ eğilimli dağ geçidi, bir zamanlar Büyük Ayı'nın iç dağlarına erişim sağlıyordu. Artık becerikli hayatta kalanlar, sert hava koşullarından korunmak için birkaç çığ kulübesinde ve kayalıklarla vadilerdeki yerleşim yerlerinde sığınacak."
   }
+
+
 }
 
