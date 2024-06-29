@@ -272,6 +272,38 @@ namespace ImprovedLoadingScreens
                         allowedBackgrounds.Add("MiningRegion23");
                         allowedBackgrounds.Add("MiningRegion24");
                         break;
+                    case "MountainPassRegion":
+                        allowedBackgrounds.Add("SunderedPassRegion1");
+                        allowedBackgrounds.Add("SunderedPassRegion2");
+                        allowedBackgrounds.Add("SunderedPassRegion3");
+                        allowedBackgrounds.Add("SunderedPassRegion4");
+                        allowedBackgrounds.Add("SunderedPassRegion5");
+                        allowedBackgrounds.Add("SunderedPassRegion6");
+                        allowedBackgrounds.Add("SunderedPassRegion7");
+                        allowedBackgrounds.Add("SunderedPassRegion8");
+                        allowedBackgrounds.Add("SunderedPassRegion9");
+                        allowedBackgrounds.Add("SunderedPassRegion10");
+                        allowedBackgrounds.Add("SunderedPassRegion11");
+                        allowedBackgrounds.Add("SunderedPassRegion12");
+                        allowedBackgrounds.Add("SunderedPassRegion13");
+                        allowedBackgrounds.Add("SunderedPassRegion14");
+                        allowedBackgrounds.Add("SunderedPassRegion15");
+                        allowedBackgrounds.Add("SunderedPassRegion16");
+                        allowedBackgrounds.Add("SunderedPassRegion17");
+                        allowedBackgrounds.Add("SunderedPassRegion18");
+                        allowedBackgrounds.Add("SunderedPassRegion19");
+                        allowedBackgrounds.Add("SunderedPassRegion20");
+                        allowedBackgrounds.Add("SunderedPassRegion21");
+                        allowedBackgrounds.Add("SunderedPassRegion22");
+                        allowedBackgrounds.Add("SunderedPassRegion23");
+                        allowedBackgrounds.Add("SunderedPassRegion24");
+                        allowedBackgrounds.Add("SunderedPassRegion25");
+                        allowedBackgrounds.Add("SunderedPassRegion26");
+                        allowedBackgrounds.Add("SunderedPassRegion27");
+                        allowedBackgrounds.Add("SunderedPassRegion28");
+                        allowedBackgrounds.Add("SunderedPassRegion29");
+                        allowedBackgrounds.Add("SunderedPassRegion30");
+                        break;
 
                     default:
                         //add region non-specific backgrounds
@@ -316,6 +348,8 @@ namespace ImprovedLoadingScreens
             names.Add("RavineTransitionZone");
             names.Add("DamRiverTransitionZoneB");
             names.Add("HubRegion");
+            names.Add("MountainPassRegion");
+            
 
             return names;
         }
