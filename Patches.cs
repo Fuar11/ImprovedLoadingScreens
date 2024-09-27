@@ -302,13 +302,59 @@ namespace ImprovedLoadingScreens
                         allowedBackgrounds.Add("SunderedPassRegion29");
                         allowedBackgrounds.Add("SunderedPassRegion30");
                         break;
-
+                    case "ModPrecariousCauseway":
+                        allowedBackgrounds.Add("precariouscauseway1");
+                        allowedBackgrounds.Add("precariouscauseway2");
+                        allowedBackgrounds.Add("precariouscauseway3");
+                        allowedBackgrounds.Add("precariouscauseway4");
+                        allowedBackgrounds.Add("precariouscauseway5");
+                        allowedBackgrounds.Add("precariouscauseway6");
+                        allowedBackgrounds.Add("precariouscauseway7");
+                        break;
+                    case "ModRockyThoroughfare":
+                        allowedBackgrounds.Add("rockythoroughfare1");
+                        allowedBackgrounds.Add("rockythoroughfare2");
+                        allowedBackgrounds.Add("rockythoroughfare3");
+                        allowedBackgrounds.Add("rockythoroughfare4");
+                        allowedBackgrounds.Add("rockythoroughfare5");
+                        allowedBackgrounds.Add("rockythoroughfare6");
+                        allowedBackgrounds.Add("rockythoroughfare7");
+                        allowedBackgrounds.Add("rockythoroughfare8");
+                        break;
+                    case "ModShatteredMarsh":
+                        allowedBackgrounds.Add("shatteredmarsh1");
+                        allowedBackgrounds.Add("shatteredmarsh2");
+                        allowedBackgrounds.Add("shatteredmarsh3");
+                        allowedBackgrounds.Add("shatteredmarsh4");
+                        allowedBackgrounds.Add("shatteredmarsh5");
+                        allowedBackgrounds.Add("shatteredmarsh6");
+                        allowedBackgrounds.Add("shatteredmarsh7");
+                        allowedBackgrounds.Add("shatteredmarsh8");
+                        allowedBackgrounds.Add("shatteredmarsh9");
+                        allowedBackgrounds.Add("shatteredmarsh10");
+                        allowedBackgrounds.Add("shatteredmarsh11");
+                        allowedBackgrounds.Add("shatteredmarsh12");
+                        allowedBackgrounds.Add("shatteredmarsh13");
+                        break;
+                    case "ModForsakenShore":
+                        allowedBackgrounds.Add("forsakenshore1");
+                        allowedBackgrounds.Add("forsakenshore2");
+                        allowedBackgrounds.Add("forsakenshore3");
+                        allowedBackgrounds.Add("forsakenshore4");
+                        allowedBackgrounds.Add("forsakenshore5");
+                        allowedBackgrounds.Add("forsakenshore6");
+                        allowedBackgrounds.Add("forsakenshore7");
+                        allowedBackgrounds.Add("forsakenshore8");
+                        allowedBackgrounds.Add("forsakenshore9");
+                        allowedBackgrounds.Add("forsakenshore10");
+                        allowedBackgrounds.Add("forsakenshore11");
+                        allowedBackgrounds.Add("forsakenshore12");
+                        allowedBackgrounds.Add("forsakenshore13");
+                        break;
                     default:
                         //add region non-specific backgrounds
                         break;
                 }
-
-
 
                 //override the loading screen
 
