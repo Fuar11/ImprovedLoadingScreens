@@ -549,8 +549,82 @@
     "English": "An isolated alpine region deep along the far range, this avalanche prone mountain pass once allowed access to the interior mountains of Great Bear. Now, skilled survivors will find shelter from the harsh weather in the few avalanche cabins and settlements that dot it's cliffs and valleys. ",
     "French": "Une région alpine isolée au plus profond de la chaîne lointaine, ce col de montagne sujet aux avalanches permettait autrefois d'accéder aux montagnes intérieures du Grand Ours. Désormais, les survivants expérimentés trouveront un abri contre les intempéries dans les quelques cabanes et colonies d'avalanche qui parsèment les falaises et les vallées.",
     "Turkish": "Uzak sıradağların derinliklerinde izole bir dağ bölgesi olan bu çığ eğilimli dağ geçidi, bir zamanlar Büyük Ayı'nın iç dağlarına erişim sağlıyordu. Artık becerikli hayatta kalanlar, sert hava koşullarından korunmak için birkaç çığ kulübesinde ve kayalıklarla vadilerdeki yerleşim yerlerinde sığınacak."
+  },
+
+  //TLDev
+
+  "FUAR_PCTitle": {
+    "English": "Precarious Causeway"
+  },
+
+  "FUAR_PCHint1": {
+    "English": "A long stretch of road that  bridges the gap between 'Lower Great Bear' and 'Eastern Great Bear'. This causeway saw plenty of use before the collapse and the vehicles left behind make that apparent.",
+    "French": "Un long section de route qui relie le «Lower Great Bear» au «Eastern Great Bear». Cette chaussée a été très utilisée avant l'effondrement et les véhicules abandonnés le prouvent.",
+    "Turkish": "'Lower Great Bear' ile 'Eastern Great Bear' arasındaki boşluğu kapatan uzun bir yol. Bu geçit yolu, çöküşten önce çokça kullanılmıştı ve geride bırakılan araçlar bunu açıkça gösteriyor."
+  },
+
+  "FUAR_PCHint2": {
+    "English": "The coastal highway continues along the rocky shores of this inlet that connects the south and eastern coast of Great Bear. Once a popular location for spelunkers.",
+    "French": "La route côtière continue le long des côtes rocheuses de cette crique qui relie la côte sud et la côte est de Great Bear. Autrefois un lieu prisé des spéléologues.",
+    "Turkish": "Kıyı otoyolu, Great Bear'ın güney ve doğu kıyılarını birbirine bağlayan bu koyun kayalık kıyıları boyunca devam ediyor. Bir zamanlar mağaracılar için popüler bir yerdi."
+  },
+
+  "FUAR_RTTitle": {
+    "English": "Rocky Thoroughfare"
+  },
+
+  "FUAR_RTHint1": {
+    "English": "This portion of the coastal highway is primarily known for being a small construction supplies depot -- as well as providing an impressive view of the neighboring oil rig.",
+    "French": "Cette portion de l'autoroute côtière est principalement connue pour être un petit dépôt de matériaux de construction, ainsi que pour offrir une vue impressionnante sur la plate-forme pétrolière voisine.",
+    "Turkish": "Sahil yolunun bu kısmı, esas olarak küçük bir inşaat malzemeleri deposu olmasıyla ve komşu petrol platformuna etkileyici bir manzara sunmasıyla biliniyor."
+  },
+
+  "FUAR_FSTitle": {
+    "English": "Forsaken Shore"
+  },
+
+  "FUAR_FSHint1": {
+    "English": "A sprawling snowy coastal region that has been decimated by the earthquakes. Towering rock cliffs seclude the oil rig that has crashed into the shore while on its way to be decommissioned. The inland half of this region features deep crags that pre-collapse; proved a challenge to even the most experienced rock climbers.",
+    "French": "Une vaste région côtière enneigée qui a été décimée par les tremblements de terre. D'imposantes falaises rocheuses isolent la plate-forme pétrolière qui s'est écrasée sur le rivage alors qu'elle était en route pour être démantelée. La moitié intérieure de cette région présente des falaises profondes qui s'effondrent, ce qui s'est avéré être un défi même pour les grimpeurs les plus expérimentés.",
+    "Turkish": "Depremlerle yerle bir olmuş, geniş, karlı bir kıyı bölgesi. Devrilmek üzere yola çıkarken kıyıya çarpan petrol platformunu yüksek kayalık uçurumlar çevreliyor. Bu bölgenin iç kesimlerinde, çökmeden önce derin kayalıklar bulunuyor; en deneyimli kaya tırmanıcıları için bile bir meydan okuma olduğu kanıtlandı."
+  },
+
+  "FUAR_FSHint2": {
+    "English": "A rocky coastal region known for its towering cliffs and icy waterfalls. A frequent destination for avid fishermen. ",
+    "French": "Une région côtière rocheuse connue pour ses falaises imposantes et ses cascades glacées. Une destination fréquente pour les pêcheurs passionnés.",
+    "Turkish": "Yüksek uçurumları ve buzlu şelaleleriyle bilinen kayalık bir kıyı bölgesi. Tutkulu balıkçıların sık sık uğradığı bir yer."
+  },
+
+  "FUAR_FSHint3": {
+    "English": "The coastal highway bisects this snowy coastal region from the rocky crag and shelf above to the icy shore below. The abandoned oil rig beckons daring survivors.",
+    "French": "La route côtière traverse cette région côtière enneigée, depuis les rochers et les plateaux qui la surplombent jusqu'au rivage gelé qui se trouve en contrebas. La plate-forme pétrolière abandonnée attire les survivants courageux.",
+    "Turkish": "Kıyı otoyolu, bu karlı kıyı bölgesini, yukarıdaki kayalık uçurum ve raftan aşağıdaki buzlu kıyıya kadar ikiye böler. Terk edilmiş petrol platformu, cesur kurtulanları çağırır."
+  },
+
+  "FUAR_SMTitle": {
+    "English": "Shattered Marsh"
+  },
+
+  "FUAR_SMHint1": {
+    "English": "An expanse of treacherous marshland that has been ravaged by wildfire. The mountains that line this location feature many transition areas to surrounding regions, as well harbor a secret to uncover.",
+    "French": "Une étendue de marais dangereux qui a été ravagée par un incendie de forêt. Les montagnes qui bordent cet endroit comportent de nombreuses zones de transition vers les régions environnantes et recèlent également un secret à découvrir.",
+    "Turkish": "Orman yangınları tarafından harap edilmiş tehlikeli bataklık alanı. Bu konumu çevreleyen dağlar, çevredeki bölgelere birçok geçiş alanı sunar ve ayrıca keşfedilecek bir sırrı barındırır."
+  },
+
+  "FUAR_SMHint2": {
+    "English": "An open marshland with pockets of infrastructure once reliant on construction supplies from the coast. Survivors may find ample shelter in the surrounding hills and mountains.",
+    "French": "Un marais ouvert avec des zones d'infrastructures autrefois dépendantes des matériaux de construction provenant de la côte. Les survivants peuvent trouver un abri suffisant dans les collines et les montagnes environnantes.",
+    "Turkish": "Bir zamanlar kıyıdan gelen inşaat malzemelerine bağımlı olan altyapı ceplerine sahip açık bir bataklık. Kurtulanlar çevredeki tepelerde ve dağlarda yeterli barınak bulabilirler."
+  },
+
+  "FUAR_TLDevTitle": {
+    "English": "Eastern Great Bear"
+  },
+
+  "FUAR_TLDevLore1": {
+    "English": "Along the eastern coast of Great Bear lies a range of mountains bordering the coast with rocky cliffs and icy waterfalls. The coastal highway and trans-island railway runs through this region of Great Bear.",
+    "French": "Le long de la côte est du Grand Ours se trouve une chaîne de montagnes bordant la côte avec des falaises rocheuses et des cascades glacées. La route côtière et le chemin de fer transinsulaire traversent cette région du Grand Ours.",
+    "Turkish": "Great Bear'ın doğu kıyısı boyunca, kayalık uçurumlar ve buzlu şelalelerle kıyıyı sınırlayan bir dizi dağ uzanır. Kıyı otoyolu ve adalar arası demir yolu Great Bear'ın bu bölgesinden geçer."
   }
-
-
 }
 

@@ -393,7 +393,12 @@ namespace ImprovedLoadingScreens
             names.Add("DamRiverTransitionZoneB");
             names.Add("HubRegion");
             names.Add("MountainPassRegion");
-            
+
+            //TLDev
+            names.Add("ModPrecariousCauseway");
+            names.Add("ModShatteredMarsh");
+            names.Add("ModForsakenShore");
+            names.Add("ModRockyThoroughfare");
 
             return names;
         }
@@ -605,6 +610,27 @@ namespace ImprovedLoadingScreens
                     AddRegionToHintsAndTitles("FUAR_SPTitle", "FUAR_SPHint1");
                     AddRegionToHintsAndTitles("FUAR_SPTitle", "FUAR_SPHint2");
                     AddRegionToHintsAndTitles("FUAR_SPTitle", "FUAR_SPHint3");
+                    break;
+                //TLDev
+                case "ModPrecariousCauseway":
+                    AddRegionToHintsAndTitles("FUAR_TLDevTitle", "FUAR_TLDevLore1");
+                    AddRegionToHintsAndTitles("FUAR_PCTitle", "FUAR_PCHint1");
+                    AddRegionToHintsAndTitles("FUAR_PCTitle", "FUAR_PCHint2");
+                    break;
+                case "ModRockyThoroughfare":
+                    AddRegionToHintsAndTitles("FUAR_TLDevTitle", "FUAR_TLDevLore1");
+                    AddRegionToHintsAndTitles("FUAR_RTTitle", "FUAR_RTHint1");
+                    break;
+                case "ModShatteredMarsh":
+                    AddRegionToHintsAndTitles("FUAR_TLDevTitle", "FUAR_TLDevLore1");
+                    AddRegionToHintsAndTitles("FUAR_SMTitle", "FUAR_SMHint1");
+                    AddRegionToHintsAndTitles("FUAR_SMTitle", "FUAR_SMHint2");
+                    break;
+                case "ModForsakenShore":
+                    AddRegionToHintsAndTitles("FUAR_TLDevTitle", "FUAR_TLDevLore1");
+                    AddRegionToHintsAndTitles("FUAR_FSTitle", "FUAR_FSHint1");
+                    AddRegionToHintsAndTitles("FUAR_FSTitle", "FUAR_FSHint2");
+                    AddRegionToHintsAndTitles("FUAR_FSTitle", "FUAR_FSHint3");
                     break;
                 default:
                     AddRegionToHintsAndTitles("SCENENAME_WorldMap", "HINT_RegionDifference");
