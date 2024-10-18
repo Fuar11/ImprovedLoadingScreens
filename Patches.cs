@@ -359,7 +359,7 @@ namespace ImprovedLoadingScreens
                 //override the loading screen
 
                 Random rando = new Random();
-                int index = rando.Next(0, allowedBackgrounds.Count + 1);
+                int index = rando.Next(0, allowedBackgrounds.Count);
 
                 __instance.m_BackgroundTexture.mainTexture = (Settings.settings.backgrounds && allowedBackgrounds.Count > 0) ? Implementation.BackgroundsAssetBundle.LoadAsset<Texture2D>(allowedBackgrounds.ElementAt(index)) : null;
             }
