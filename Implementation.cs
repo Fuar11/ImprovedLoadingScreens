@@ -26,22 +26,27 @@ namespace ImprovedLoadingScreens
             Debug.Log($"[{Info.Name}] Version {Info.Version} loaded!");
             Settings.onLoad();
 
-            assetBundle = LoadAssetBundle("ImprovedLoadingScreens.improvedloadingscreens");
+            assetBundle = LoadAssetBundleFromStream("ImprovedLoadingScreens.improvedloadingscreens");
             //GetAssetNames(assetBundle);
 
             Patches.LoadLocalizations();
 
         }
 
-        private static AssetBundle LoadAssetBundle(string path)
-        {
-            using Stream stream = Assembly.GetExecutingAssembly().GetManifestResourceStream(path);
-            MemoryStream memoryStream = new MemoryStream((int)stream.Length);
-            stream.CopyTo(memoryStream);
 
-            return memoryStream.Length != 0
-                ? AssetBundle.LoadFromMemory(memoryStream.ToArray())
-                : throw new System.Exception("No data loaded!");
+        public static AssetBundle LoadAssetBundleFromStream(string path)
+        {
+            using (Stream? stream = Assembly.GetExecutingAssembly().GetManifestResourceStream(path))
+            {
+                MemoryStream? memory = new((int)stream.Length);
+                stream!.CopyTo(memory);
+
+                Il2CppSystem.IO.MemoryStream memoryStream = new Il2CppSystem.IO.MemoryStream(memory.ToArray());
+
+                AssetBundle loadFromMemoryInternal = AssetBundle.LoadFromStream(memoryStream);
+                return loadFromMemoryInternal;
+            }
         }
+       
     }
 }
