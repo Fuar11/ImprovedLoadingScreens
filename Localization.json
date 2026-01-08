@@ -506,13 +506,13 @@
   "FUAR_CarcassHarvestTitle": {
     "English": "Field Dressing",
     "French": "Récolte des Carcasses",
-    "Turkish": "Saha Pansumanı"
+    "Turkish": "Karkas hasadı"
   },
 
   "FUAR_CarcassHarvestHint1": {
     "English": "When harvesting a carcass, you must first field dress the animal by making an incision with a bladed tool. Afterwards you may harvest the carcass without a tool, provided it's not frozen.",
     "French": "Lors de la récolte d'une carcasse, vous devez d'abord panser l'animal sur le terrain en pratiquant une incision avec un outil à lame. Vous pourrez ensuite récolter la carcasse sans outil, à condition qu'elle ne soit pas congelée.",
-    "Turkish": "Bir karkas hasat ederken, öncelikle bıçaklı bir aletle bir kesi yaparak hayvanı sahada giydirmelisiniz. Daha sonra donmamış olması koşuluyla karkası alet kullanmadan hasat edebilirsiniz."
+    "Turkish": "Bir karkas hasat ederken, öncelikle bıçaklı bir aletle bir kesik atarak hayvanın derisini ayırmalısınız. Daha sonra donmamış olması koşuluyla karkası alet kullanmadan hasat edebilirsiniz."
   },
 
   "FUAR_PtarmiganTitle": {
