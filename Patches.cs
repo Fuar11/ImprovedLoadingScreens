@@ -645,17 +645,28 @@ namespace ImprovedLoadingScreens
                 case "ModRockyThoroughfare":
                     AddRegionToHintsAndTitles("FUAR_TLDevTitle", "FUAR_TLDevLore1");
                     AddRegionToHintsAndTitles("FUAR_RTTitle", "FUAR_RTHint1");
+                    AddRegionToHintsAndTitles("FUAR_RTTitle", "FUAR_RTHint2");
+                    break;
+                case "ModProponentsReach":
+                    AddRegionToHintsAndTitles("FUAR_TLDevTitle", "FUAR_TLDevLore1");
+                    AddRegionToHintsAndTitles("FUAR_PRTitle", "FUAR_PRHint1");
+                    AddRegionToHintsAndTitles("FUAR_PRTitle", "FUAR_PRHint2");
                     break;
                 case "ModShatteredMarsh":
                     AddRegionToHintsAndTitles("FUAR_TLDevTitle", "FUAR_TLDevLore1");
                     AddRegionToHintsAndTitles("FUAR_SMTitle", "FUAR_SMHint1");
                     AddRegionToHintsAndTitles("FUAR_SMTitle", "FUAR_SMHint2");
+                    AddRegionToHintsAndTitles("FUAR_SMTitle2", "FUAR_SMHint3");
                     break;
                 case "ModForsakenShore":
                     AddRegionToHintsAndTitles("FUAR_TLDevTitle", "FUAR_TLDevLore1");
                     AddRegionToHintsAndTitles("FUAR_FSTitle", "FUAR_FSHint1");
                     AddRegionToHintsAndTitles("FUAR_FSTitle", "FUAR_FSHint2");
                     AddRegionToHintsAndTitles("FUAR_FSTitle", "FUAR_FSHint3");
+                    break;
+                case "ModMountainPass":
+                    AddRegionToHintsAndTitles("FUAR_TLDevTitle", "FUAR_TLDevLore1");
+                    AddRegionToHintsAndTitles("FUAR_MPTitle", "FUAR_MPHint1");
                     break;
                 default:
                     AddRegionToHintsAndTitles("SCENENAME_WorldMap", "HINT_RegionDifference");

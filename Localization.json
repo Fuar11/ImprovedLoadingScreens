@@ -556,7 +556,7 @@
   },
 
   "FUAR_PCHint1": {
-    "English": "A long stretch of road that  bridges the gap between 'Lower Great Bear' and 'Eastern Great Bear'. This causeway saw plenty of use before the collapse and the vehicles left behind make that apparent.",
+    "English": "A long stretch of road that bridges the gap between 'Lower Great Bear' and 'Eastern Great Bear'. This causeway saw plenty of use before the collapse and the vehicles left behind make that apparent.",
     "French": "Un long section de route qui relie le «Lower Great Bear» au «Eastern Great Bear». Cette chaussée a été très utilisée avant l'effondrement et les véhicules abandonnés le prouvent.",
     "Turkish": "'Lower Great Bear' ile 'Eastern Great Bear' arasındaki boşluğu kapatan uzun bir yol. Bu geçit yolu, çöküşten önce çokça kullanılmıştı ve geride bırakılan araçlar bunu açıkça gösteriyor."
   },
@@ -572,9 +572,15 @@
   },
 
   "FUAR_RTHint1": {
-    "English": "This portion of the coastal highway is primarily known for being a small construction supplies depot -- as well as providing an impressive view of the neighboring oil rig.",
+    "English": "This portion of the coastal highway is primarily known for being a small construction supplies depot and popular tourist and hunting location -- as well as providing an impressive view of the neighboring oil rig.",
     "French": "Cette portion de l'autoroute côtière est principalement connue pour être un petit dépôt de matériaux de construction, ainsi que pour offrir une vue impressionnante sur la plate-forme pétrolière voisine.",
     "Turkish": "Sahil yolunun bu kısmı, esas olarak küçük bir inşaat malzemeleri deposu olmasıyla ve komşu petrol platformuna etkileyici bir manzara sunmasıyla biliniyor."
+  },
+
+  "FUAR_RTHint2": {
+    "English": "The thoroughfare has been home to a wide variety of wildlife, and has attracted many tourists, hunters and biologists alike to the local hunting park.",
+    "French": "Cette voie a abrité une grande diversité de faune sauvage et a attiré aussi bien des touristes et des chasseurs que des biologistes vers la réserve de chasse locale.",
+    "Turkish": "Bu ana yol, çok çeşitli yaban hayatına ev sahipliği yapmış; yerel av parkına hem turistleri hem de avcıları ve biyologları çekmiştir."
   },
 
   "FUAR_FSTitle": {
@@ -582,7 +588,7 @@
   },
 
   "FUAR_FSHint1": {
-    "English": "A sprawling snowy coastal region that has been decimated by the earthquakes. Towering rock cliffs seclude the oil rig that has crashed into the shore while on its way to be decommissioned. The inland half of this region features deep crags that pre-collapse; proved a challenge to even the most experienced rock climbers.",
+    "English": "A sprawling snowy coastal region that has been decimated by earthquakes. Towering rock cliffs seclude the oil rig that has crashed into the shore while on its way to be decommissioned. The inland half of this region features deep crags that pre-collapse; proved a challenge to even the most experienced rock climbers.",
     "French": "Une vaste région côtière enneigée qui a été décimée par les tremblements de terre. D'imposantes falaises rocheuses isolent la plate-forme pétrolière qui s'est écrasée sur le rivage alors qu'elle était en route pour être démantelée. La moitié intérieure de cette région présente des falaises profondes qui s'effondrent, ce qui s'est avéré être un défi même pour les grimpeurs les plus expérimentés.",
     "Turkish": "Depremlerle yerle bir olmuş, geniş, karlı bir kıyı bölgesi. Devrilmek üzere yola çıkarken kıyıya çarpan petrol platformunu yüksek kayalık uçurumlar çevreliyor. Bu bölgenin iç kesimlerinde, çökmeden önce derin kayalıklar bulunuyor; en deneyimli kaya tırmanıcıları için bile bir meydan okuma olduğu kanıtlandı."
   },
@@ -604,7 +610,7 @@
   },
 
   "FUAR_SMHint1": {
-    "English": "An expanse of treacherous marshland that has been ravaged by wildfire. The mountains that line this location feature many transition areas to surrounding regions, as well harbor a secret to uncover.",
+    "English": "An expanse of treacherous marshland that has been ravaged by wildfire. The mountains that surround the basin feature many transitions to surrounding regions, as well harbor a secret to uncover.",
     "French": "Une étendue de marais dangereux qui a été ravagée par un incendie de forêt. Les montagnes qui bordent cet endroit comportent de nombreuses zones de transition vers les régions environnantes et recèlent également un secret à découvrir.",
     "Turkish": "Orman yangınları tarafından harap edilmiş tehlikeli bataklık alanı. Bu konumu çevreleyen dağlar, çevredeki bölgelere birçok geçiş alanı sunar ve ayrıca keşfedilecek bir sırrı barındırır."
   },
@@ -613,6 +619,42 @@
     "English": "An open marshland with pockets of infrastructure once reliant on construction supplies from the coast. Survivors may find ample shelter in the surrounding hills and mountains.",
     "French": "Un marais ouvert avec des zones d'infrastructures autrefois dépendantes des matériaux de construction provenant de la côte. Les survivants peuvent trouver un abri suffisant dans les collines et les montagnes environnantes.",
     "Turkish": "Bir zamanlar kıyıdan gelen inşaat malzemelerine bağımlı olan altyapı ceplerine sahip açık bir bataklık. Kurtulanlar çevredeki tepelerde ve dağlarda yeterli barınak bulabilirler."
+  },
+
+  "FUAR_SMTitle2": {
+    "English": "Town of Lowell"
+  },
+
+  "FUAR_SMHint3": {
+    "English": "The small pop-up town of Lowell once served as a minor population center for hardy oil workers, fishermen and loggers, located deep in the marshland. It's livelihood came to an end with the wildfire that ravaged the basin.",
+    "French": "La ville de Lowell fut autrefois un petit foyer de peuplement pour des travailleurs robustes — ouvriers pétroliers, pêcheurs et bûcherons — établis au cœur des marécages. Son activité prit fin avec l'incendie qui ravagea le bassin.",
+    "Turkish": "Lowell kasabası bir zamanlar, bataklık arazinin derinliklerinde yer alan; dayanıklı petrol işçileri, balıkçılar ve tomrukçular için küçük bir yerleşim merkeziydi. Kasabanın geçim kaynağı, havzayı kasıp kavuran orman yangınıyla birlikte sona erdi."
+  },
+
+  "FUAR_MPTitle": {
+    "English": "Mountain Pass"
+  },
+
+  "FUAR_MPHint1": {
+    "English": "A sprawling rocky region with winding fissures carved out by a river thousands of years prior. This region features a large basin, ample hunting space, a train yard, and the railway track that bisects it all.",
+    "French": "Une vaste étendue rocheuse sillonnée de failles sinueuses, creusées par une rivière il y a des millénaires. La région comprend un grand bassin, de vastes zones de chasse, une gare de triage et la voie ferrée qui la traverse de part en part.",
+    "Turkish": "Binlerce yıl önce bir nehir tarafından oyulmuş kıvrımlı yarıkların bulunduğu, geniş ve kayalık bir bölge. Bu bölge; büyük bir havzaya, geniş bir avlanma alanına, bir tren sahasına ve tüm bu alanı ikiye bölen bir demiryolu hattına ev sahipliği yapmaktadır."
+  },
+
+  "FUAR_PRTitle": {
+    "English": "Proponent's Reach"
+  },
+
+  "FUAR_PRHint1": {
+    "English": "A small section of highway and outlet of a large mountain river where one of the old mainland connector bridges sits idly, ever imposing as it stretches into the horizon.",
+    "French": "Un court tronçon de route et l'embouchure d'une grande rivière de montagne, où se dresse, immobile, l'un des anciens ponts reliant le continent ; une structure toujours aussi imposante qui s'étire vers l'horizon.",
+    "Turkish": "Otoyolun küçük bir bölümü ve büyük bir dağ nehrinin çıkış noktası; burada, anakaraya bağlayan eski köprülerden biri, ufka doğru uzanırken sergilediği heybetli duruşuyla öylece atıl bir halde duruyor."
+  },
+
+  "FUAR_PRHint2": {
+    "English": "Once a hotspot of traffic to and from the mainland, the mainland connector bridge now crumbles under it's own weight, leaving survivors stranded on Great Bear.",
+    "French": "Autrefois plaque tournante du trafic vers et depuis le continent, le pont de liaison s'effondre désormais sous son propre poids, laissant les survivants bloqués sur Great Bear.",
+    "Turkish": "Kıtadaki trafik turnuvası sırasında, irtibat noktası s'effondre désormais sous son propre poids, hayatta kalanları Büyük Ayı'ya bıraktı."
   },
 
   "FUAR_TLDevTitle": {
