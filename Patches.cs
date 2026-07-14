@@ -310,6 +310,10 @@ namespace ImprovedLoadingScreens
                         allowedBackgrounds.Add("precariouscauseway5");
                         allowedBackgrounds.Add("precariouscauseway6");
                         allowedBackgrounds.Add("precariouscauseway7");
+                        allowedBackgrounds.Add("precariouscauseway8");
+                        allowedBackgrounds.Add("precariouscauseway9");
+                        allowedBackgrounds.Add("precariouscauseway10");
+                        allowedBackgrounds.Add("precariouscauseway11");
                         break;
                     case "ModRockyThoroughfare":
                         allowedBackgrounds.Add("rockythoroughfare1");
@@ -320,6 +324,17 @@ namespace ImprovedLoadingScreens
                         allowedBackgrounds.Add("rockythoroughfare6");
                         allowedBackgrounds.Add("rockythoroughfare7");
                         allowedBackgrounds.Add("rockythoroughfare8");
+                        allowedBackgrounds.Add("rockythoroughfare9");
+                        allowedBackgrounds.Add("rockythoroughfare10");
+                        allowedBackgrounds.Add("rockythoroughfare11");
+                        allowedBackgrounds.Add("rockythoroughfare12");
+                        allowedBackgrounds.Add("rockythoroughfare13");
+                        allowedBackgrounds.Add("rockythoroughfare14");
+                        allowedBackgrounds.Add("rockythoroughfare15");
+                        allowedBackgrounds.Add("rockythoroughfare16");
+                        allowedBackgrounds.Add("rockythoroughfare17");
+                        allowedBackgrounds.Add("rockythoroughfare18");
+                        allowedBackgrounds.Add("rockythoroughfare19");
                         break;
                     case "ModShatteredMarsh":
                         allowedBackgrounds.Add("shatteredmarsh1");
@@ -330,11 +345,7 @@ namespace ImprovedLoadingScreens
                         allowedBackgrounds.Add("shatteredmarsh6");
                         allowedBackgrounds.Add("shatteredmarsh7");
                         allowedBackgrounds.Add("shatteredmarsh8");
-                        allowedBackgrounds.Add("shatteredmarsh9");
-                        allowedBackgrounds.Add("shatteredmarsh10");
-                        allowedBackgrounds.Add("shatteredmarsh11");
-                        allowedBackgrounds.Add("shatteredmarsh12");
-                        allowedBackgrounds.Add("shatteredmarsh13");
+                        allowedBackgrounds.Add("shatteredmarsh9");    
                         break;
                     case "ModForsakenShore":
                         allowedBackgrounds.Add("forsakenshore1");
@@ -350,6 +361,19 @@ namespace ImprovedLoadingScreens
                         allowedBackgrounds.Add("forsakenshore11");
                         allowedBackgrounds.Add("forsakenshore12");
                         allowedBackgrounds.Add("forsakenshore13");
+                        allowedBackgrounds.Add("forsakenshore14");
+                        allowedBackgrounds.Add("forsakenshore15");
+                        allowedBackgrounds.Add("forsakenshore16");
+                        allowedBackgrounds.Add("forsakenshore17");
+                        break;
+                    case "ModProponentsReach":
+                        allowedBackgrounds.Add("proponentsreach1");
+                        allowedBackgrounds.Add("proponentsreach2");
+                        allowedBackgrounds.Add("proponentsreach3");
+                        allowedBackgrounds.Add("proponentsreach4");
+                        allowedBackgrounds.Add("proponentsreach5");
+                        allowedBackgrounds.Add("proponentsreach6");
+                        allowedBackgrounds.Add("proponentsreach7");
                         break;
                     default:
                         //add region non-specific backgrounds
@@ -399,6 +423,7 @@ namespace ImprovedLoadingScreens
             names.Add("ModShatteredMarsh");
             names.Add("ModForsakenShore");
             names.Add("ModRockyThoroughfare");
+            names.Add("ModProponentsReach");
 
             return names;
         }
